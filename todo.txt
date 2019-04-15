@@ -1,0 +1,9 @@
+TODO:
+
+-custom entity models
+-cusotm lightmaps
+-random textures
+-overlay textures
+-bushy leaves and grass
+-handheld tools view fix
+-animated UI

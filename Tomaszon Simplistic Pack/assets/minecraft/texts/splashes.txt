@@ -18,11 +18,11 @@ Easter block.
 3.14159265358979323846.
 Block = m * c^2.
 Láma not equals Lámpa.
-Another spash.
+Another splash.
 Made by Tomaszon.
 I like that quartz block.
 Yellow useless texts.
-8x8 + 64x64 = awesome! 
+8x8 + 64x64 = awesome!
 Another day for Minecraft.
 Diggi-diggi-diggi ás!
 Use sand as ceiling. It is sooo stable!
@@ -30,7 +30,7 @@ Use TNT with caution!
 Hug creepers.
 Zombies always scare me!
 F-f-f-f-f-f-f-faaaaaaar enough!
-This text is hard to read if you play the game at the default resolution, or you are blind!
+This text is hard to read if you play the game at the default resolution!
 Use gatling against skeletons!
 Rock, paper, SHOTGUN!!!
 GIMME DAT DIAMONDO YA SOON OF A BRICKS!

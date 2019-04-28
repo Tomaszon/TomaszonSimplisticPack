@@ -1,0 +1,26 @@
+{
+    "parent": "block/block",
+    "textures": {
+        "particle": "block/cartography_table_side1",
+        "top": "block/cartography_table_top",
+        "back": "block/cartography_table_side4",
+        "front": "block/cartography_table_side1",
+        "bottom": "block/dark_oak_planks",
+        "right": "block/cartography_table_side3",
+        "left": "block/cartography_table_side2"
+    },
+    "elements": [
+        {
+            "from": [0, 0, 0],
+            "to": [16, 16, 16],
+            "faces":{
+                "down": { "texture": "#bottom" },
+				"up": { "texture": "#top" },
+				"north": { "texture": "#right" },
+				"south": {  "texture": "#left" },
+				"west": { "texture": "#back" },
+				"east": {  "texture": "#front" }
+            }
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "block/leaves",
+	"parent": "block/block",
 	"textures": {
 		"1": "block/oak_leaves",
 		"texture": "block/oak_leaves_bushy",
@@ -10,6 +10,7 @@
 		{
 			"from": [8, -8, -8],
 			"to": [8, 24, 24],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": false },
 			"faces": {
 				"east": {"uv": [0, 0, 16, 16], "texture": "#texture", "tintindex": 0},
 				"west": {"uv": [0, 0, 16, 16], "texture": "#texture", "tintindex": 0}
@@ -18,6 +19,7 @@
 		{
 			"from": [-8, -8, 8],
 			"to": [24, 24, 8],
+			"rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": false },
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#texture", "tintindex": 0},
 				"south": {"uv": [0, 0, 16, 16], "texture": "#texture", "tintindex": 0}
@@ -34,14 +36,7 @@
 				"up": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0},
 				"down": {"uv": [0, 0, 16, 16], "texture": "#1", "tintindex": 0}
 			}
-		},
-		{
-			"from": [-8, 8, -8],
-			"to": [24, 8, 24],
-			"faces": {
-				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#texture", "tintindex": 0},
-				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#texture", "tintindex": 0}
-			}
 		}
+		
 	]
 }

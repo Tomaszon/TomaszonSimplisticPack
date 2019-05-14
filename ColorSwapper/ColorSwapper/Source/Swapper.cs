@@ -32,7 +32,7 @@ namespace ColorSwapper.Source
 				{
 					if (SwapClass.ContainsFrom(b.GetPixel(x, y), out int index))
 					{
-						SwapClass.AddPoint(index, new Point(x, y));
+						SwapClass.AddPoint(b, index, new Point(x, y));
 					}
 				}
 			}
@@ -40,7 +40,7 @@ namespace ColorSwapper.Source
 
 		private void SwapColors(Bitmap b)
 		{
-			SwapClass.Points.ForEach(p => b.SetPixel(p.Item2.X, p.Item2.Y, SwapClass.Colors[p.Item1].Item2));
+			SwapClass.Points.Where(e => e.Item1 == b).ToList().ForEach(p => b.SetPixel(p.Item3.X, p.Item3.Y, SwapClass.Colors[p.Item2].Item2));
 		}
 
 		private void SaveChanges(Tuple<string, Bitmap> bitmap)
@@ -55,6 +55,12 @@ namespace ColorSwapper.Source
 			Bitmaps.ForEach(b => SwapColors(b.Item2));
 
 			Bitmaps.ForEach(b => SaveChanges(b));
+		}
+
+		public void Clear()
+		{
+			SwapClass.Points.Clear();
+			SwapClass.Points.Clear();
 		}
 	}
 }

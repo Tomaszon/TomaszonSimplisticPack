@@ -5,17 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ColorSwapper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="242" Width="524">
+        Title="MainWindow" Height="337" Width="524">
 	<Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition/>
 		</Grid.ColumnDefinitions>
 		<Button Content="Open files" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="15,30,0,0" Click="ButtonOpenClick" Height="20"/>
-		<TextBox Name="fromText" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="100,120,0,0"/>
-		<TextBox Name="toText" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="265,120,0,0"/>
-		<Button Content="Add color" HorizontalAlignment="Left" Margin="390,123,0,0" VerticalAlignment="Top" Width="75" Click="ButtonAddClick" Height="20"/>
-		<Label Content="From" HorizontalAlignment="Left" Margin="100,95,0,0" VerticalAlignment="Top" Height="26" Width="37"/>
-		<Label Content="To" HorizontalAlignment="Left" Margin="265,95,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
-		<Button Content="Process" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="200,170,0,0" Click="Button_Click"/>
+		<TextBox Name="fromText" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="118,57,0,0" TextChanged="FromText_TextChanged"/>
+		<TextBox Name="toText" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="283,57,0,0" TextChanged="ToText_TextChanged"/>
+		<Button Content="Add color" HorizontalAlignment="Left" Margin="408,60,0,0" VerticalAlignment="Top" Width="75" Click="ButtonAddClick" Height="20"/>
+		<Label Content="From" HorizontalAlignment="Left" Margin="118,32,0,0" VerticalAlignment="Top" Height="26" Width="37"/>
+		<Label Content="To" HorizontalAlignment="Left" Margin="283,32,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
+		<Button Content="Process" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="15,90,0,0" Click="Button_Click"/>
+		<ListBox Name="listBox" HorizontalAlignment="Left" Margin="118,120,0,41" Width="285" Padding="0" SelectionChanged="ListBox_SelectionChanged"/>
+		<Button Name="buttonClear" Content="Clear colors" HorizontalAlignment="Left" Margin="15,145,0,0" VerticalAlignment="Top" Width="75" Click="ButtonClear_Click"/>
+		<Rectangle Name="fromRec" HorizontalAlignment="Left" Height="25" Margin="118,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
+		<Rectangle Name="toRec" HorizontalAlignment="Left" Height="25" Margin="283,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
 	</Grid>
 </Window>

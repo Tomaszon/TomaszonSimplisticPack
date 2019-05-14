@@ -11,16 +11,19 @@ namespace ColorSwapper.Source
 	{
 		public List<Tuple<Color, Color>> Colors { get; set; } = new List<Tuple<Color, Color>>();
 
-		public List<Tuple<int, Point>> Points { get; set; } = new List<Tuple<int, Point>>();
+		public List<Tuple<Bitmap, int, Point>> Points { get; set; } = new List<Tuple<Bitmap, int, Point>>();
 
 		public void AddColor(Color from, Color to)
 		{
-			Colors.Add(new Tuple<Color, Color>(from, to));
+			if (!Colors.Exists(t => t.Item1.ToArgb() == from.ToArgb()))
+			{
+				Colors.Add(new Tuple<Color, Color>(from, to));
+			}
 		}
 
-		public void AddPoint(int index, Point point)
+		public void AddPoint(Bitmap b, int index, Point point)
 		{
-			Points.Add(new Tuple<int, Point>(index, point));
+			Points.Add(new Tuple<Bitmap, int, Point>(b, index, point));
 		}
 
 		public bool ContainsFrom(Color color, out int index)

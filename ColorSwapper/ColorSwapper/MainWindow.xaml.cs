@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +28,9 @@ namespace ColorSwapper
 		public MainWindow()
 		{
 			InitializeComponent();
+			Swapper.AddColor(Color.Azure, Color.Bisque);
+			listColors.ItemsSource = Swapper.SwapClass.Colors;
+			listImages.ItemsSource = Swapper.Bitmaps;
 		}
 
 		private void ButtonOpenClick(object sender, RoutedEventArgs e)
@@ -47,11 +52,9 @@ namespace ColorSwapper
 			try
 			{
 				Swapper.AddColor(ParseColor(fromText.Text), ParseColor(toText.Text));
-				listBox.Items.Clear();
-				Swapper.SwapClass.Colors.ForEach(t => listBox.Items.Add($"{t.Item1.A}, {t.Item1.R}, {t.Item1.G}, {t.Item1.B} => {t.Item2.A}, {t.Item2.R}, {t.Item2.G}, {t.Item2.B}"));
 
-				fromText.Text = "";
-				toText.Text = "";
+				//fromText.Text = "";
+				//toText.Text = "";
 			}
 			catch (Exception ex)
 			{
@@ -74,7 +77,6 @@ namespace ColorSwapper
 		private void ButtonClear_Click(object sender, RoutedEventArgs e)
 		{
 			Swapper.Clear();
-			listBox.Items.Clear();
 		}
 
 		private void FromText_TextChanged(object sender, TextChangedEventArgs e)
@@ -82,11 +84,11 @@ namespace ColorSwapper
 			try
 			{
 				Color c = ParseColor(fromText.Text);
-				fromRec.Fill = new System.Windows.Media.SolidColorBrush(new System.Windows.Media.Color() { A = c.A, R = c.R, G = c.G, B = c.B });
+				//fromRec.Fill = new System.Windows.Media.SolidColorBrush(new System.Windows.Media.Color() { A = c.A, R = c.R, G = c.G, B = c.B });
 			}
 			catch
 			{
-				fromRec.Fill = System.Windows.Media.Brushes.Transparent;
+				//fromRec.Fill = System.Windows.Media.Brushes.Transparent;
 			}
 		}
 
@@ -95,11 +97,11 @@ namespace ColorSwapper
 			try
 			{
 				Color c = ParseColor(toText.Text);
-				toRec.Fill = new System.Windows.Media.SolidColorBrush(new System.Windows.Media.Color() { A = c.A, R = c.R, G = c.G, B = c.B });
+				//toRec.Fill = new System.Windows.Media.SolidColorBrush(new System.Windows.Media.Color() { A = c.A, R = c.R, G = c.G, B = c.B });
 			}
 			catch
 			{
-				toRec.Fill = System.Windows.Media.Brushes.Transparent;
+				//toRec.Fill = System.Windows.Media.Brushes.Transparent;
 			}
 		}
 
@@ -109,18 +111,56 @@ namespace ColorSwapper
 			return Color.FromArgb(colorARGB[0], colorARGB[1], colorARGB[2], colorARGB[3]);
 		}
 
-		private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		private void ListColors_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
 			try
 			{
-				var arr = listBox.SelectedValue.ToString().Split('>').Select(p => p.Trim('=')).ToArray();
-				fromText.Text = arr[0];
-				toText.Text = arr[1];
+				//var arr = listBox.SelectedValue.ToString().Split('>').Select(p => p.Trim('=')).ToArray();
+				//fromText.Text = arr[0];
+				//toText.Text = arr[1];
 			}
 			catch (Exception ex)
 			{
-				fromText.Text = "";
-				toText.Text = "";
+				//fromText.Text = "";
+				//toText.Text = "";
+			}
+		}
+
+		private void ListImages_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+			try
+			{
+				imgFrom.Source = Convert(Swapper.Bitmaps.FirstOrDefault(t => t == listImages.SelectedValue).Item2);
+				imgTo.Source = Convert(Swapper.Bitmaps.FirstOrDefault(t => t == listImages.SelectedValue).Item3);
+				//fromText.Text = arr[0];
+				//toText.Text = arr[1];
+			}
+			catch (Exception ex)
+			{
+				//fromText.Text = "";
+				//toText.Text = "";
+			}
+		}
+
+		private void Save_Click(object sender, RoutedEventArgs e)
+		{
+			Swapper.Save();
+		}
+
+		private System.Windows.Media.ImageSource Convert(System.Drawing.Image image)
+		{
+			using (var ms = new MemoryStream())
+			{
+				image.Save(ms, ImageFormat.Bmp);
+				ms.Seek(0, SeekOrigin.Begin);
+
+				var bitmapImage = new System.Windows.Media.Imaging.BitmapImage();
+				bitmapImage.BeginInit();
+				bitmapImage.CacheOption = System.Windows.Media.Imaging.BitmapCacheOption.OnLoad;
+				bitmapImage.StreamSource = ms;
+				bitmapImage.EndInit();
+
+				return bitmapImage;
 			}
 		}
 	}

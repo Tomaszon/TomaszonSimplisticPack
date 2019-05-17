@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ColorSwapper"
+		xmlns:source="clr-namespace:ColorSwapper.Source"
         mc:Ignorable="d"
-        Title="MainWindow" Height="337" Width="524">
+        Title="MainWindow" Height="432" Width="884">
 	<Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition/>
@@ -17,9 +18,16 @@
 		<Label Content="From" HorizontalAlignment="Left" Margin="118,32,0,0" VerticalAlignment="Top" Height="26" Width="37"/>
 		<Label Content="To" HorizontalAlignment="Left" Margin="283,32,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
 		<Button Content="Process" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="15,90,0,0" Click="Button_Click"/>
-		<ListBox Name="listBox" HorizontalAlignment="Left" Margin="118,120,0,41" Width="285" Padding="0" SelectionChanged="ListBox_SelectionChanged"/>
+		<ListBox Name="listColors" HorizontalAlignment="Left" Margin="118,120,0,41" Width="285" Padding="0" SelectionChanged="ListColors_SelectionChanged" DisplayMemberPath="Formatted">
+		</ListBox>
 		<Button Name="buttonClear" Content="Clear colors" HorizontalAlignment="Left" Margin="15,145,0,0" VerticalAlignment="Top" Width="75" Click="ButtonClear_Click"/>
+
 		<Rectangle Name="fromRec" HorizontalAlignment="Left" Height="25" Margin="118,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
 		<Rectangle Name="toRec" HorizontalAlignment="Left" Height="25" Margin="283,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
+
+		<Image Name="imgFrom" Width="128" Height="128" Stretch="Fill" Margin="488,10,260,263"/>
+		<Image x:Name="imgTo" Width="128" Height="128" Stretch="Fill" Margin="621,10,127,263"/>
+		<ListBox x:Name="listImages" HorizontalAlignment="Left" Margin="408,160,0,41" Width="458" Padding="0" SelectionChanged="ListImages_SelectionChanged" DisplayMemberPath="Item1"/>
+		<Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="15,190,0,0" VerticalAlignment="Top" Width="75" Click="Save_Click"/>
 	</Grid>
 </Window>

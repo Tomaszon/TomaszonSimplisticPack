@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,18 @@ namespace ColorSwapper.Source
 	{
 		public SwapClass SwapClass { get; set; } = new SwapClass();
 
-		public List<Tuple<string, Bitmap>> Bitmaps { get; set; } = new List<Tuple<string, Bitmap>>();
+		public ObservableCollection<Tuple<string, Bitmap, Bitmap>> Bitmaps { get; set; } = new ObservableCollection<Tuple<string, Bitmap, Bitmap>>();
 
 		public void LoadBitmaps(string[] files)
 		{
-			Array.ForEach(files, f => Bitmaps.Add(new Tuple<string, Bitmap>(f, new Bitmap(new Bitmap(f)))));
+			Array.ForEach(files, f =>
+			{
+				if (Bitmaps.ToList().Exists(t => t.Item1 == f))
+				{
+					Bitmaps.Remove(Bitmaps.First(t => t.Item1 == f));
+				}
+				Bitmaps.Add(new Tuple<string, Bitmap, Bitmap>(f, new Bitmap(new Bitmap(f)), null));
+			});
 		}
 
 		public void AddColor(Color from, Color to)
@@ -26,6 +34,7 @@ namespace ColorSwapper.Source
 
 		private void CheckBitmap(Bitmap b)
 		{
+			SwapClass.Points.Clear();
 			for (int x = 0; x < b.Width; x++)
 			{
 				for (int y = 0; y < b.Height; y++)
@@ -40,21 +49,29 @@ namespace ColorSwapper.Source
 
 		private void SwapColors(Bitmap b)
 		{
-			SwapClass.Points.Where(e => e.Item1 == b).ToList().ForEach(p => b.SetPixel(p.Item3.X, p.Item3.Y, SwapClass.Colors[p.Item2].Item2));
+			SwapClass.Points.Where(e => e.Item1 == b).ToList().ForEach(p => b.SetPixel(p.Item3.X, p.Item3.Y, SwapClass.Colors[p.Item2].To));
 		}
 
-		private void SaveChanges(Tuple<string, Bitmap> bitmap)
+		private void SaveChanges(Tuple<string, Bitmap, Bitmap> bitmap)
 		{
 			bitmap.Item2.Save(bitmap.Item1);
 		}
 
 		public void Process()
 		{
-			Bitmaps.ForEach(b => CheckBitmap(b.Item2));
+			foreach (var b in Bitmaps)
+			{
+				CheckBitmap(b.Item2);
+				SwapColors(b.Item2);
+			}
+		}
 
-			Bitmaps.ForEach(b => SwapColors(b.Item2));
-
-			Bitmaps.ForEach(b => SaveChanges(b));
+		public void Save()
+		{
+			foreach (var b in Bitmaps)
+			{
+				SaveChanges(b);
+			}
 		}
 
 		public void Clear()

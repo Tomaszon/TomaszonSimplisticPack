@@ -1,5 +1,10 @@
 {
 	"parent": "block/block",
+	"textures": {
+		"particle": "#particle",
+		"texture_bushy": "#texture_bushy",
+		"texture": "#texture"
+	},
 	"elements": [
 		{
 			"from": [8, -8, -8],

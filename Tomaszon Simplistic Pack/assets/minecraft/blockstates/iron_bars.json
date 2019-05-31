@@ -1,0 +1,19 @@
+{
+    "multipart": [
+        {   
+            "apply": { "model": "block/iron_bars_single" }
+        },
+        {   "when": { "north": true },
+            "apply": { "model": "block/iron_bars_side_nw", "y": 90 }
+        },
+        {   "when": { "west": true },
+            "apply": { "model": "block/iron_bars_side_nw" }
+        },
+        {   "when": { "south": true },
+            "apply": { "model": "block/iron_bars_side_se", "y": 90 }
+        },
+        {   "when": { "east": true },
+            "apply": { "model": "block/iron_bars_side_se" }
+        }
+    ]
+}

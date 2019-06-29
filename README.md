@@ -68,18 +68,7 @@
 <img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
 <img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/oak_door_top.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/light_blue_stained_glass.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
-<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
+<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/><img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/omaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/><img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/inecraft/textures/block/oak_door_top.png"/><img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/<img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/light_blue_stained_glass.png"/><img hspace="0" alt="img" rc="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/><img hspace="0" alt="img" src="https://github.com/Tomaszon/omaszonSimplisticPack/blob/master/empty.png"/><img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/><img hspace="0" alt="img" src="https://github.com/omaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/><img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/><img hspace="0" alt="img" rc="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/><img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
 
 <img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <img hspace="0" alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>

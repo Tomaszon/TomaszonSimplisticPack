@@ -1,0 +1,7 @@
+{
+	"parent": "block/cobblestone",
+	"textures": {
+		"all": "block/cobblestone2"
+
+	}
+}

@@ -1,9 +1,9 @@
 TODO:
 
--custom entity models
--cusotm lightmaps
--random textures
--overlay textures
--bushy leaves and grass
--handheld tools view fix
--animated UI
+-custom entity models     --- DROPPED
+-custom lightmaps         --- DROPPED
+-random textures          --- INP ROGRESSS
+-overlay textures         ---
+-bushy leaves and grass   --- IN PROGRESS
+-handheld tools view fix  --- OK
+-animated UI              --- DROPPED

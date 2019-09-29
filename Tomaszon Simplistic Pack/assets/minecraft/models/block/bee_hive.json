@@ -6,7 +6,8 @@
 		"2": "block/bee_hive_bottom",
 		"3": "block/bee_hive_front",
 		"4": "block/bee_hive_top",
-		"6": "block/bee_hive_side"
+		"6": "block/bee_hive_side",
+		"particle": "block/bee_hive_front"
 	},
 	"elements": [
 		{

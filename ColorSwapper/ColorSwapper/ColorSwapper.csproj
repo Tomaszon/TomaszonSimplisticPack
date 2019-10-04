@@ -56,8 +56,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Source\BitmapEntry.cs" />
+    <Compile Include="Source\FromToColor.cs" />
+    <Compile Include="Source\PointEntry.cs" />
     <Compile Include="Source\Swapper.cs" />
-    <Compile Include="Source\SwapClass.cs" />
+    <Compile Include="Source\EntryCollection.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

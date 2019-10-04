@@ -1,83 +1,79 @@
-﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Collections.ObjectModel;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ColorSwapper.Source
 {
 	public class Swapper
 	{
-		public SwapClass SwapClass { get; set; } = new SwapClass();
+		public EntryCollection EntryCollection { get; set; } = new EntryCollection();
 
-		public ObservableCollection<Tuple<string, Bitmap, Bitmap>> Bitmaps { get; set; } = new ObservableCollection<Tuple<string, Bitmap, Bitmap>>();
+		public ObservableCollection<BitmapEntry> Bitmaps { get; set; } = new ObservableCollection<BitmapEntry>();
 
 		public void LoadBitmaps(string[] files)
 		{
 			Array.ForEach(files, f =>
 			{
-				if (Bitmaps.ToList().Exists(t => t.Item1 == f))
+				if (Bitmaps.ToList().Exists(t => t.Name == f))
 				{
-					Bitmaps.Remove(Bitmaps.First(t => t.Item1 == f));
+					Bitmaps.Remove(Bitmaps.First(t => t.Name == f));
 				}
-				Bitmaps.Add(new Tuple<string, Bitmap, Bitmap>(f, new Bitmap(new Bitmap(f)), null));
+				Bitmaps.Add(new BitmapEntry() { Name = f, Modified = new Bitmap(new Bitmap(f)), Original = new Bitmap(new Bitmap(f)) });
 			});
 		}
 
 		public void AddColor(Color from, Color to)
 		{
-			SwapClass.AddColor(from, to);
+			EntryCollection.AddColor(from, to);
 		}
 
-		private void CheckBitmap(Bitmap b)
+		private void CheckBitmap(string bmpName, Bitmap b)
 		{
-			SwapClass.Points.Clear();
 			for (int x = 0; x < b.Width; x++)
 			{
 				for (int y = 0; y < b.Height; y++)
 				{
-					if (SwapClass.ContainsFrom(b.GetPixel(x, y), out int index))
+					if (EntryCollection.ContainsFrom(b.GetPixel(x, y), out FromToColor fromToColor))
 					{
-						SwapClass.AddPoint(b, index, new Point(x, y));
+						EntryCollection.AddPoint(bmpName, b, new Point(x, y), fromToColor);
 					}
 				}
 			}
 		}
 
-		private void SwapColors(Bitmap b)
+		private void SwapColors(string bmpName, Bitmap b)
 		{
-			SwapClass.Points.Where(e => e.Item1 == b).ToList().ForEach(p => b.SetPixel(p.Item3.X, p.Item3.Y, SwapClass.Colors[p.Item2].To));
+			EntryCollection.Points.Where(e =>
+				e.BitmapName == bmpName).ToList().ForEach(p =>
+					b.SetPixel(p.Location.X, p.Location.Y, p.FromToColor.To));
 		}
 
-		private void SaveChanges(Tuple<string, Bitmap, Bitmap> bitmap)
+		private void SaveChanges(BitmapEntry bitmapEntry)
 		{
-			bitmap.Item2.Save(bitmap.Item1);
+			bitmapEntry.Modified.Save(bitmapEntry.Name);
 		}
 
 		public void Process()
 		{
-			foreach (var b in Bitmaps)
+			Clear();
+			foreach (BitmapEntry b in Bitmaps)
 			{
-				CheckBitmap(b.Item2);
-				SwapColors(b.Item2);
+				CheckBitmap(b.Name, b.Original);
+				SwapColors(b.Name, b.Modified);
 			}
 		}
 
 		public void Save()
 		{
-			foreach (var b in Bitmaps)
-			{
-				SaveChanges(b);
-			}
+			Bitmaps.Where(b =>
+				EntryCollection.Points.FirstOrDefault(p =>
+					p.BitmapName == b.Name) != null).ToList().ForEach(b => SaveChanges(b));
 		}
 
 		public void Clear()
 		{
-			SwapClass.Points.Clear();
-			SwapClass.Points.Clear();
+			EntryCollection.Points.Clear();
 		}
 	}
 }

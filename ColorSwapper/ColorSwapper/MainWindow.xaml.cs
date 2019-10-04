@@ -63,7 +63,7 @@ namespace ColorSwapper
 			}
 			catch (Exception ex)
 			{
-
+				MessageBox.Show(ex.Message);
 			}
 		}
 
@@ -137,7 +137,7 @@ namespace ColorSwapper
 
 		private void Save_Click(object sender, RoutedEventArgs e)
 		{
-			Swapper.Save();
+			Swapper.Save(false);
 		}
 
 		private System.Windows.Media.ImageSource Convert(System.Drawing.Image image)
@@ -159,7 +159,7 @@ namespace ColorSwapper
 
 		private void ButtonRestore_Click(object sender, RoutedEventArgs e)
 		{
-			//TODO
+			Swapper.Save(true);
 		}
 	}
 }

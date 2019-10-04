@@ -49,9 +49,16 @@ namespace ColorSwapper.Source
 					b.SetPixel(p.Location.X, p.Location.Y, p.FromToColor.To));
 		}
 
-		private void SaveChanges(BitmapEntry bitmapEntry)
+		private void SaveChanges(bool restore, BitmapEntry bitmapEntry)
 		{
-			bitmapEntry.Modified.Save(bitmapEntry.Name);
+			if (restore)
+			{
+				bitmapEntry.Original.Save(bitmapEntry.Name);
+			}
+			else
+			{
+				bitmapEntry.Modified.Save(bitmapEntry.Name);
+			}
 		}
 
 		public void Process()
@@ -64,11 +71,12 @@ namespace ColorSwapper.Source
 			}
 		}
 
-		public void Save()
+		public void Save(bool restore)
 		{
 			Bitmaps.Where(b =>
 				EntryCollection.Points.FirstOrDefault(p =>
-					p.BitmapName == b.Name) != null).ToList().ForEach(b => SaveChanges(b));
+					p.BitmapName == b.Name) != null).ToList().
+					ForEach(b => SaveChanges(restore, b));
 		}
 
 		public void Clear()

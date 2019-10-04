@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace ColorSwapper.Source
 {
@@ -17,7 +16,7 @@ namespace ColorSwapper.Source
 
 		public static bool operator ==(FromToColor self, FromToColor other)
 		{
-			return self.Formatted == other.Formatted;
+			return self?.Formatted == other?.Formatted;
 		}
 
 		public static bool operator !=(FromToColor self, FromToColor other)

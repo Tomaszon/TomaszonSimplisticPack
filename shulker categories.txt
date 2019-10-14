@@ -1,16 +1,16 @@
-black		- other hard materials
-blue		- ocean stuff - prismarine block and briskc, corals, sponge
-brown		- wood
-cyan		- concrete and powder
-gray		- stones, stone bricks, smooth stones
-green		- plants, seeds, leaves
-light blue	- ores, ingots
-light gray	- tools, armors
-lime		- colored stuff
-magenta		- terracottas, brick
-orange		- food
-pink		- decor - flowers, paintings, itemframe 
-purple		- enchanting, brewing
-red		- redstone
-white		- mob drops
-yellow		- sands, gravel
+black		- other hard materials				- 
+blue		- ocean stuff - prismarine, corals, sponge	- 
+brown		- wood						- 
+cyan		- concrete and powder				- 
+gray		- stones, stone bricks, smooth stones		- 
+green		- plants, seeds, leaves				- 
+light blue	- ores, ingots					- 
+light gray	- tools, armors					- 
+lime		- colored stuff					- 
+magenta		- terracottas, brick				- 
+orange		- food						- 
+pink		- decor - flowers, paintings, itemframe 	- 
+purple		- enchanting, brewing				- 
+red		- redstone					- 
+white		- mob drops					- bone, gun powder
+yellow		- sands, gravel					- sand, gravel

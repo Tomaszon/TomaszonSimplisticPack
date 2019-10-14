@@ -1,0 +1,16 @@
+black		- other blocks
+blue		- 
+brown		- wood related items - logs, planks, stairs, sticks, doors etc. exc bowls
+cyan		- 
+gray		- mob drops exc arrow (that belongs to tools)
+green		- plantable and edible plant-based stuffs
+light blue	- tools, armors
+light gray	- all kind of stone stuffs
+lime		- colored building blokc (wool, concrete, concrete powder, (glazed) terracottas dyes)
+magenta		- 
+orange		- cooked and noncooked animal-based food stuffs
+pink		- decor - paintings, flower pots, leaves, decorative plants
+purple		- brewing and enchanting related items
+red		- redstone components
+white		- valuable stuff like ores and ingots
+yellow		- all kind of sand and sandstone

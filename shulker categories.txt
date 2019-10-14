@@ -1,5 +1,5 @@
 black		- other hard materials
-blue		- 
+blue		- ocean stuff - prismarine block and briskc, corals, sponge
 brown		- wood
 cyan		- concrete and powder
 gray		- stones, stone bricks, smooth stones

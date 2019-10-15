@@ -1,4 +1,4 @@
-black		- concrete					- light gray concrete 
+black		- 						- 
 blue		- prismarine					- prismarine brick
 brown		- wood						- oak log
 cyan		- concrete and powder				- light gray concrete powder

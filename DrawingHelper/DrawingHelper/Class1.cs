@@ -8,7 +8,7 @@ namespace DrawingHelper
 {
 	public static class Processor
 	{
-		public static void ProcessImage(Bitmap bitmap)
+		public static Bitmap ProcessImage(Bitmap bitmap)
 		{
 			BorderPositions borderPositions = new BorderPositions();
 			EmbossPositions embossPositions = new EmbossPositions();
@@ -21,20 +21,21 @@ namespace DrawingHelper
 			ShapeCreator shapeCreator = new ShapeCreator();
 			for (int i = 0; i < cmtx.Length; i++)
 			{
-				cmtx.GetSurroundingElements(cmtx.GetElement(i),
+
+				ColorMatrixElement element = cmtx.GetElement(i);
+				cmtx.GetSurroundingElements(element,
 					out ColorMatrixElement N, out ColorMatrixElement S, out ColorMatrixElement W, out ColorMatrixElement E,
 					out ColorMatrixElement NW, out ColorMatrixElement NE, out ColorMatrixElement SW, out ColorMatrixElement SE);
 
-				shapeCreator.DetermineBorder(cmtx.GetElement(i), baseColor, N, S, W, E, NW, NE, SW, SE);
-				shapeCreator.DetermineEmboss(cmtx.GetElement(i));
+				shapeCreator.DetermineBorder(element, baseColor, N, S, W, E, NW, NE, SW, SE);
+				shapeCreator.DetermineEmboss(element);
+				shapeCreator.SetEmbossColors(embossPositions, element);
+				shapeCreator.SetBorderColors(borderPositions, element);
 			}
 
-			ImageHandler res = new ImageHandler();
-			Bitmap largeBitmap = res.ResizeTo64(bitmap);
+			ImageHandler imageHandler = new ImageHandler();
 
-
-
-
+			return imageHandler.PaintImage(cmtx);
 		}
 	}
 
@@ -156,7 +157,7 @@ namespace DrawingHelper
 					EasyColor lc = c.AddLuminance(Properties.Settings.Default.ShineColorDiff);
 					EasyColor sc = c.AddLuminance(Properties.Settings.Default.ShadowColorDiff);
 
-					_mtx[x, y] = new ColorMatrixElement(baseColor) { Location = new Point(x, y), Color = c, BorderColor = bc, ShineColor = lc, ShadowColor = sc };
+					_mtx[x, y] = new ColorMatrixElement(c) { Location = new Point(x, y), Color = c, BorderColor = bc, ShineColor = lc, ShadowColor = sc };
 				}
 			}
 		}
@@ -168,14 +169,14 @@ namespace DrawingHelper
 			int x = center.Location.X;
 			int y = center.Location.Y;
 
-			N = Get(x - 1, y);
-			S = Get(x + 1, y);
-			W = Get(x, y - 1);
-			E = Get(x, y + 1);
+			N = Get(x, y - 1);
+			S = Get(x, y + 1);
+			W = Get(x - 1, y);
+			E = Get(x + 1, y);
 
 			NW = Get(x - 1, y - 1);
-			NE = Get(x - 1, y + 1);
-			SW = Get(x + 1, y - 1);
+			NE = Get(x + 1, y - 1);
+			SW = Get(x - 1, y + 1);
 			SE = Get(x + 1, y + 1);
 		}
 
@@ -206,15 +207,15 @@ namespace DrawingHelper
 
 		public EasyColor[,] ScaledInnerColorMatrix { get; set; } = new EasyColor[8, 8];
 
-		public Bordering Bordering { get; set; }
+		public Bordering Bordering { get; set; } = new Bordering();
 
-		public Embossing Embossing { get; set; }
+		public Embossing Embossing { get; set; } = new Embossing();
 
 		public ColorMatrixElement(EasyColor c)
 		{
-			for (int y = 0; y < ScaledInnerColorMatrix.GetLength(0); y++)
+			for (int y = 0; y < ScaledInnerColorMatrix.GetLength(1); y++)
 			{
-				for (int x = 0; x < ScaledInnerColorMatrix.GetLength(1); x++)
+				for (int x = 0; x < ScaledInnerColorMatrix.GetLength(0); x++)
 				{
 					ScaledInnerColorMatrix[x, y] = c;
 				}
@@ -262,14 +263,55 @@ namespace DrawingHelper
 			ColorMatrixElement N, ColorMatrixElement S, ColorMatrixElement W, ColorMatrixElement E,
 			ColorMatrixElement NW, ColorMatrixElement NE, ColorMatrixElement SW, ColorMatrixElement SE)
 		{
-			element.Bordering.N = N is null || N.Color == baseColor;
-			element.Bordering.S = S is null || S.Color == baseColor;
-			element.Bordering.W = W is null || W.Color == baseColor;
-			element.Bordering.E = E is null || E.Color == baseColor;
-			element.Bordering.NW = NW is null || NW.Color == baseColor;
-			element.Bordering.NE = NE is null || NE.Color == baseColor;
-			element.Bordering.SW = SW is null || SW.Color == baseColor;
-			element.Bordering.SE = SE is null || SE.Color == baseColor;
+			element.Bordering.N = element.Color != baseColor && (N is null || N.Color == baseColor);
+			element.Bordering.S = element.Color != baseColor && (S is null || S.Color == baseColor);
+			element.Bordering.W = element.Color != baseColor && (W is null || W.Color == baseColor);
+			element.Bordering.E = element.Color != baseColor && (E is null || E.Color == baseColor);
+			element.Bordering.NW = element.Color != baseColor && (NW is null || NW.Color == baseColor);
+			element.Bordering.NE = element.Color != baseColor && (NE is null || NE.Color == baseColor);
+			element.Bordering.SW = element.Color != baseColor && (SW is null || SW.Color == baseColor);
+			element.Bordering.SE = element.Color != baseColor && (SE is null || SE.Color == baseColor);
+		}
+
+		public void SetBorderColors(BorderPositions borderPositions, ColorMatrixElement element)
+		{
+			if (element.Bordering.N)
+			{
+				SetInnerColors(element.BorderColor, element, borderPositions.N);
+			}
+			if (element.Bordering.S)
+			{
+				SetInnerColors(element.BorderColor, element, borderPositions.S);
+			}
+			if (element.Bordering.W)
+			{
+				SetInnerColors(element.BorderColor, element, borderPositions.W);
+			}
+			if (element.Bordering.E)
+			{
+				SetInnerColors(element.BorderColor, element, borderPositions.E);
+			}
+			if (element.Bordering.NW)
+			{
+				SetInnerColors(element.BorderColor, element, borderPositions.NW);
+			}
+			if (element.Bordering.NE)
+			{
+				SetInnerColors(element.BorderColor, element, borderPositions.NE);
+			}
+			if (element.Bordering.SW)
+			{
+				SetInnerColors(element.BorderColor, element, borderPositions.SW);
+			}
+			if (element.Bordering.SE)
+			{
+				SetInnerColors(element.BorderColor, element, borderPositions.SE);
+			}
+		}
+
+		private void SetInnerColors(EasyColor swapColor, ColorMatrixElement element, params Point[] points)
+		{
+			Array.ForEach(points, e => element.ScaledInnerColorMatrix[e.X, e.Y] = swapColor);
 		}
 
 		public void DetermineEmboss(ColorMatrixElement element)
@@ -280,6 +322,34 @@ namespace DrawingHelper
 			element.Embossing.NE = element.Bordering.NE;
 			element.Embossing.SW = element.Bordering.SW;
 			element.Embossing.SE = element.Bordering.SE;
+		}
+
+		public void SetEmbossColors(EmbossPositions embossPositions, ColorMatrixElement element)
+		{
+			if (element.Embossing.N)
+			{
+				SetInnerColors(element.ShineColor, element, embossPositions.N);
+			}
+			if (element.Embossing.S)
+			{
+				SetInnerColors(element.ShadowColor, element, embossPositions.S);
+			}
+			if (element.Embossing.NW)
+			{
+				SetInnerColors(element.ShineColor, element, embossPositions.NW);
+			}
+			if (element.Embossing.NE)
+			{
+				SetInnerColors(element.ShineColor, element, embossPositions.NE);
+			}
+			if (element.Embossing.SW)
+			{
+				SetInnerColors(element.ShadowColor, element, embossPositions.SW);
+			}
+			if (element.Embossing.SE)
+			{
+				SetInnerColors(element.ShadowColor, element, embossPositions.SE);
+			}
 		}
 	}
 
@@ -303,18 +373,18 @@ namespace DrawingHelper
 
 		public BorderPositions()
 		{
-			for (int p = 2; p <= N.Length; p++)
+			for (int p = 1; p <= N.Length; p++)
 			{
-				N[p - 2] = new Point(p, 0);
-				S[p - 2] = new Point(p, 8);
-				W[p - 2] = new Point(0, p);
-				E[p - 2] = new Point(8, p);
+				N[p - 1] = new Point(p, 0);
+				S[p - 1] = new Point(p, 7);
+				W[p - 1] = new Point(0, p);
+				E[p - 1] = new Point(7, p);
 			}
 
 			NW = new Point(0, 0);
-			NE = new Point(8, 0);
-			SW = new Point(0, 8);
-			SE = new Point(8, 8);
+			NE = new Point(7, 0);
+			SW = new Point(0, 7);
+			SE = new Point(7, 7);
 		}
 	}
 
@@ -334,56 +404,38 @@ namespace DrawingHelper
 
 		public EmbossPositions()
 		{
-			for (int p = 2; p <= N.Length; p++)
+			for (int p = 1; p <= N.Length; p++)
 			{
-				N[p - 2] = new Point(p, 1);
-				S[p - 2] = new Point(p, 7);
+				N[p - 1] = new Point(p, 1);
+				S[p - 1] = new Point(p, 6);
 			}
 
 			NW = new Point(0, 1);
-			NE = new Point(8, 1);
-			SW = new Point(0, 7);
-			SE = new Point(8, 7);
+			NE = new Point(7, 1);
+			SW = new Point(0, 6);
+			SE = new Point(7, 6);
 		}
 	}
 
 	public class ImageHandler
 	{
-		public Bitmap ResizeTo64(Bitmap bitmap)
+		public Bitmap PaintImage(ColorMatrix colorMatrix)
 		{
-			return new Bitmap(bitmap, new Size(64, 64));
-		}
+			Bitmap b = new Bitmap(64, 64);
 
-		public void SetColor(Bitmap bitmap, ColorMatrixElement e, BorderPositions bps, EmbossPositions eps)
-		{
-			Point p = e.Location;
-			EasyColor colorToSet;
-
-			if (Is(e.Bordering.N, p, bps.N))
+			for (int i = 0; i < colorMatrix.Length; i++)
 			{
-
-			}
-			else if (Is(e.Bordering.S, p, bps.S))
-			{
-
+				ColorMatrixElement element = colorMatrix.GetElement(i);
+				for (int y = 0; y < element.ScaledInnerColorMatrix.GetLength(1); y++)
+				{
+					for (int x = 0; x < element.ScaledInnerColorMatrix.GetLength(0); x++)
+					{
+						b.SetPixel(element.Location.X * 8 + x, element.Location.Y * 8 + y, element.ScaledInnerColorMatrix[x, y].Color);
+					}
+				}
 			}
 
-			//...
-			else if (Is(e.Embossing.N, p, eps.N))
-			{
-
-			}
-			else if (Is(e.Embossing.S, p, eps.S))
-			{
-
-			}
-
-			bitmap.SetPixel(e.Location.X, e.Location.Y);
-		}
-
-		private bool Is(bool det, Point p, params Point[] points)
-		{
-			return det && points.Contains(p);
+			return b;
 		}
 	}
 }

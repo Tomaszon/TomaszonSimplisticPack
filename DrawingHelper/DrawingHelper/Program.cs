@@ -1,16 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
 
 namespace DrawingHelper
 {
-	class Program
+	internal class Program
 	{
-		static void Main(string[] args)
+		private static void Main(string[] args)
 		{
+			string fileName = "test.png";//Console.ReadLine();
 
+			Bitmap input = (Bitmap)Bitmap.FromFile(fileName);
+
+			Bitmap output = Processor.ProcessImage(input);
+
+			output.Save(@"C:\Users\toti9\Documents\GitHub\TomaszonSimplisticPack\DrawingHelper\DrawingHelper\bin\Debug\output.png");
+
+			//Console.ReadKey();
 		}
 	}
 }

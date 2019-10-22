@@ -6,19 +6,74 @@ using System.Linq;
 
 namespace DrawingHelper
 {
+	public static class Processor
+	{
+		public static void ProcessImage(Bitmap bitmap)
+		{
+			BorderPositions borderPositions = new BorderPositions();
+			EmbossPositions embossPositions = new EmbossPositions();
+
+			EasyColor baseColor = new ValueTable().GetBaseColor(bitmap);
+
+			ColorMatrix cmtx = new ColorMatrix();
+			cmtx.CreateFromBitmap(bitmap, baseColor);
+
+			ShapeCreator shapeCreator = new ShapeCreator();
+			for (int i = 0; i < cmtx.Length; i++)
+			{
+				cmtx.GetSurroundingElements(cmtx.GetElement(i),
+					out ColorMatrixElement N, out ColorMatrixElement S, out ColorMatrixElement W, out ColorMatrixElement E,
+					out ColorMatrixElement NW, out ColorMatrixElement NE, out ColorMatrixElement SW, out ColorMatrixElement SE);
+
+				shapeCreator.DetermineBorder(cmtx.GetElement(i), baseColor, N, S, W, E, NW, NE, SW, SE);
+				shapeCreator.DetermineEmboss(cmtx.GetElement(i));
+			}
+
+			ImageHandler res = new ImageHandler();
+			Bitmap largeBitmap = res.ResizeTo64(bitmap);
+
+
+
+
+		}
+	}
+
+	public class ValueTableEntry
+	{
+		public EasyColor Color { get; set; }
+
+		public int Count { get; set; }
+	}
+
 	public class ValueTable
 	{
-		public Dictionary<EasyColor, int> Values { get; set; } = new Dictionary<EasyColor, int>();
+		public List<ValueTableEntry> Values { get; set; } = new List<ValueTableEntry>();
 
-		public EasyColor GetBaseColor()
+		public EasyColor GetBaseColor(Bitmap bitmap)
 		{
-			return Values.FirstOrDefault(v => v.Value == Values.Max(p => p.Value)).Key;
+			for (int y = 0; y < bitmap.Height; y++)
+			{
+				for (int x = 0; x < bitmap.Width; x++)
+				{
+					Color c = bitmap.GetPixel(x, y);
+					if (!Values.Exists(t => t.Color.Color.ToArgb() == c.ToArgb()))
+					{
+						Values.Add(new ValueTableEntry() { Color = new EasyColor(c), Count = 1 });
+					}
+					else
+					{
+						Values.Find(p => p.Color.Color.ToArgb() == c.ToArgb()).Count++;
+					}
+				}
+			}
+
+			return Values.FirstOrDefault(v => v.Count == Values.Max(p => p.Count)).Color;
 		}
 	}
 
 	public class EasyColor
 	{
-		private Color Color { get; } = Color.Empty;
+		public Color Color { get; } = Color.Empty;
 
 		public EasyColor(Color color) : this(color.A, color.R, color.G, color.B) { }
 
@@ -78,10 +133,14 @@ namespace DrawingHelper
 	{
 		private readonly ColorMatrixElement[,] _mtx = new ColorMatrixElement[8, 8];
 
+		public int Length => _mtx.Length;
+
+		public ColorMatrixElement GetElement(int index) => _mtx[index / _mtx.GetLength(0), index % _mtx.GetLength(0)];
+
 		/// <summary>
 		/// Create from 8x8 bitmap
 		/// </summary>
-		public void CreateFromBitmap(Bitmap b)
+		public void CreateFromBitmap(Bitmap b, EasyColor baseColor)
 		{
 			if (b.Size.Height != 8 || b.Size.Width != 8)
 			{
@@ -97,8 +156,38 @@ namespace DrawingHelper
 					EasyColor lc = c.AddLuminance(Properties.Settings.Default.ShineColorDiff);
 					EasyColor sc = c.AddLuminance(Properties.Settings.Default.ShadowColorDiff);
 
-					_mtx[x, y] = new ColorMatrixElement() { Location = new Point(x, y), Color = c, BorderColor = bc, ShinColor = lc, ShadowColor = sc };
+					_mtx[x, y] = new ColorMatrixElement(baseColor) { Location = new Point(x, y), Color = c, BorderColor = bc, ShineColor = lc, ShadowColor = sc };
 				}
+			}
+		}
+
+		public void GetSurroundingElements(ColorMatrixElement center, out ColorMatrixElement N, out ColorMatrixElement S,
+			out ColorMatrixElement W, out ColorMatrixElement E, out ColorMatrixElement NW,
+			out ColorMatrixElement NE, out ColorMatrixElement SW, out ColorMatrixElement SE)
+		{
+			int x = center.Location.X;
+			int y = center.Location.Y;
+
+			N = Get(x - 1, y);
+			S = Get(x + 1, y);
+			W = Get(x, y - 1);
+			E = Get(x, y + 1);
+
+			NW = Get(x - 1, y - 1);
+			NE = Get(x - 1, y + 1);
+			SW = Get(x + 1, y - 1);
+			SE = Get(x + 1, y + 1);
+		}
+
+		private ColorMatrixElement Get(int x, int y)
+		{
+			try
+			{
+				return _mtx[x, y];
+			}
+			catch (IndexOutOfRangeException)
+			{
+				return null;
 			}
 		}
 	}
@@ -111,7 +200,7 @@ namespace DrawingHelper
 
 		public EasyColor BorderColor { get; set; }
 
-		public EasyColor ShinColor { get; set; }
+		public EasyColor ShineColor { get; set; }
 
 		public EasyColor ShadowColor { get; set; }
 
@@ -121,7 +210,7 @@ namespace DrawingHelper
 
 		public Embossing Embossing { get; set; }
 
-		public void InitScaledInnerColorMatrix(EasyColor c)
+		public ColorMatrixElement(EasyColor c)
 		{
 			for (int y = 0; y < ScaledInnerColorMatrix.GetLength(0); y++)
 			{
@@ -173,14 +262,14 @@ namespace DrawingHelper
 			ColorMatrixElement N, ColorMatrixElement S, ColorMatrixElement W, ColorMatrixElement E,
 			ColorMatrixElement NW, ColorMatrixElement NE, ColorMatrixElement SW, ColorMatrixElement SE)
 		{
-			element.Bordering.N = N.Color == baseColor;
-			element.Bordering.S = S.Color == baseColor;
-			element.Bordering.W = W.Color == baseColor;
-			element.Bordering.E = E.Color == baseColor;
-			element.Bordering.NW = NW.Color == baseColor;
-			element.Bordering.NE = NE.Color == baseColor;
-			element.Bordering.SW = SW.Color == baseColor;
-			element.Bordering.SE = SE.Color == baseColor;
+			element.Bordering.N = N is null || N.Color == baseColor;
+			element.Bordering.S = S is null || S.Color == baseColor;
+			element.Bordering.W = W is null || W.Color == baseColor;
+			element.Bordering.E = E is null || E.Color == baseColor;
+			element.Bordering.NW = NW is null || NW.Color == baseColor;
+			element.Bordering.NE = NE is null || NE.Color == baseColor;
+			element.Bordering.SW = SW is null || SW.Color == baseColor;
+			element.Bordering.SE = SE is null || SE.Color == baseColor;
 		}
 
 		public void DetermineEmboss(ColorMatrixElement element)
@@ -258,8 +347,43 @@ namespace DrawingHelper
 		}
 	}
 
-	public class ImageResizer
+	public class ImageHandler
 	{
+		public Bitmap ResizeTo64(Bitmap bitmap)
+		{
+			return new Bitmap(bitmap, new Size(64, 64));
+		}
 
+		public void SetColor(Bitmap bitmap, ColorMatrixElement e, BorderPositions bps, EmbossPositions eps)
+		{
+			Point p = e.Location;
+			EasyColor colorToSet;
+
+			if (Is(e.Bordering.N, p, bps.N))
+			{
+
+			}
+			else if (Is(e.Bordering.S, p, bps.S))
+			{
+
+			}
+
+			//...
+			else if (Is(e.Embossing.N, p, eps.N))
+			{
+
+			}
+			else if (Is(e.Embossing.S, p, eps.S))
+			{
+
+			}
+
+			bitmap.SetPixel(e.Location.X, e.Location.Y);
+		}
+
+		private bool Is(bool det, Point p, params Point[] points)
+		{
+			return det && points.Contains(p);
+		}
 	}
 }

@@ -7,15 +7,25 @@ namespace DrawingHelper
 	{
 		private static void Main(string[] args)
 		{
-			string fileName = "test.png";//Console.ReadLine();
+			Console.WriteLine("Params: {path}");
+			string fileName = Console.ReadLine();
 
-			Bitmap input = (Bitmap)Bitmap.FromFile(fileName);
+			Bitmap input = (Bitmap)Image.FromFile(fileName);
+			try
+			{
+				Bitmap output = new Processor().ProcessImage(input);
 
-			Bitmap output = Processor.ProcessImage(input);
+				output.Save(@"C:\Users\toti9\Documents\GitHub\TomaszonSimplisticPack\DrawingHelper\DrawingHelper\bin\Debug\output.png");
 
-			output.Save(@"C:\Users\toti9\Documents\GitHub\TomaszonSimplisticPack\DrawingHelper\DrawingHelper\bin\Debug\output.png");
+				Console.WriteLine("Processed!");
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+			}
 
-			//Console.ReadKey();
+			Console.WriteLine("Press to exit");
+			Console.ReadKey();
 		}
 	}
 }

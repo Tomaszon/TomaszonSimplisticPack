@@ -26,36 +26,36 @@ namespace DrawingHelper.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("-20")]
-        public int BorderColorDiff {
+        public int BorderColorDiffBase {
             get {
-                return ((int)(this["BorderColorDiff"]));
+                return ((int)(this["BorderColorDiffBase"]));
             }
             set {
-                this["BorderColorDiff"] = value;
+                this["BorderColorDiffBase"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("6")]
-        public int ShineColorDiff {
+        public int ShineColorDiffBase {
             get {
-                return ((int)(this["ShineColorDiff"]));
+                return ((int)(this["ShineColorDiffBase"]));
             }
             set {
-                this["ShineColorDiff"] = value;
+                this["ShineColorDiffBase"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("-6")]
-        public int ShadowColorDiff {
+        public int ShadowColorDiffBase {
             get {
-                return ((int)(this["ShadowColorDiff"]));
+                return ((int)(this["ShadowColorDiffBase"]));
             }
             set {
-                this["ShadowColorDiff"] = value;
+                this["ShadowColorDiffBase"] = value;
             }
         }
     }

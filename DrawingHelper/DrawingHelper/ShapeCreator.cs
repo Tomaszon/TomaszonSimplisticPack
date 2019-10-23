@@ -1,22 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 
 namespace DrawingHelper
 {
 	public class ShapeCreator
 	{
-		public void DetermineBorder(ColorMatrixElement element, EasyColor baseColor,
+		public void DetermineBorder(ColorMatrixElement element, List<EasyColor> baseColors,
 			ColorMatrixElement N, ColorMatrixElement S, ColorMatrixElement W, ColorMatrixElement E,
 			ColorMatrixElement NW, ColorMatrixElement NE, ColorMatrixElement SW, ColorMatrixElement SE)
 		{
-			element.Bordering.N = element.Color != baseColor && (N is null || N.Color == baseColor);
-			element.Bordering.S = element.Color != baseColor && (S is null || S.Color == baseColor);
-			element.Bordering.W = element.Color != baseColor && (W is null || W.Color == baseColor);
-			element.Bordering.E = element.Color != baseColor && (E is null || E.Color == baseColor);
-			element.Bordering.NW = element.Color != baseColor && (element.Bordering.N || element.Bordering.W || NW is null || NW.Color == baseColor);
-			element.Bordering.NE = element.Color != baseColor && (element.Bordering.N || element.Bordering.E || NE is null || NE.Color == baseColor);
-			element.Bordering.SW = element.Color != baseColor && (element.Bordering.S || element.Bordering.W || SW is null || SW.Color == baseColor);
-			element.Bordering.SE = element.Color != baseColor && (element.Bordering.S || element.Bordering.E || SE is null || SE.Color == baseColor);
+			element.Bordering.N = !baseColors.Contains(element.Color) && (N is null || baseColors.Contains(N.Color));
+			element.Bordering.S = !baseColors.Contains(element.Color) && (S is null || baseColors.Contains(S.Color));
+			element.Bordering.W = !baseColors.Contains(element.Color) && (W is null || baseColors.Contains(W.Color));
+			element.Bordering.E = !baseColors.Contains(element.Color) && (E is null || baseColors.Contains(E.Color));
+			element.Bordering.NW = !baseColors.Contains(element.Color) && (element.Bordering.N || element.Bordering.W || NW is null || baseColors.Contains(NW.Color));
+			element.Bordering.NE = !baseColors.Contains(element.Color) && (element.Bordering.N || element.Bordering.E || NE is null || baseColors.Contains(NE.Color));
+			element.Bordering.SW = !baseColors.Contains(element.Color) && (element.Bordering.S || element.Bordering.W || SW is null || baseColors.Contains(SW.Color));
+			element.Bordering.SE = !baseColors.Contains(element.Color) && (element.Bordering.S || element.Bordering.E || SE is null || baseColors.Contains(SE.Color));
 		}
 
 		public void SetBorderColors(BorderPositions borderPositions, ColorMatrixElement element)

@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlockMassType.cs" />
     <Compile Include="Bordering.cs" />
     <Compile Include="BorderPositions.cs" />
     <Compile Include="Processor.cs" />

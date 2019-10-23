@@ -8,7 +8,7 @@ namespace DrawingHelper
 	{
 		public List<ValueTableEntry> Values { get; set; } = new List<ValueTableEntry>();
 
-		public EasyColor GetBaseColor(Bitmap bitmap)
+		public List<EasyColor> GetBaseColor(Bitmap bitmap, int topCount)
 		{
 			for (int y = 0; y < bitmap.Height; y++)
 			{
@@ -25,8 +25,9 @@ namespace DrawingHelper
 					}
 				}
 			}
+			Values = Values.OrderByDescending(p => p.Count).ToList();
 
-			return Values.FirstOrDefault(v => v.Count == Values.Max(p => p.Count)).Color;
+			return Values.Take(topCount).Select(e => e.Color).ToList();
 		}
 	}
 }

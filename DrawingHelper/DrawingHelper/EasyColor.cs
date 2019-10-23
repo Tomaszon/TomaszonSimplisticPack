@@ -57,7 +57,12 @@ namespace DrawingHelper
 
 		public override bool Equals(object obj)
 		{
-			return base.Equals(obj);
+			if (!(obj is EasyColor))
+			{
+				return false;
+			}
+
+			return this == (EasyColor)obj;
 		}
 
 		public override int GetHashCode()

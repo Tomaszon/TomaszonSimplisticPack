@@ -1,0 +1,43 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "item/fishing_rod_cast",
+		"particle": "item/fishing_rod_cast"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 7],
+			"to": [5, 16, 9],
+			"faces": {
+				"north": {"uv": [5, 0, 3, 16], "texture": "#0"},
+				"east": {"uv": [3.5, 0, 4.5, 16], "texture": "#0"},
+				"south": {"uv": [5, 0, 3, 16], "texture": "#0"},
+				"west": {"uv": [3.5, 0, 4.5, 16], "texture": "#0"},
+				"up": {"uv": [3.5, 3, 4.5, 4.5], "texture": "#0"},
+				"down": {"uv": [3.5, 13, 4.5, 14], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-55, 90, 55],
+			"translation": [0, 5.75, -1.5],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, -55],
+			"translation": [0, 4, 2.5],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [-80, 90, 25],
+			"translation": [0, 2.75, -0.5],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-80, -90, -25],
+			"translation": [0, 2.75, -0.5],
+			"scale": [0.6, 0.6, 0.6]
+		}
+	}
+}

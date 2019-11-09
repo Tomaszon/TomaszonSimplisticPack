@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "item/fishing_rod_cast",
-		"particle": "item/fishing_rod_cast"
+		"0": "item/fishing_rod",
+		"particle": "item/fishing_rod"
 	},
 	"elements": [
 		{

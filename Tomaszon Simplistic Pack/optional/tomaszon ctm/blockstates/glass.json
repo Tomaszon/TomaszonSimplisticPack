@@ -1,0 +1,12 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "up": "false", "down": "false", "west": "false", "east": "false"
+            },
+            "apply": {
+                "model": "block/glass/glass/c0"
+            }
+        }
+    ]
+}

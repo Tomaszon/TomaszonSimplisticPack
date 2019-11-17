@@ -1,0 +1,7 @@
+{
+	"parent": "block/bricks",
+	"textures": {
+		"all": "block/bricks2"
+
+	}
+}

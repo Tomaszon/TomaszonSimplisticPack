@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace DrawingHelper
 {
@@ -28,19 +32,16 @@ namespace DrawingHelper
 						}
 					}
 
+					rawInput = rawInput.Replace("Tomaszon Simplistic Pack", "Tomaszon_Simplistic_Pack");
 					string[] input = rawInput.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-					string fileName = input[0];
-					int baseColorCount = int.Parse(input[1]);
-					BlockMassType massType = (BlockMassType)Enum.Parse(typeof(BlockMassType), input[2], true);
+					string fileNames = input[0].Replace("Tomaszon_Simplistic_Pack", "Tomaszon Simplistic Pack");
 
-					Bitmap originalImage = (Bitmap)Image.FromFile(input[0]);
-					Bitmap output = new Processor().ProcessImage(originalImage, baseColorCount, massType);
-
-					output.Save(@"C:\Users\toti9\Documents\GitHub\TomaszonSimplisticPack\DrawingHelper\DrawingHelper\bin\Debug\output.png");
-
-					Console.WriteLine("Processed!");
-					Console.WriteLine();
+					DirectoryInfo dir = Directory.GetParent(fileNames);
+					FileInfo[] files = dir.GetFiles();
+					Regex regex = new Regex(Path.GetFileName(fileNames));
+					List<FileInfo> filteredFiles = files.Where(f => regex.IsMatch(f.FullName)).ToList();
+					filteredFiles.ForEach(f => Process(f.FullName, input[1], input[2]));
 				}
 				catch (Exception ex)
 				{
@@ -52,8 +53,33 @@ namespace DrawingHelper
 			Console.WriteLine("Press to exit");
 			Console.ReadKey();
 		}
-	}
 
+		public static void Process(string fileName, string baseColorCountS, string massTypeS)
+		{
+			try
+			{
+				int baseColorCount = int.Parse(baseColorCountS);
+				BlockMassType massType = (BlockMassType)Enum.Parse(typeof(BlockMassType), massTypeS, true);
+
+				Bitmap originalImage = null;
+				using (Bitmap tmp = new Bitmap(fileName))
+				{
+					originalImage = new Bitmap(tmp);
+				}
+
+				Bitmap output = new Processor().ProcessImage(originalImage, baseColorCount, massType);
+
+				output.Save(fileName);
+
+				Console.WriteLine($"Processed: {Path.GetFileName(fileName)}");
+				Console.WriteLine();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+			}
+		}
+	}
 	public enum Command
 	{
 		Exit

@@ -5,8 +5,21 @@ namespace DrawingHelper
 {
 	public class Processor
 	{
-		public Bitmap ProcessImage(Bitmap bitmap, int baseColorCount, BlockMassType massType)
+		public Bitmap ProcessImage(Bitmap input, int baseColorCount, BlockMassType massType)
 		{
+			Bitmap bitmap = new Bitmap(8, 8);
+			if (input.Width == 64 && input.Height == 64)
+			{
+				using (Graphics g = Graphics.FromImage(bitmap))
+				{
+					g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;
+					g.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.Half;
+					g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+
+					g.DrawImage(input, 0, 0, 8, 8);
+				}
+			}
+
 			BorderPositions borderPositions = new BorderPositions();
 			EmbossPositions embossPositions = new EmbossPositions();
 

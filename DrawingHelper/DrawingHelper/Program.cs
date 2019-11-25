@@ -15,7 +15,7 @@ namespace DrawingHelper
 			{
 			Start:
 				Console.WriteLine($"Commands: {Command.Exit}");
-				Console.WriteLine($"Params: {{path}} {{base color count}} {{mass type {BlockMassType.Invidual}|{BlockMassType.Mass}}} ");
+				Console.WriteLine($"Params: {{path}} {{regex {true}|{false}}} {{base color count}} {{mass type {BlockMassType.Invidual}|{BlockMassType.Mass}}} ");
 				try
 				{
 					string rawInput = Console.ReadLine();
@@ -36,12 +36,20 @@ namespace DrawingHelper
 					string[] input = rawInput.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
 					string fileNames = input[0].Replace("Tomaszon_Simplistic_Pack", "Tomaszon Simplistic Pack");
+					bool isRegex = bool.Parse(input[1]);
 
-					DirectoryInfo dir = Directory.GetParent(fileNames);
-					FileInfo[] files = dir.GetFiles();
-					Regex regex = new Regex(Path.GetFileName(fileNames));
-					List<FileInfo> filteredFiles = files.Where(f => regex.IsMatch(f.FullName)).ToList();
-					filteredFiles.ForEach(f => Process(f.FullName, input[1], input[2]));
+					if (isRegex)
+					{
+						DirectoryInfo dir = Directory.GetParent(fileNames);
+						FileInfo[] files = dir.GetFiles();
+						Regex regex = new Regex(Path.GetFileName(fileNames));
+						List<FileInfo> filteredFiles = files.Where(f => regex.IsMatch(f.FullName)).ToList();
+						filteredFiles.ForEach(f => Process(f.FullName, input[2], input[3]));
+					}
+					else
+					{
+						Process(fileNames, input[2], input[3]);
+					}
 				}
 				catch (Exception ex)
 				{

@@ -1,0 +1,92 @@
+{
+    "mutipart": [
+        {
+            "when": {
+                "inverted": "true"
+            },
+            "apply": {
+                "model": "block/daylight_detector_inverted"
+            }
+        },
+        {
+            "when": {
+                "inverted": "false"
+            },
+            "apply": {
+                "model": "block/daylight_detector"
+            }
+        },
+        {
+            "when": {
+                "power": "0"
+            },
+            "apply": {
+                "model": "block/daylight_detector_power0"
+            }
+        },
+        {
+            "when": {
+                "power": "1|2"
+            },
+            "apply": {
+                "model": "block/daylight_detector_power1"
+            }
+        },
+        {
+            "when": {
+                "power": "3|4"
+            },
+            "apply": {
+                "model": "block/daylight_detector_power2"
+            }
+        },
+        {
+            "when": {
+                "power": "5|6"
+            },
+            "apply": {
+                "model": "block/daylight_detector_power3"
+            }
+        },
+        {
+            "when": {
+                "power": "7|8"
+            },
+            "apply": {
+                "model": "block/daylight_detector_power4"
+            }
+        },
+        {
+            "when": {
+                "power": "9|10"
+            },
+            "apply": {
+                "model": "block/daylight_detector_power5"
+            }
+        },
+        {
+            "when": {
+                "power": "11|12"
+            },
+            "apply": {
+                "model": "block/daylight_detector_power6"
+            }
+        },
+        {
+            "when": {
+                "power": "13|14"
+            },
+            "apply": {
+                "model": "block/daylight_detector_power7"
+            }
+        },
+        {
+            "when": {
+                "power": "15"
+            },
+            "apply": {
+                "model": "block/daylight_detector_power8"
+            }
+        }
+    ]
+}

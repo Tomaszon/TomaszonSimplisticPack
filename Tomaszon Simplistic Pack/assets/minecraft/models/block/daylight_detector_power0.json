@@ -1,5 +1,5 @@
 {
-    "parent": "block/daylight_detector_power_base",
+    "parent": "block/daylight_detector_power",
     "textures": {
         "texture": "block/daylight_detector_power0"
     }

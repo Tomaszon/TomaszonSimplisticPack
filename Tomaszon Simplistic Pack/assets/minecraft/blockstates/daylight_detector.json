@@ -1,11 +1,16 @@
 {
-    "mutipart": [
+    "multipart": [
+        {
+            "apply": {
+                "model": "block/daylight_detector"
+            }
+        },
         {
             "when": {
                 "inverted": "true"
             },
             "apply": {
-                "model": "block/daylight_detector_inverted"
+                "model": "block/daylight_detector_switch_off"
             }
         },
         {
@@ -13,7 +18,7 @@
                 "inverted": "false"
             },
             "apply": {
-                "model": "block/daylight_detector"
+                "model": "block/daylight_detector_switch_on"
             }
         },
         {

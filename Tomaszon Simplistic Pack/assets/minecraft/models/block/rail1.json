@@ -1,0 +1,9 @@
+{
+	"parent": "block/rail",
+	"textures": {
+		"rail": "block/rail1",
+		"sleeper1": "block/rail_sleeper1",
+		"sleeper2": "block/rail_sleeper2",
+		"particle": "block/rail1"
+	}
+}

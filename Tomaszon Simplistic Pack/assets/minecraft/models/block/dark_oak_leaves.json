@@ -2,7 +2,6 @@
 	"parent": "block/leaves_bushy",
 	"textures": {
 		"texture": "block/dark_oak_leaves",
-		"texture_bushy": "block/dark_oak_leaves_bushy",
 		"particle": "block/dark_oak_leaves"
 	}
 }

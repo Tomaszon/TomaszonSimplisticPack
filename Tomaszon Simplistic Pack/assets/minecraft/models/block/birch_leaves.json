@@ -2,7 +2,6 @@
 	"parent": "block/leaves_bushy",
 	"textures": {
 		"texture": "block/birch_leaves",
-		"texture_bushy": "block/birch_leaves_bushy",
 		"particle": "block/birch_leaves"
 	}
 }

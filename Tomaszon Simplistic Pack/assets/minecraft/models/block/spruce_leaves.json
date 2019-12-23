@@ -1,0 +1,7 @@
+{
+	"parent": "block/leaves_bushy",
+	"textures": {
+		"texture": "block/spruce_leaves",
+		"particle": "block/spruce_leaves"
+	}
+}

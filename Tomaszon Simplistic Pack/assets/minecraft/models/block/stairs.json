@@ -1,0 +1,14 @@
+{
+	"parent": "block/stairs_base",
+	"textures": {
+		"bottom": "#bottom",
+		"top": "#top",
+		"innertop":"#top",
+		"right": "#side",
+		"left": "#side",
+		"front": "#side",
+		"innerfront": "#side",
+		"back": "#side",
+		"particle":"#side"
+	}
+}

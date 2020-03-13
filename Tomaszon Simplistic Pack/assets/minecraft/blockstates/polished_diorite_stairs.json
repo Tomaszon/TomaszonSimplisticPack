@@ -31,17 +31,20 @@
       "x": 180
     },
     "facing=east,half=top,shape=outer_left": {
-      "y": 270,
       "uvlock": false,
-      "model": "block/polished_diorite_stairs_outer_upside_down"
+      "model": "block/polished_diorite_stairs_outer_upside_down",
+      "x": 180
     },
     "facing=east,half=top,shape=outer_right": {
+      "y": 90,
       "uvlock": false,
-      "model": "block/polished_diorite_stairs_outer_upside_down"
+      "model": "block/polished_diorite_stairs_outer_upside_down",
+      "x": 180
     },
     "facing=east,half=top,shape=straight": {
       "uvlock": false,
-      "model": "block/polished_diorite_stairs_upside_down"
+      "model": "block/polished_diorite_stairs_upside_down",
+      "x": 180
     },
     "facing=north,half=bottom,shape=inner_left": {
       "y": 180,
@@ -80,19 +83,21 @@
       "x": 180
     },
     "facing=north,half=top,shape=outer_left": {
-      "y": 180,
-      "uvlock": false,
-      "model": "block/polished_diorite_stairs_outer_upside_down"
-    },
-    "facing=north,half=top,shape=outer_right": {
       "y": 270,
       "uvlock": false,
-      "model": "block/polished_diorite_stairs_outer_upside_down"
+      "model": "block/polished_diorite_stairs_outer_upside_down",
+      "x": 180
+    },
+    "facing=north,half=top,shape=outer_right": {
+      "uvlock": false,
+      "model": "block/polished_diorite_stairs_outer_upside_down",
+      "x": 180
     },
     "facing=north,half=top,shape=straight": {
       "y": 270,
       "uvlock": false,
-      "model": "block/polished_diorite_stairs_upside_down"
+      "model": "block/polished_diorite_stairs_upside_down",
+      "x": 180
     },
     "facing=south,half=bottom,shape=inner_left": {
       "model": "block/polished_diorite_stairs_inner"
@@ -128,18 +133,22 @@
       "x": 180
     },
     "facing=south,half=top,shape=outer_left": {
-      "uvlock": false,
-      "model": "block/polished_diorite_stairs_outer_upside_down"
-    },
-    "facing=south,half=top,shape=outer_right": {
       "y": 90,
       "uvlock": false,
-      "model": "block/polished_diorite_stairs_outer_upside_down"
+      "model": "block/polished_diorite_stairs_outer_upside_down",
+      "x": 180
+    },
+    "facing=south,half=top,shape=outer_right": {
+      "y": 180,
+      "uvlock": false,
+      "model": "block/polished_diorite_stairs_outer_upside_down",
+      "x": 180
     },
     "facing=south,half=top,shape=straight": {
       "y": 90,
       "uvlock": false,
-      "model": "block/polished_diorite_stairs_upside_down"
+      "model": "block/polished_diorite_stairs_upside_down",
+      "x": 180
     },
     "facing=west,half=bottom,shape=inner_left": {
       "y": 90,
@@ -179,19 +188,22 @@
       "x": 180
     },
     "facing=west,half=top,shape=outer_left": {
-      "y": 90,
-      "uvlock": false,
-      "model": "block/polished_diorite_stairs_outer_upside_down"
-    },
-    "facing=west,half=top,shape=outer_right": {
       "y": 180,
       "uvlock": false,
-      "model": "block/polished_diorite_stairs_outer_upside_down"
+      "model": "block/polished_diorite_stairs_outer_upside_down",
+      "x": 180
+    },
+    "facing=west,half=top,shape=outer_right": {
+      "y": 270,
+      "uvlock": false,
+      "model": "block/polished_diorite_stairs_outer_upside_down",
+      "x": 180
     },
     "facing=west,half=top,shape=straight": {
       "y": 180,
       "uvlock": false,
-      "model": "block/polished_diorite_stairs_upside_down"
+      "model": "block/polished_diorite_stairs_upside_down",
+      "x": 180
     }
   }
 }

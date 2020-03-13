@@ -1,0 +1,14 @@
+{
+  "parent": "block/stairs_base",
+  "textures": {
+    "bottom": "block/polished_granite_top",
+    "top": "block/polished_granite_stairs_top",
+    "innertop":"block/polished_granite_top",
+    "right": "block/polished_granite_stairs_right",
+    "left": "block/polished_granite_stairs_left",
+    "front": "block/polished_granite_slab",
+    "innerfront": "block/polished_granite",
+    "back": "block/polished_granite",
+    "particle": "block/polished_granite"
+  }
+}

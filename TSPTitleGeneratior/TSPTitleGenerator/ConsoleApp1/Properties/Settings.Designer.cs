@@ -12,7 +12,7 @@ namespace TSPTitleGenerator.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.4.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.5.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -25,7 +25,7 @@ namespace TSPTitleGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\toti9\\Downloads\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\toti9\\Google Drive\\project - video\\főcím\\TSP\\")]
         public string OutputDirectory {
             get {
                 return ((string)(this["OutputDirectory"]));
@@ -37,7 +37,7 @@ namespace TSPTitleGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("145, 885")]
+        [global::System.Configuration.DefaultSettingValueAttribute("273, 885")]
         public global::System.Drawing.Point BlockNameLocation {
             get {
                 return ((global::System.Drawing.Point)(this["BlockNameLocation"]));
@@ -61,7 +61,7 @@ namespace TSPTitleGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("193, 931")]
+        [global::System.Configuration.DefaultSettingValueAttribute("273, 931")]
         public global::System.Drawing.Point VariantsLocation {
             get {
                 return ((global::System.Drawing.Point)(this["VariantsLocation"]));
@@ -85,7 +85,7 @@ namespace TSPTitleGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("252, 1023")]
+        [global::System.Configuration.DefaultSettingValueAttribute("273, 1023")]
         public global::System.Drawing.Point CTMSupportLocation {
             get {
                 return ((global::System.Drawing.Point)(this["CTMSupportLocation"]));

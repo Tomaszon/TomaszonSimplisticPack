@@ -1,0 +1,13 @@
+{
+  "parent": "block/outer_stairs_base_upside_down",
+  "textures": {
+    "bottom": "block/polished_andesite_top",
+    "top": "block/polished_andesite_stairs_top_outer",
+    "innertop":"block/polished_andesite_top",
+    "right": "block/polished_andesite_stairs_right_upside_down",
+    "left": "block/polished_andesite_stairs_left_upside_down",
+    "front": "block/polished_andesite_slab",
+    "innerfront": "block/polished_andesite",
+    "particle": "block/polished_andesite"
+  }
+}

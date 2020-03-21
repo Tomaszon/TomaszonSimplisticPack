@@ -18,8 +18,11 @@ namespace PackageCopier
 			textBoxSourceLocation.DataBindings.Add(new Binding("Text", Model, nameof(Model.SourcePath)));
 			textBoxTargetLocation.DataBindings.Add(new Binding("Text", Model, nameof(Model.TargetPath)));
 			checkBoxDeletePreviousVersion.DataBindings.Add(new Binding("Checked", Model, nameof(Model.DeletePreviousVersion)));
+			checkBoxAutoCopy.DataBindings.Add(new Binding("Checked", Model, nameof(Model.AutoCopy)));
 			buttonCopy.DataBindings.Add(new Binding("Enabled", Model, nameof(Model.CanProceed)));
 			labelStatus.DataBindings.Add(new Binding("Text", Model, nameof(Model.Status)));
+			fileSystemWatcher1.Path = Model.SourcePath;
+			fileSystemWatcher1.IncludeSubdirectories = true;
 		}
 
 		private void ButtonCopy_Click(object sender, EventArgs e)
@@ -107,6 +110,14 @@ namespace PackageCopier
 			catch (Exception ex)
 			{
 				MessageBox.Show(ex.Message + "\n\n\n" + ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
+
+		private void FileSystemWatcher1_Changed(object sender, FileSystemEventArgs e)
+		{
+			if (Model.AutoCopy)
+			{
+				File.Copy(e.FullPath, e.FullPath.Replace(Model.SourcePath, Model.TargetPath), true);
 			}
 		}
 	}

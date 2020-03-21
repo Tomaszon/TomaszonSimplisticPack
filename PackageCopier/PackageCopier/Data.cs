@@ -42,6 +42,17 @@ namespace PackageCopier
 			}
 		}
 
+		private bool _autoCopy = true;
+		public bool AutoCopy
+		{
+			get { return _autoCopy; }
+			set
+			{
+				_autoCopy = value;
+				OnPropertyChanged();
+			}
+		}
+
 		private Status _status;
 
 		public Status Status

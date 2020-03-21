@@ -35,6 +35,9 @@
 			this.linkLabelSource = new System.Windows.Forms.LinkLabel();
 			this.linkLabelTartget = new System.Windows.Forms.LinkLabel();
 			this.labelStatus = new System.Windows.Forms.Label();
+			this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+			this.checkBoxAutoCopy = new System.Windows.Forms.CheckBox();
+			((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// textBoxSourceLocation
@@ -89,6 +92,7 @@
 			this.linkLabelSource.Name = "linkLabelSource";
 			this.linkLabelSource.Size = new System.Drawing.Size(49, 20);
 			this.linkLabelSource.TabIndex = 4;
+			this.linkLabelSource.TabStop = true;
 			this.linkLabelSource.Text = "Source";
 			this.linkLabelSource.VisitedLinkColor = System.Drawing.Color.Black;
 			this.linkLabelSource.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSource_LinkClicked);
@@ -100,6 +104,7 @@
 			this.linkLabelTartget.Name = "linkLabelTartget";
 			this.linkLabelTartget.Size = new System.Drawing.Size(49, 20);
 			this.linkLabelTartget.TabIndex = 5;
+			this.linkLabelTartget.TabStop = true;
 			this.linkLabelTartget.Text = "Target";
 			this.linkLabelTartget.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelTartget_LinkClicked);
 			// 
@@ -113,11 +118,29 @@
 			this.labelStatus.TabIndex = 8;
 			this.labelStatus.Text = "status";
 			// 
+			// fileSystemWatcher1
+			// 
+			this.fileSystemWatcher1.EnableRaisingEvents = true;
+			this.fileSystemWatcher1.SynchronizingObject = this;
+			this.fileSystemWatcher1.Changed += new System.IO.FileSystemEventHandler(this.FileSystemWatcher1_Changed);
+			// 
+			// checkBoxAutoCopy
+			// 
+			this.checkBoxAutoCopy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.checkBoxAutoCopy.AutoSize = true;
+			this.checkBoxAutoCopy.Location = new System.Drawing.Point(163, 124);
+			this.checkBoxAutoCopy.Name = "checkBoxAutoCopy";
+			this.checkBoxAutoCopy.Size = new System.Drawing.Size(109, 17);
+			this.checkBoxAutoCopy.TabIndex = 9;
+			this.checkBoxAutoCopy.Text = "Enable auto copy";
+			this.checkBoxAutoCopy.UseVisualStyleBackColor = true;
+			// 
 			// PackageCopier
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 181);
+			this.Controls.Add(this.checkBoxAutoCopy);
 			this.Controls.Add(this.labelStatus);
 			this.Controls.Add(this.linkLabelTartget);
 			this.Controls.Add(this.linkLabelSource);
@@ -130,6 +153,7 @@
 			this.Name = "PackageCopier";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "PackageCopier";
+			((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -144,6 +168,8 @@
 		private System.Windows.Forms.LinkLabel linkLabelSource;
 		private System.Windows.Forms.LinkLabel linkLabelTartget;
 		private System.Windows.Forms.Label labelStatus;
+		private System.IO.FileSystemWatcher fileSystemWatcher1;
+		private System.Windows.Forms.CheckBox checkBoxAutoCopy;
 	}
 }
 

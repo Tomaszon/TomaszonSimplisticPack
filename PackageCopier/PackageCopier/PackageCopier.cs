@@ -115,7 +115,9 @@ namespace PackageCopier
 
 		private void FileSystemWatcher1_Changed(object sender, FileSystemEventArgs e)
 		{
-			if (Model.AutoCopy)
+			FileAttributes fileAttributes = File.GetAttributes(e.FullPath);
+
+			if (Model.AutoCopy && !fileAttributes.HasFlag(FileAttributes.Directory))
 			{
 				File.Copy(e.FullPath, e.FullPath.Replace(Model.SourcePath, Model.TargetPath), true);
 			}

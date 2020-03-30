@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"lever": "block/lever"
+		"lever": "block/lever",
+		"particle":"block/lever"
 	},
 	"elements": [
 		{
@@ -26,7 +27,8 @@
 				"east": {"uv": [0, 0, 2, 10], "texture": "#lever"},
 				"south": {"uv": [0, 0, 2, 10], "texture": "#lever"},
 				"west": {"uv": [0, 0, 2, 10], "texture": "#lever"},
-				"up": {"uv": [0, 1, 2, 2], "texture": "#lever"}
+				"up": {"uv": [0, 0.5, 2, 1.25], "texture": "#lever"},
+				"down": {"uv": [0, 0, 2, 10], "texture": "#lever"}
 			}
 		}
 	]

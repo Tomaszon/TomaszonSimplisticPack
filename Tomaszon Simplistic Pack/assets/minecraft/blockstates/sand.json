@@ -1,7 +1,8 @@
 {
     "variants": {
         "": [
-            { "model": "block/sand" }
+            { "model": "block/sand" },
+            { "model": "block/sand2" }
         ]
     }
 }

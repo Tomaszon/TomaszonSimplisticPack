@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,12 +16,12 @@ namespace PackageCopier
 			InitializeComponent();
 
 			DataBindings.DefaultDataSourceUpdateMode = DataSourceUpdateMode.OnPropertyChanged;
-			textBoxSourceLocation.DataBindings.Add(new Binding("Text", Model, nameof(Model.SourcePath)));
-			textBoxTargetLocation.DataBindings.Add(new Binding("Text", Model, nameof(Model.TargetPath)));
-			checkBoxDeletePreviousVersion.DataBindings.Add(new Binding("Checked", Model, nameof(Model.DeletePreviousVersion)));
-			checkBoxAutoCopy.DataBindings.Add(new Binding("Checked", Model, nameof(Model.AutoCopy)));
-			buttonCopy.DataBindings.Add(new Binding("Enabled", Model, nameof(Model.CanProceed)));
-			labelStatus.DataBindings.Add(new Binding("Text", Model, nameof(Model.Status)));
+			textBoxSourceLocation.DataBindings.Add(new Binding("Text", Model, nameof(Model.SourcePath), false, DataSourceUpdateMode.OnPropertyChanged));
+			textBoxTargetLocation.DataBindings.Add(new Binding("Text", Model, nameof(Model.TargetPath), false, DataSourceUpdateMode.OnPropertyChanged));
+			checkBoxDeletePreviousVersion.DataBindings.Add(new Binding("Checked", Model, nameof(Model.DeletePreviousVersion), false, DataSourceUpdateMode.OnPropertyChanged));
+			checkBoxAutoCopy.DataBindings.Add(new Binding("Checked", Model, nameof(Model.AutoCopy), false, DataSourceUpdateMode.OnPropertyChanged));
+			buttonCopy.DataBindings.Add(new Binding("Enabled", Model, nameof(Model.CanProceed), false, DataSourceUpdateMode.OnPropertyChanged));
+			labelStatus.DataBindings.Add(new Binding("Text", Model, nameof(Model.Status), false, DataSourceUpdateMode.OnPropertyChanged));
 			fileSystemWatcher1.Path = Model.SourcePath;
 			fileSystemWatcher1.IncludeSubdirectories = true;
 		}
@@ -113,31 +114,65 @@ namespace PackageCopier
 			}
 		}
 
-		private void FileSystemWatcher1_Changed(object sender, FileSystemEventArgs e)
+		private void OnRenamed(object sender, RenamedEventArgs e)
 		{
-			//FileAttributes fileAttributes = File.GetAttributes(e.FullPath);
-
-			//if (Model.AutoCopy && !fileAttributes.HasFlag(FileAttributes.Directory))
-			//{
-			//	File.Copy(e.FullPath, e.FullPath.Replace(Model.SourcePath, Model.TargetPath), true);
-			//}
-
 			if (Model.AutoCopy && !File.GetAttributes(e.FullPath).HasFlag(FileAttributes.Directory))
 			{
-				using (FileStream input = new FileStream(e.FullPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-				using (FileStream output = new FileStream(e.FullPath.Replace(Model.SourcePath, Model.TargetPath), FileMode.OpenOrCreate, FileAccess.Write))
-				{
-					int bufferSize = 1024 * 1024;
-					output.SetLength(input.Length);
-					int bytesRead = -1;
-					byte[] bytes = new byte[bufferSize];
+				string oldName = GetOutputName(e.OldFullPath);
 
-					while ((bytesRead = input.Read(bytes, 0, bufferSize)) > 0)
+				OnDeleted(sender, new FileSystemEventArgs(WatcherChangeTypes.Deleted, Path.GetDirectoryName(oldName), Path.GetFileName(oldName)));
+
+				OnChanged(sender, new FileSystemEventArgs(WatcherChangeTypes.Created, Path.GetDirectoryName(e.FullPath), Path.GetFileName(e.FullPath)));
+			}
+		}
+
+		private void OnDeleted(object sender, FileSystemEventArgs e)
+		{
+			if (Model.AutoCopy)
+			{
+				string outputName = GetOutputName(e.FullPath);
+
+				File.Delete(outputName);
+			}
+		}
+
+		private void OnChanged(object sender, FileSystemEventArgs e)
+		{
+			if (Model.AutoCopy && !File.GetAttributes(e.FullPath).HasFlag(FileAttributes.Directory))
+			{
+				string outputName = GetOutputName(e.FullPath);
+
+				while (true)
+				{
+					try
 					{
-						output.Write(bytes, 0, bytesRead);
+						using (FileStream input = new FileStream(e.FullPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+						using (FileStream output = new FileStream(outputName, FileMode.OpenOrCreate, FileAccess.Write))
+						{
+							int bufferSize = 1024 * 1024;
+							output.SetLength(input.Length);
+							int bytesRead = -1;
+							byte[] bytes = new byte[bufferSize];
+
+							while ((bytesRead = input.Read(bytes, 0, bufferSize)) > 0)
+							{
+								output.Write(bytes, 0, bytesRead);
+							}
+						}
+
+						break;
+					}
+					catch (IOException)
+					{
+						Thread.SpinWait(100);
 					}
 				}
 			}
+		}
+
+		private string GetOutputName(string eventArgsFullPath)
+		{
+			return eventArgsFullPath.Replace(Model.SourcePath, Model.TargetPath);
 		}
 	}
 }

@@ -1,4 +1,7 @@
-﻿namespace PackageCopier
+﻿using System;
+using System.IO;
+
+namespace PackageCopier
 {
 	partial class PackageCopier
 	{
@@ -122,7 +125,9 @@
 			// 
 			this.fileSystemWatcher1.EnableRaisingEvents = true;
 			this.fileSystemWatcher1.SynchronizingObject = this;
-			this.fileSystemWatcher1.Changed += new System.IO.FileSystemEventHandler(this.FileSystemWatcher1_Changed);
+			this.fileSystemWatcher1.Changed += new System.IO.FileSystemEventHandler(this.OnChanged);
+			this.fileSystemWatcher1.Deleted += new System.IO.FileSystemEventHandler(this.OnDeleted);
+			this.fileSystemWatcher1.Renamed += new System.IO.RenamedEventHandler(this.OnRenamed);
 			// 
 			// checkBoxAutoCopy
 			// 

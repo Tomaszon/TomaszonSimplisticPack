@@ -115,11 +115,28 @@ namespace PackageCopier
 
 		private void FileSystemWatcher1_Changed(object sender, FileSystemEventArgs e)
 		{
-			FileAttributes fileAttributes = File.GetAttributes(e.FullPath);
+			//FileAttributes fileAttributes = File.GetAttributes(e.FullPath);
 
-			if (Model.AutoCopy && !fileAttributes.HasFlag(FileAttributes.Directory))
+			//if (Model.AutoCopy && !fileAttributes.HasFlag(FileAttributes.Directory))
+			//{
+			//	File.Copy(e.FullPath, e.FullPath.Replace(Model.SourcePath, Model.TargetPath), true);
+			//}
+
+			if (Model.AutoCopy && !File.GetAttributes(e.FullPath).HasFlag(FileAttributes.Directory))
 			{
-				File.Copy(e.FullPath, e.FullPath.Replace(Model.SourcePath, Model.TargetPath), true);
+				using (FileStream input = new FileStream(e.FullPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+				using (FileStream output = new FileStream(e.FullPath.Replace(Model.SourcePath, Model.TargetPath), FileMode.OpenOrCreate, FileAccess.Write))
+				{
+					int bufferSize = 1024 * 1024;
+					output.SetLength(input.Length);
+					int bytesRead = -1;
+					byte[] bytes = new byte[bufferSize];
+
+					while ((bytesRead = input.Read(bytes, 0, bufferSize)) > 0)
+					{
+						output.Write(bytes, 0, bytesRead);
+					}
+				}
 			}
 		}
 	}

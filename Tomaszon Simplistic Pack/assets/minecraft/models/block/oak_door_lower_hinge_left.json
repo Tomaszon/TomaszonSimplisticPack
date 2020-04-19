@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "block/birch_door_lower",
-		"face": "block/birch_door_lower",
-		"edge": "block/birch_door_edge"
+		"particle": "block/oak_door_lower",
+		"face": "block/oak_door_lower",
+		"edge": "block/oak_door_edge"
 	},
 	"elements": [
 		{

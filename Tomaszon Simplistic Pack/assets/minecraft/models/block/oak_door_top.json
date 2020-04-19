@@ -1,7 +1,0 @@
-{
-    "parent": "block/door_top",
-    "textures": {
-        "face": "block/oak_door_top",
-        "edge": "block/oak_door_edge"
-    }
-}

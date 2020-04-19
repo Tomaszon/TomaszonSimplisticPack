@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/spruce_fence",
-		"particle": "block/spruce_fence"
+		"0": "block/birch_fence",
+		"particle": "block/birch_fence"
 	},
 	"elements": [
 		{
@@ -14,18 +14,6 @@
 				"south": {"uv": [10, 0, 6, 16], "texture": "#0"},
 				"west": {"uv": [10, 0, 6, 16], "texture": "#0"},
 				"up": {"uv": [10, 0.25, 6, 1.5], "texture": "#0"},
-				"down": {"uv": [0, 0, 4, 4], "texture": "#missing"}
-			}
-		},
-		{
-			"from": [6.01, -1.99, 6.01],
-			"to": [9.99, 0, 9.99],
-			"faces": {
-				"north": {"uv": [10, 0, 6, 2], "texture": "#0"},
-				"east": {"uv": [10, 0, 6, 2], "texture": "#0"},
-				"south": {"uv": [10, 0, 6, 2], "texture": "#0"},
-				"west": {"uv": [10, 0, 6, 2], "texture": "#0"},
-				"up": {"uv": [4, 0, 0, 4], "texture": "#missing"},
 				"down": {"uv": [10, 0.25, 6, 1.5], "texture": "#0"}
 			}
 		}

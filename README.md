@@ -17,7 +17,7 @@
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <br/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/cobblestone.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/cobblestone2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/red_terracotta.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/red_terracotta.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/red_terracotta.png"/>
@@ -70,7 +70,7 @@
 <br/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/oak_door_top.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/oak_door_upper.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/light_blue_stained_glass.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
@@ -83,7 +83,7 @@
 <br/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/oak_door_bottom.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/oak_door_lower.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
@@ -98,7 +98,7 @@
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/mossy_cobblestone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/mossy_cobblestone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/cobblestone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/cobblestone.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/cobblestone2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/mossy_cobblestone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/potatoes_stage3.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/carrots_stage3.png"/>
@@ -111,10 +111,10 @@
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt2.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/grass_block_side.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/grass_block_side.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/grass_block_side.png"/>
@@ -122,12 +122,12 @@
 <br/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
@@ -138,16 +138,16 @@
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/coal_ore.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/coal_ore.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <br/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/coal_ore.png"/>
@@ -165,17 +165,17 @@
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
 <br/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/diamond_ore.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/gold_ore.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/gold_ore.png"/>
@@ -193,8 +193,8 @@
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/gold_ore.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/lapis_ore.png"/>
 <br/>

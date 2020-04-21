@@ -25,7 +25,7 @@
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <br/>
@@ -62,11 +62,11 @@
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/oak_leaves_colored.png"/>
 <br/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/empty.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/stone_bricks.png"/>

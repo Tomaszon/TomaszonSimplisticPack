@@ -1,0 +1,19 @@
+{
+    "multipart": [
+        {
+            "apply": { "model": "block/acacia_fence_single" }
+        },
+        {   "when": { "north": true },
+            "apply": { "model": "block/acacia_fence_side" }
+        },
+        {   "when": { "west": true },
+            "apply": { "model": "block/acacia_fence_side", "y": 270}
+        },
+        {   "when": { "south": true },
+            "apply": { "model": "block/acacia_fence_side", "y": 180 }
+        },
+        {   "when": { "east": true },
+            "apply": { "model": "block/acacia_fence_side", "y": 90 }
+        }
+    ]
+}

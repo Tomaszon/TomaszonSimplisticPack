@@ -1,0 +1,19 @@
+{
+    "multipart": [
+        {
+            "apply": { "model": "block/oak_fence_single" }
+        },
+        {   "when": { "north": true },
+            "apply": { "model": "block/oak_fence_side_nw" }
+        },
+        {   "when": { "west": true },
+            "apply": { "model": "block/oak_fence_side_nw", "y": 270}
+        },
+        {   "when": { "south": true },
+            "apply": { "model": "block/oak_fence_side_se" }
+        },
+        {   "when": { "east": true },
+            "apply": { "model": "block/oak_fence_side_se", "y": 270 }
+        }
+    ]
+}

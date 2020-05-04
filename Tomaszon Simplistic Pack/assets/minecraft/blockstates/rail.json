@@ -1,60 +1,28 @@
 {
     "variants": {
         "shape=north_south": [
-            {
-                "model": "block/rail1"
-            },
-            {
-                "model": "block/rail2"
-            }
+            { "model": "block/rail1" },
+            { "model": "block/rail2", "weight": 4 }
         ],
         "shape=east_west": [
-            {
-                "model": "block/rail1",
-                "y": 90
-            },
-            {
-                "model": "block/rail2",
-                "y": 90
-            }
+            { "model": "block/rail1", "y": 90 },
+            { "model": "block/rail2", "y": 90, "weight": 4  }
         ],
         "shape=ascending_east": [
-            {
-                "model": "block/rail_raised1",
-                "y": 270
-            },
-            {
-                "model": "block/rail_raised2",
-                "y": 270
-            }
+            { "model": "block/rail_raised1", "y": 270 },
+            { "model": "block/rail_raised2", "y": 270, "weight": 4  }
         ],
         "shape=ascending_west": [
-            {
-                "model": "block/rail_raised1",
-                "y": 90
-            },
-            {
-                "model": "block/rail_raised2",
-                "y": 90
-            }
+            { "model": "block/rail_raised1", "y": 90 },
+            { "model": "block/rail_raised2", "y": 90, "weight": 4 }
         ],
         "shape=ascending_north": [
-            {
-                "model": "block/rail_raised1",
-                "y": 180
-            },
-            {
-                "model": "block/rail_raised2",
-                "y": 180
-            }
+            { "model": "block/rail_raised1", "y": 180 },
+            { "model": "block/rail_raised2", "y": 180, "weight": 4  }
         ],
         "shape=ascending_south": [
-            {
-                "model": "block/rail_raised1"
-            },
-            {
-                "model": "block/rail_raised2"
-            }
+            { "model": "block/rail_raised1" }, 
+            { "model": "block/rail_raised2", "weight": 4  }
         ],
         "shape=south_east": {
             "model": "block/rail_corner"

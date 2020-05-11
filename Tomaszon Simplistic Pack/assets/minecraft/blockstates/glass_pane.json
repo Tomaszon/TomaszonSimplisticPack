@@ -1,7 +1,6 @@
 {
   "multipart": [
     {
-      "when":{ "north": false, "south":false, "west":false, "east":false },
       "apply": { "model": "block/glass_pane_post" }
     },
     {
@@ -19,6 +18,22 @@
     {
       "when": { "east": true },
       "apply": { "model": "block/glass_pane_side_se", "y": 270}
+    },
+    {
+      "when": { "north": false },
+      "apply": { "model": "block/glass_pane_noside" }
+    },
+    {
+      "when": { "south": false },
+      "apply": { "model": "block/glass_pane_noside", "y": 180}
+    },
+    {
+      "when": { "west": false },
+      "apply": { "model": "block/glass_pane_noside", "y": 270}
+    },
+    {
+      "when": { "east": false },
+      "apply": { "model": "block/glass_pane_noside", "y": 90}
     }
   ]
 }

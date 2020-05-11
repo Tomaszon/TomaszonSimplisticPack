@@ -2,8 +2,10 @@ TODO:
 
 -custom entity models     --- DROPPED
 -custom lightmaps         --- DROPPED
--random textures          --- INP ROGRESSS
--overlay textures         ---
--bushy leaves and grass   --- IN PROGRESS
--handheld tools view fix  --- OK
+-random textures          --- IN PROGRESS
+-overlay textures         --- POSTPONED
+-connected textures       --- IN PROGRESS
+-bushy leaves and grass   --- COMPLETED
+-handheld tools view fix  --- COMPLETED
 -animated UI              --- DROPPED
+-block top textures       --- IN PROGRESS

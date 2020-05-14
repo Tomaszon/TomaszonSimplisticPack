@@ -20,7 +20,7 @@ namespace ColorSwapper
 		public MainWindow()
 		{
 			InitializeComponent();
-			Swapper.AddColor(Color.FromArgb(255, 245, 204, 39), Color.Black);
+			//Swapper.AddColor(Color.FromArgb(255, 245, 204, 39), Color.Black);
 			listColors.ItemsSource = Swapper.EntryCollection.Colors;
 			listImages.ItemsSource = Swapper.Bitmaps;
 			listImages.DisplayMemberPath = nameof(BitmapEntry.Name);

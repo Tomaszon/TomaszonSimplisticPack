@@ -1,14 +1,14 @@
 {
     "multipart": [
-        {   "apply": { "model": "block/brewing_stand" }},
+        {   "apply": { "model": "block/brewing_stand/brewing_stand" }},
         {   "when": { "has_bottle_0": "true" },
-            "apply": { "model": "block/brewing_stand_bottle1" }
+            "apply": { "model": "block/brewing_stand/brewing_stand_bottle1" }
         },
         {   "when": { "has_bottle_1": "true" },
-            "apply": { "model": "block/brewing_stand_bottle2" }
+            "apply": { "model": "block/brewing_stand/brewing_stand_bottle2" }
         },
         {   "when": { "has_bottle_2": "true" },
-            "apply": { "model": "block/brewing_stand_bottle3" }
+            "apply": { "model": "block/brewing_stand/brewing_stand_bottle3" }
         }
     ]
 }

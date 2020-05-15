@@ -1,19 +1,32 @@
 {
-    "multipart": [
-        {
-            "apply": { "model": "block/oak_fence_single" }
-        },
-        {   "when": { "north": true },
-            "apply": { "model": "block/oak_fence_side" }
-        },
-        {   "when": { "west": true },
-            "apply": { "model": "block/oak_fence_side", "y": 270}
-        },
-        {   "when": { "south": true },
-            "apply": { "model": "block/oak_fence_side", "y": 180 }
-        },
-        {   "when": { "east": true },
-            "apply": { "model": "block/oak_fence_side", "y": 90 }
-        }
-    ]
+	"multipart": [
+		{
+			"apply": { "model": "block/fence/oak_fence_single" }
+		},
+		{
+			"when": { "north": true },
+			"apply": { "model": "block/fence/oak_fence_side" }
+		},
+		{
+			"when": { "west": true },
+			"apply": {
+				"model": "block/fence/oak_fence_side",
+				"y": 270
+			}
+		},
+		{
+			"when": { "south": true },
+			"apply": {
+				"model": "block/fence/oak_fence_side",
+				"y": 180
+			}
+		},
+		{
+			"when": { "east": true },
+			"apply": {
+				"model": "block/fence/oak_fence_side",
+				"y": 90
+			}
+		}
+	]
 }

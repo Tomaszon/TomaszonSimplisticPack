@@ -1,0 +1,10 @@
+{
+	"parent": "block/rail/rail_raised",
+	"textures": {
+		"rail": "block/rail2",
+		"sleeper1": "block/rail_sleeper3",
+		"sleeper2": "block/rail_sleeper4",
+		"particle": "block/rail2",
+		"leg": "block/rail_leg"
+	}
+}

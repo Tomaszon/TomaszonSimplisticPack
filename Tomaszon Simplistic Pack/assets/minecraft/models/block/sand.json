@@ -1,0 +1,7 @@
+{
+	"parent": "block/column",
+	"textures": {
+		"end": "block/sand_top",
+		"side": "block/sand"
+	}
+}

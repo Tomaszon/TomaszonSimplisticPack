@@ -1,0 +1,7 @@
+{
+	"parent": "block/column",
+	"textures": {
+		"end": "block/chiseled_stone_bricks_top",
+		"side": "block/chiseled_stone_bricks"
+	}
+}

@@ -1,7 +1,7 @@
 {
-	"parent": "block/bricks",
+	"parent": "block/column",
 	"textures": {
-		"all": "block/bricks2"
-
+		"end": "block/bricks2_top",
+		"side": "block/bricks2"
 	}
 }

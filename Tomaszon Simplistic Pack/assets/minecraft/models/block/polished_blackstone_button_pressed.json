@@ -1,6 +1,6 @@
 {
-  "parent": "block/button_pressed",
-  "textures": {
-    "texture": "block/polished_blackstone_button"
-  }
+	"parent": "block/button_pressed",
+	"textures": {
+		"texture": "block/polished_blackstone_button"
+	}
 }

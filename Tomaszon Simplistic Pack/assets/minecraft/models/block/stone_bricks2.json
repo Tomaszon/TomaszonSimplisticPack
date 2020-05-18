@@ -2,6 +2,5 @@
 	"parent": "block/stone_bricks",
 	"textures": {
 		"all": "block/stone_bricks2"
-
 	}
 }

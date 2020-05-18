@@ -3,12 +3,12 @@
 	"textures": {
 		"bottom": "#bottom",
 		"top": "#top",
-		"innertop":"#top",
+		"innertop": "#top",
 		"right": "#side",
 		"left": "#side",
 		"front": "#side",
 		"innerfront": "#side",
 		"back": "#side",
-		"particle":"#side"
+		"particle": "#side"
 	}
 }

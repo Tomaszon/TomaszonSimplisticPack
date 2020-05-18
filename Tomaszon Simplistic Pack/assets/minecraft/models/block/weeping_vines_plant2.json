@@ -2,6 +2,5 @@
 	"parent": "block/cross",
 	"textures": {
 		"cross": "block/weeping_vines_plant2"
-
 	}
 }

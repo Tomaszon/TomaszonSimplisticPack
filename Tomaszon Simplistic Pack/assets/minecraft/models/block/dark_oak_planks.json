@@ -1,7 +1,7 @@
 {
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "block/dark_oak_planks_top",
-        "side": "block/dark_oak_planks"
-    }
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/dark_oak_planks_top",
+		"side": "block/dark_oak_planks"
+	}
 }

@@ -1,7 +1,7 @@
 {
-    "parent": "block/door_top_rh",
-    "textures": {
-        "face": "block/crimson_door_upper",
-        "edge": "block/crimson_door_edge"
-    }
+	"parent": "block/door_top_rh",
+	"textures": {
+		"face": "block/crimson_door_upper",
+		"edge": "block/crimson_door_edge"
+	}
 }

@@ -1,7 +1,7 @@
 {
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "block/jungle_planks_top",
-        "side": "block/jungle_planks"
-    }
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/jungle_planks_top",
+		"side": "block/jungle_planks"
+	}
 }

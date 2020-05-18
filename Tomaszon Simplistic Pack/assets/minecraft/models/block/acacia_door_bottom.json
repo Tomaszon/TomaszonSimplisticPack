@@ -1,5 +1,5 @@
 {
-    "parent": "block/door_bottom",
+  "parent": "block/door_bottom",
     "textures": {
         "face": "block/acacia_door_lower",
         "edge": "block/acacia_door_edge"

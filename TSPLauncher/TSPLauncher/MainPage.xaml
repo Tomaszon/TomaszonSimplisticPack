@@ -8,11 +8,11 @@
 	xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
 	mc:Ignorable="d" Loaded="Page_Loaded" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 	<Grid>
-		<muxc:NavigationView SelectionChanged="NavigationView_SelectionChanged">
+		<muxc:NavigationView x:Name="navigationView" SelectionChanged="NavigationView_SelectionChanged">
 			<muxc:NavigationView.MenuItems>
-				<muxc:NavigationViewItem Tag="Home" Content="{x:Bind ModelContainer.ViewModel.A, Mode=OneWay}" Icon="Home" ToolTipService.ToolTip="Home"/>
+				<muxc:NavigationViewItem Tag="Home" Content="{x:Bind ModelContainer.ViewModel.AMView, Mode=OneWay}" Icon="Home" ToolTipService.ToolTip="Home"/>
 				<muxc:NavigationViewItem Tag="News" Content="News" Icon="PreviewLink" ToolTipService.ToolTip="News"/>
-				<muxc:NavigationViewItem Content="Installed versions" Icon="Library" ToolTipService.ToolTip="Installed versions" MenuItemsSource="{x:Bind ModelContainer.ViewModel.InstalledVersions, Mode=OneWay}">
+				<muxc:NavigationViewItem Tag="InstalledVersions" Content="Installed versions" Icon="Library" ToolTipService.ToolTip="Installed versions" MenuItemsSource="{x:Bind ModelContainer.Model.InstalledVersions, Mode=OneWay}">
 					<!--<muxc:NavigationViewItem.MenuItems>
 					<muxc:NavigationViewItem Content="1.0 for 1.16" Icon="Page2" ToolTipService.ToolTip="1.0 for 1.16"/>
 					<muxc:NavigationViewItem Content="0.9 for 1.15" Icon="Page2" ToolTipService.ToolTip="0.9 for 1.15"/>
@@ -27,6 +27,6 @@
 				<Frame x:Name="ContentFrame" Padding="12,0,12,24" IsTabStop="True" NavigationFailed="ContentFrame_NavigationFailed" Navigated="ContentFrame_Navigated"/>
 			</ScrollViewer>
 		</muxc:NavigationView>
-		<TextBox Text="{x:Bind Mode=TwoWay, Path=ModelContainer.ViewModel.A, UpdateSourceTrigger=PropertyChanged}" RequestedTheme="Default" Width="200" Height="20"/>
+		<TextBox Text="{x:Bind Mode=TwoWay, Path=ModelContainer.ViewModel.AView, UpdateSourceTrigger=PropertyChanged}" RequestedTheme="Default" Width="200" Height="20"/>
 	</Grid>
 </Page>

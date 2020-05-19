@@ -1,6 +1,6 @@
 ﻿using ModelContainer;
 using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Windows.UI.Xaml.Controls;
@@ -23,7 +23,7 @@ namespace TSPLauncher
 
 		private void Page_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 		{
-			//ModelContainer.Model.InstalledVersions = new List<int> { 4, 5, 7, 8, 6 };
+			//ModelContainer.Model.InstalledVersions = new ObservableCollection<int> { 4, 5, 7, 8, 6 };
 			//ModelContainer.ViewModel.A = "asd";
 		}
 
@@ -45,20 +45,24 @@ namespace TSPLauncher
 			}
 			else
 			{
-				var tag = (args.SelectedItem as Microsoft.UI.Xaml.Controls.NavigationViewItem)?.Tag?.ToString();
-				if (Enum.TryParse(typeof(E.NavigationPages), tag, out var res))
+				var item = args.SelectedItem as Microsoft.UI.Xaml.Controls.NavigationViewItem;
+				var tag = item?.Tag?.ToString();
+				if (Enum.TryParse(typeof(NavigationPages), tag, out var res))
 				{
 					switch (res)
 					{
-						case E.NavigationPages.AddVersion:
+						case NavigationPages.AddVersion:
 							ModelContainer.Model.A = "asdsadadasdasdasas";
-							ModelContainer.ViewModel.InstalledVersions.Add(6);
+							ModelContainer.Model.InstalledVersions.Add(6);
 							break;
-						case E.NavigationPages.Home:
+						case NavigationPages.Home:
 							ContentFrame.Navigate(typeof(HomePage));
 							break;
-						case E.NavigationPages.News:
+						case NavigationPages.News:
 							ContentFrame.Navigate(typeof(NewsPage));
+							break;
+						case NavigationPages.InstalledVersions:
+							navigationView.SelectedItem = (item.MenuItemsSource as IList)?[0];
 							break;
 						default:
 
@@ -69,15 +73,23 @@ namespace TSPLauncher
 		}
 	}
 
+	public enum NavigationPages
+	{
+		Home,
+		News,
+		AddVersion,
+		InstalledVersions
+	}
+
 	public class Model : ModelBase
 	{
 		public string A { get { return Get<string>("Alma"); } set { Set(value); } }
 
-		public List<int> InstalledVersions
+		public ObservableCollection<int> InstalledVersions
 		{
 			get
 			{
-				return Get<List<int>>(new List<int>(new[] { 2, 3 }));
+				return Get(new ObservableCollection<int> { 2, 3 });
 			}
 			set
 			{
@@ -88,14 +100,16 @@ namespace TSPLauncher
 
 	public class ViewModel : ViewModelBase
 	{
-		public string A { get { return Get<string>(); } set { Set(value); } }
+		public string AView { get { return Get<string>("A"); } set { Set(value); } }
+
+		public string AMView { get { return Get<string>("A", x => x + " Ft"); } }
 
 		//TODO test different Property and Accessor name null exceptions
-		public List<int> InstalledVersions
+		public ObservableCollection<int> InstalledVersions
 		{
 			get
 			{
-				return Get<List<int>>();
+				return Get<ObservableCollection<int>>();
 			}
 			set
 			{
@@ -105,15 +119,4 @@ namespace TSPLauncher
 
 		public ViewModel(Model model) : base(model) { }
 	}
-}
-
-namespace E
-{
-	public enum NavigationPages
-	{
-		Home,
-		News,
-		AddVersion
-	}
-
 }

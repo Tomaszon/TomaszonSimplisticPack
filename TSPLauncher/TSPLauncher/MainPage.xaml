@@ -5,28 +5,24 @@
 	xmlns:local="using:TSPLauncher"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+	xmlns:c="using:Microsoft.UI.Xaml.Controls"
 	mc:Ignorable="d" Loaded="Page_Loaded" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 	<Grid>
-		<muxc:NavigationView x:Name="navigationView" SelectionChanged="NavigationView_SelectionChanged">
-			<muxc:NavigationView.MenuItems>
-				<muxc:NavigationViewItem Tag="Home" Content="{x:Bind ModelContainer.ViewModel.AMView, Mode=OneWay}" Icon="Home" ToolTipService.ToolTip="Home"/>
-				<muxc:NavigationViewItem Tag="News" Content="News" Icon="PreviewLink" ToolTipService.ToolTip="News"/>
-				<muxc:NavigationViewItem Tag="InstalledVersions" Content="Installed versions" Icon="Library" ToolTipService.ToolTip="Installed versions" MenuItemsSource="{x:Bind ModelContainer.Model.InstalledVersions, Mode=OneWay}">
-					<!--<muxc:NavigationViewItem.MenuItems>
-					<muxc:NavigationViewItem Content="1.0 for 1.16" Icon="Page2" ToolTipService.ToolTip="1.0 for 1.16"/>
-					<muxc:NavigationViewItem Content="0.9 for 1.15" Icon="Page2" ToolTipService.ToolTip="0.9 for 1.15"/>
-				</muxc:NavigationViewItem.MenuItems>-->
-				</muxc:NavigationViewItem>
-				<muxc:NavigationViewItem Tag="AddVersion" Content="Add version" Icon="Add" ToolTipService.ToolTip="Add version"/>
-			</muxc:NavigationView.MenuItems>
-
-			<muxc:NavigationView.Header>TomaszonSimplistiPack Launcher</muxc:NavigationView.Header>
+		<c:NavigationView x:Name="navigationView" SelectionChanged="NavigationView_SelectionChanged" Background="{ThemeResource NavigationViewExpandedPaneBackground}" IsPaneOpen="False">
+			<c:NavigationView.MenuItems>
+				<c:NavigationViewItem Tag="Home" Content="Home" Icon="Home" ToolTipService.ToolTip="Home" IsSelected="True"/>
+				<c:NavigationViewItem Tag="News" Content="News" Icon="PreviewLink" ToolTipService.ToolTip="News"/>
+				<c:NavigationViewItem Tag="InstalledVersions" Icon="Library" Content="Installed versions" ToolTipService.ToolTip="Installed versions" MenuItemsSource="{x:Bind ModelContainer.ViewModel.InstalledVersionsMenuItems, Mode=OneWay}">
+				</c:NavigationViewItem>
+				<c:NavigationViewItem Tag="AddVersion" Content="Add version" Icon="Add" ToolTipService.ToolTip="Add version"/>
+			</c:NavigationView.MenuItems>
+		
+			<c:NavigationView.Header>TomaszonSimplistiPack Launcher</c:NavigationView.Header>
 
 			<ScrollViewer>
-				<Frame x:Name="ContentFrame" Padding="12,0,12,24" IsTabStop="True" NavigationFailed="ContentFrame_NavigationFailed" Navigated="ContentFrame_Navigated"/>
+				<Frame x:Name="ContentFrame" Padding="12,0,12,24" IsTabStop="True" NavigationFailed="ContentFrame_NavigationFailed" Navigated="ContentFrame_Navigated">
+				</Frame>
 			</ScrollViewer>
-		</muxc:NavigationView>
-		<TextBox Text="{x:Bind Mode=TwoWay, Path=ModelContainer.ViewModel.AView, UpdateSourceTrigger=PropertyChanged}" RequestedTheme="Default" Width="200" Height="20"/>
+		</c:NavigationView>
 	</Grid>
 </Page>

@@ -1,9 +1,9 @@
-﻿using ModelContainer;
+﻿using Microsoft.UI.Xaml.Controls;
+using ModelContainer;
 using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using Windows.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -12,7 +12,7 @@ namespace TSPLauncher
 	/// <summary>
 	/// An empty page that can be used on its own or navigated to within a Frame.
 	/// </summary>
-	public sealed partial class MainPage : Page
+	public sealed partial class MainPage : Windows.UI.Xaml.Controls.Page
 	{
 		public ModelContainer<ViewModel, Model> ModelContainer { get; set; } = new ModelContainer<ViewModel, Model>();
 
@@ -45,14 +45,13 @@ namespace TSPLauncher
 			}
 			else
 			{
-				var item = args.SelectedItem as Microsoft.UI.Xaml.Controls.NavigationViewItem;
+				var item = args.SelectedItem as NavigationViewItem;
 				var tag = item?.Tag?.ToString();
 				if (Enum.TryParse(typeof(NavigationPages), tag, out var res))
 				{
 					switch (res)
 					{
 						case NavigationPages.AddVersion:
-							ModelContainer.Model.A = "asdsadadasdasdasas";
 							ModelContainer.Model.InstalledVersions.Add(6);
 							break;
 						case NavigationPages.Home:
@@ -60,9 +59,6 @@ namespace TSPLauncher
 							break;
 						case NavigationPages.News:
 							ContentFrame.Navigate(typeof(NewsPage));
-							break;
-						case NavigationPages.InstalledVersions:
-							navigationView.SelectedItem = (item.MenuItemsSource as IList)?[0];
 							break;
 						default:
 
@@ -77,43 +73,33 @@ namespace TSPLauncher
 	{
 		Home,
 		News,
-		AddVersion,
-		InstalledVersions
+		AddVersion
 	}
 
 	public class Model : ModelBase
 	{
-		public string A { get { return Get<string>("Alma"); } set { Set(value); } }
+		public string A { get { return Get("Alma"); } set { Set(value); } }
 
-		public ObservableCollection<int> InstalledVersions
+		public List<int> InstalledVersions
 		{
-			get
-			{
-				return Get(new ObservableCollection<int> { 2, 3 });
-			}
-			set
-			{
-				Set(value);
-			}
+			get { return Get(new List<int> { 2, 3 }); }
 		}
 	}
 
+
 	public class ViewModel : ViewModelBase
 	{
-		public string AView { get { return Get<string>("A"); } set { Set(value); } }
-
-		public string AMView { get { return Get<string>("A", x => x + " Ft"); } }
-
-		//TODO test different Property and Accessor name null exceptions
-		public ObservableCollection<int> InstalledVersions
+		public ObservableCollection<NavigationViewItem> InstalledVersionsMenuItems
 		{
 			get
 			{
-				return Get<ObservableCollection<int>>();
-			}
-			set
-			{
-				Set(value);
+				return Get<ObservableCollection<int>, ObservableCollection<NavigationViewItem>>(transform: x =>
+					new ObservableCollection<NavigationViewItem>(x.Select(e =>
+						new NavigationViewItem()
+						{
+							Content = e,
+							Icon = new Windows.UI.Xaml.Controls.SymbolIcon(Windows.UI.Xaml.Controls.Symbol.Page2)
+						})), nameof(Model.InstalledVersions));
 			}
 		}
 

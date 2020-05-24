@@ -1,6 +1,7 @@
 {
 	"parent": "block/dirt",
 	"textures": {
-		"all": "block/dirt2"
+		"end": "block/dirt2_top",
+		"side": "block/dirt2"
 	}
 }

@@ -1,0 +1,110 @@
+{
+	"multipart": [
+		{
+			"when": {
+				"north": "true"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_stem"
+			}
+		},
+		{
+			"when": {
+				"east": "true"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_stem",
+				"y": 90
+			}
+		},
+		{
+			"when": {
+				"south": "true"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_stem",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"west": "true"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_stem",
+				"y": 270
+			}
+		},
+		{
+			"when": {
+				"up": "true"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_stem_top",
+				"x": 270
+			}
+		},
+		{
+			"when": {
+				"down": "true"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_stem_bottom",
+				"x": 90
+			}
+		},
+		{
+			"when": {
+				"north": "false"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_block_inside"
+			}
+		},
+		{
+			"when": {
+				"east": "false"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_block_inside",
+				"y": 90
+			}
+		},
+		{
+			"when": {
+				"south": "false"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_block_inside",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"west": "false"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_block_inside",
+				"y": 270
+			}
+		},
+		{
+			"when": {
+				"up": "false"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_block_inside_top",
+				"x": 270
+			}
+		},
+		{
+			"when": {
+				"down": "false"
+			},
+			"apply": {
+				"model": "block/mushroom/mushroom_block_inside_top",
+				"x": 90
+			}
+		}
+	]
+}

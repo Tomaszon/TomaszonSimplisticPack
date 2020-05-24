@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/wet_sponge_top",
+		"side": "block/wet_sponge"
+	}
+}

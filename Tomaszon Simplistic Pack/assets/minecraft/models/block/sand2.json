@@ -1,5 +1,5 @@
 {
-	"parent": "block/column",
+	"parent": "block/sand",
 	"textures": {
 		"end": "block/sand2_top",
 		"side": "block/sand2"

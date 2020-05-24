@@ -1,5 +1,5 @@
 {
-	"parent": "block/column",
+	"parent": "block/bricks",
 	"textures": {
 		"end": "block/bricks2_top",
 		"side": "block/bricks2"

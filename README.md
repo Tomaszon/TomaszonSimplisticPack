@@ -212,8 +212,9 @@
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/bedrock.png"/>
 </p>
 
-
-
+<p align="center">
+<img alt="logo" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/readme_resources/end.png"/>
+</p>
 
 <p align="center">
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/bricks.png"/>

@@ -1,6 +1,6 @@
 # TomaszonSimplisticPack
 <p align="center">
-<img alt="logo" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/pack.png"/>
+<img alt="logo" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/readme_resources/begin.png"/>
 </p>
 <p align="center">
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/readme_resources/empty.png"/>

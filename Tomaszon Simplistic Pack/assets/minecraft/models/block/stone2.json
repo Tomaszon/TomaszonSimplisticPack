@@ -1,6 +1,7 @@
 {
 	"parent": "block/stone",
 	"textures": {
-		"all": "block/stone2"
+		"end": "block/stone2_top",
+		"side": "block/stone2"
 	}
 }

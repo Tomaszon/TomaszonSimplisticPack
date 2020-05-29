@@ -5,7 +5,7 @@
 		"top": "block/cartography_table_top",
 		"back": "block/cartography_table_side4",
 		"front": "block/cartography_table_side1",
-		"bottom": "block/dark_oak_planks",
+		"bottom": "block/cartography_table_bottom",
 		"right": "block/cartography_table_side3",
 		"left": "block/cartography_table_side2"
 	},

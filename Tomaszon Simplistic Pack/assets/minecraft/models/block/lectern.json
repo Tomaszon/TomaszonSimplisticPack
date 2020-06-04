@@ -7,8 +7,8 @@
 		"7": "block/lectern_pillar_sides",
 		"base": "block/lectern_base",
 		"front": "block/lectern_front",
-		"sides": "block/lectern_sides",
 		"particle": "block/lectern_sides",
+		"sides": "block/lectern_sides",
 		"top": "block/lectern_top"
 	},
 	"elements": [
@@ -45,6 +45,24 @@
 				"west": {"uv": [0, 4, 14, 8], "texture": "#sides"},
 				"up": {"uv": [0, 0, 16, 14], "rotation": 180, "texture": "#top"},
 				"down": {"uv": [0, 0, 15.937, 14], "texture": "#6"}
+			}
+		},
+		{
+			"from": [-0.01, 6, 5],
+			"to": [-0.01, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 23, 13]},
+			"faces": {
+				"east": {"uv": [0, 16, 10, 10], "rotation": 90, "texture": "#sides"},
+				"west": {"uv": [0, 10, 10, 16], "rotation": 90, "texture": "#sides"}
+			}
+		},
+		{
+			"from": [16.01, 6, 5],
+			"to": [16.01, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16.01, 11, 8]},
+			"faces": {
+				"east": {"uv": [0, 16, 10, 10], "rotation": 90, "texture": "#sides"},
+				"west": {"uv": [0, 10, 10, 16], "rotation": 90, "texture": "#sides"}
 			}
 		}
 	],

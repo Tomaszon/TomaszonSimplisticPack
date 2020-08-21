@@ -1,8 +1,8 @@
 {
   "animation": {
     "frametime": 3,
-    "width": 64,
-    "height": 32,
+    "width": 512,
+    "height": 256,
     "frames": [
       0,
       1,

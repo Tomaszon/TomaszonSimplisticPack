@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "block/rail1",
-		"2": "block/powered_rail_on",
-		"3": "block/powered_rail_on_sleeper1",
-		"4": "block/powered_rail_on_sleeper2",
-		"particle": "block/rail1"
+		"0": "block/rail/rail1",
+		"2": "block/rail/powered_rail_on",
+		"3": "block/rail/powered_rail_on_sleeper1",
+		"4": "block/rail/powered_rail_on_sleeper2",
+		"particle": "block/rail/rail1"
 	},
 	"elements": [
 		{

@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "block/rail_corner",
-		"1": "block/rail_corner_sleeper",
-		"2": "block/rail_corner_sleeper2",
-		"particle": "block/rail_corner"
+		"0": "block/rail/rail_corner",
+		"1": "block/rail/rail_corner_sleeper",
+		"2": "block/rail/rail_corner_sleeper2",
+		"particle": "block/rail/rail_corner"
 	},
 	"elements": [
 		{

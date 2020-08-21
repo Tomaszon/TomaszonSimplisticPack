@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "block/detector_rail_off_sleeper1",
-		"1": "block/detector_rail_off_sleeper2",
-		"2": "block/rail1",
-		"3": "block/detector_rail_plate",
-		"particle": "block/detector_rail_off_sleeper1"
+		"0": "block/rail/detector_rail_off_sleeper1",
+		"1": "block/rail/detector_rail_off_sleeper2",
+		"2": "block/rail/rail1",
+		"3": "block/rail/detector_rail_plate",
+		"particle": "block/rail/detector_rail_off_sleeper1"
 	},
 	"elements": [
 		{

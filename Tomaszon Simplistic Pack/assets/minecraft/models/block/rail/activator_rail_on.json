@@ -3,9 +3,9 @@
 	"parent": "block/rail/activator_rail",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "block/activator_rail_on_sleeper1",
-		"1": "block/activator_rail_on_sleeper2",
-		"2": "block/rail1",
-		"particle": "block/activator_rail_on_sleeper1"
+		"0": "block/rail/activator_rail_on_sleeper1",
+		"1": "block/rail/activator_rail_on_sleeper2",
+		"2": "block/rail/rail1",
+		"particle": "block/rail/activator_rail_on_sleeper1"
 	}
 }

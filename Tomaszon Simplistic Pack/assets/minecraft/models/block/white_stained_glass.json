@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/glass/white_stained_glass_top",
+		"side": "block/glass/white_stained_glass"
+	}
+}

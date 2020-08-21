@@ -1,6 +1,6 @@
 {
 	"parent": "block/daylight_detector/daylight_detector_power",
 	"textures": {
-		"texture": "block/daylight_detector_power8"
+		"texture": "block/daylight_detector/daylight_detector_power8"
 	}
 }

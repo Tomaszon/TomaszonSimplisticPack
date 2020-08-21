@@ -1,11 +1,11 @@
 {
 	"parent": "block/command_block/command_block",
 	"textures": {
-		"particle": "block/chain_command_block_front",
-		"side": "block/chain_command_block_side",
-		"top": "block/chain_command_block_top",
-		"front": "block/chain_command_block_front",
-		"back": "block/command_block_back",
-		"bottom": "block/chain_command_block_bottom"
+		"particle": "block/command_block/chain_command_block_front",
+		"side": "block/command_block/chain_command_block_side",
+		"top": "block/command_block/chain_command_block_top",
+		"front": "block/command_block/chain_command_block_front",
+		"back": "block/command_block/command_block_back",
+		"bottom": "block/command_block/chain_command_block_bottom"
 	}
 }

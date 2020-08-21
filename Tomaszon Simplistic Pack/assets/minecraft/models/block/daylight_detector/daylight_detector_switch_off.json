@@ -1,6 +1,6 @@
 {
 	"parent": "block/daylight_detector/daylight_detector_switch",
 	"textures": {
-		"texture": "block/daylight_detector_switch_off"
+		"texture": "block/daylight_detector/daylight_detector_switch_off"
 	}
 }

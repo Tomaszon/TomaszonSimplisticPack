@@ -1,0 +1,7 @@
+{
+	"parent": "block/door/door_upper_hinge_left",
+	"textures": {
+		"face": "block/door/dark_oak_door_upper",
+		"edge": "block/door/dark_oak_door_edge"
+	}
+}

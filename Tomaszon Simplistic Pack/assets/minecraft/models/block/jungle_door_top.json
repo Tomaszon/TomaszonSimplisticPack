@@ -1,7 +1,0 @@
-{
-	"parent": "block/door_top",
-	"textures": {
-		"face": "block/jungle_door_upper",
-		"edge": "block/jungle_door_edge"
-	}
-}

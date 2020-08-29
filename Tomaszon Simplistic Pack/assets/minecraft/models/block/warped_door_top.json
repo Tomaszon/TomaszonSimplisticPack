@@ -1,7 +1,0 @@
-{
-	"parent": "block/door_top",
-	"textures": {
-		"face": "block/warped_door_upper",
-		"edge": "block/warped_door_edge"
-	}
-}

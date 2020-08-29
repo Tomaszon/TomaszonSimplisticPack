@@ -1,0 +1,7 @@
+{
+	"parent": "block/trapdoor/trapdoor_upper_open",
+	"textures": {
+		"face": "block/trapdoor/spruce_trapdoor_upper",
+		"edge": "block/trapdoor/spruce_trapdoor_edge"
+	}
+}

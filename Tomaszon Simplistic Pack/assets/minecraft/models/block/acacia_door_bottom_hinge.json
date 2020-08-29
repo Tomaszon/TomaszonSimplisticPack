@@ -1,7 +1,0 @@
-{
-	"parent": "block/door_bottom_rh",
-	"textures": {
-		"face": "block/acacia_door_lower",
-		"edge": "block/acacia_door_edge"
-	}
-}

@@ -1,6 +1,7 @@
 {
-	"parent": "block/cube_all",
+	"parent": "block/cube_column",
 	"textures": {
-		"all": "block/ancient_debris"
+		"end": "block/ancient_debris_top",
+		"side": "block/ancient_debris"
 	}
 }

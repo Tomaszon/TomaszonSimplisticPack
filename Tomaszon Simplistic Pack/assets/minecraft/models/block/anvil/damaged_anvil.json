@@ -1,0 +1,7 @@
+{
+	"parent": "block/anvil/template_anvil",
+	"textures": {
+		"top": "block/anvil/damaged_anvil_top",
+		"face_side": "block/anvil/damaged_anvil_face_side"
+	}
+}

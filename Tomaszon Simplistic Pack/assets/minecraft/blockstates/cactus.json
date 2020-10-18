@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "block/cactus",
+				"weight": 2
+			},
+			{
+				"model": "block/cactus2"
+			}
+		]
+	}
+}

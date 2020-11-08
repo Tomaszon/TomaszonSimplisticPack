@@ -1,0 +1,28 @@
+{
+	"variants": {
+		"candles=1,lit=false": {
+			"model": "block/candle/candle_one"
+		},
+		"candles=2,lit=false": {
+			"model": "block/candle/candle_two"
+		},
+		"candles=3,lit=false": {
+			"model": "block/candle/candle_three"
+		},
+		"candles=4,lit=false": {
+			"model": "block/candle/candle_four"
+		},
+		"candles=1,lit=true": {
+			"model": "block/candle/candle_one_lit"
+		},
+		"candles=2,lit=true": {
+			"model": "block/candle/candle_two_lit"
+		},
+		"candles=3,lit=true": {
+			"model": "block/candle/candle_three_lit"
+		},
+		"candles=4,lit=true": {
+			"model": "block/candle/candle_four_lit"
+		}
+	}
+}

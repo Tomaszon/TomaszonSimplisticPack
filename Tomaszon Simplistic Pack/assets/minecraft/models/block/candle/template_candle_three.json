@@ -16,21 +16,23 @@
 			}
 		},
 		{
-			"from": [7.93525, 4, 10.00225],
-			"to": [8.06025, 6, 10.00225],
-			"rotation": {"angle": -45, "axis": "y", "origin": [7.99775, 5, 10.00225]},
+			"name": "wick6",
+			"from": [7.75, 4, 10],
+			"to": [8.25, 6, 10],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 5, 10]},
 			"faces": {
-				"north": {"uv": [0, 2, 0.125, 4], "texture": "#all"},
-				"south": {"uv": [0, 2, 0.125, 4], "texture": "#all"}
+				"north": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"},
+				"south": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"}
 			}
 		},
 		{
-			"from": [7.93525, 4, 10.00225],
-			"to": [8.06025, 6, 10.00225],
-			"rotation": {"angle": 45, "axis": "y", "origin": [7.99775, 5, 10.00225]},
+			"name": "wick5",
+			"from": [7.75, 4, 10],
+			"to": [8.25, 6, 10],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 5, 10]},
 			"faces": {
-				"north": {"uv": [0, 2, 0.125, 4], "texture": "#all"},
-				"south": {"uv": [0, 2, 0.125, 4], "texture": "#all"}
+				"north": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"},
+				"south": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"}
 			}
 		},
 		{
@@ -47,21 +49,23 @@
 			}
 		},
 		{
-			"from": [8.93525, 4, 7.00225],
-			"to": [9.06025, 6, 7.00225],
-			"rotation": {"angle": 45, "axis": "y", "origin": [8.99775, 5, 7.00225]},
+			"name": "wick3",
+			"from": [8.75, 4, 7],
+			"to": [9.25, 6, 7],
+			"rotation": {"angle": 45, "axis": "y", "origin": [9, 5, 7]},
 			"faces": {
-				"north": {"uv": [0, 2, 0.125, 4], "texture": "#all"},
-				"south": {"uv": [0, 2, 0.125, 4], "texture": "#all"}
+				"north": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"},
+				"south": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"}
 			}
 		},
 		{
-			"from": [8.93525, 4, 7.00225],
-			"to": [9.06025, 6, 7.00225],
-			"rotation": {"angle": -45, "axis": "y", "origin": [8.99775, 5, 7.00225]},
+			"name": "wick4",
+			"from": [8.75, 4, 7],
+			"to": [9.25, 6, 7],
+			"rotation": {"angle": -45, "axis": "y", "origin": [9, 5, 7]},
 			"faces": {
-				"north": {"uv": [0, 2, 0.125, 4], "texture": "#all"},
-				"south": {"uv": [0, 2, 0.125, 4], "texture": "#all"}
+				"north": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"},
+				"south": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"}
 			}
 		},
 		{
@@ -78,21 +82,23 @@
 			}
 		},
 		{
-			"from": [5.93525, 6, 8.00225],
-			"to": [6.06025, 8, 8.00225],
-			"rotation": {"angle": -45, "axis": "y", "origin": [5.99775, 7, 8.00225]},
+			"name": "wick1",
+			"from": [5.75, 6, 8],
+			"to": [6.25, 8, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [6, 7, 8]},
 			"faces": {
-				"north": {"uv": [0, 2, 0.125, 4], "texture": "#all"},
-				"south": {"uv": [0, 2, 0.125, 4], "texture": "#all"}
+				"north": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"},
+				"south": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"}
 			}
 		},
 		{
-			"from": [5.93525, 6, 8.00225],
-			"to": [6.06025, 8, 8.00225],
-			"rotation": {"angle": 45, "axis": "y", "origin": [5.99775, 7, 8.00225]},
+			"name": "wick2",
+			"from": [5.75, 6, 8],
+			"to": [6.25, 8, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [6, 7, 8]},
 			"faces": {
-				"north": {"uv": [0, 2, 0.125, 4], "texture": "#all"},
-				"south": {"uv": [0, 2, 0.125, 4], "texture": "#all"}
+				"north": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"},
+				"south": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"}
 			}
 		}
 	],

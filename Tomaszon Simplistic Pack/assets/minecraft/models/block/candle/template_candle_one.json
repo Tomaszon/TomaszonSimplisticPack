@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
+	"texture_size": [64, 64],
 	"elements": [
 		{
 			"from": [7, 0, 7],
@@ -15,21 +16,23 @@
 			}
 		},
 		{
-			"from": [7.93525, 6, 8.00225],
-			"to": [8.06025, 8, 8.00225],
-			"rotation": {"angle": -45, "axis": "y", "origin": [7.99775, 7, 8.00225]},
+			"name": "wick1",
+			"from": [7.75, 6, 8],
+			"to": [8.25, 8, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 7, 8]},
 			"faces": {
-				"north": {"uv": [0, 2, 0.125, 4], "texture": "#all"},
-				"south": {"uv": [0, 2, 0.125, 4], "texture": "#all"}
+				"north": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"},
+				"south": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"}
 			}
 		},
 		{
-			"from": [7.93525, 6, 8.00225],
-			"to": [8.06025, 8, 8.00225],
-			"rotation": {"angle": 45, "axis": "y", "origin": [7.99775, 7, 8.00225]},
+			"name": "wick2",
+			"from": [7.75, 6, 8],
+			"to": [8.25, 8, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 7, 8]},
 			"faces": {
-				"north": {"uv": [0, 2, 0.125, 4], "texture": "#all"},
-				"south": {"uv": [0, 2, 0.125, 4], "texture": "#all"}
+				"north": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"},
+				"south": {"uv": [0.75, 2, 1.25, 4], "texture": "#all"}
 			}
 		}
 	],

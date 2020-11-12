@@ -1,22 +1,6 @@
 {
-	"credit": "Made with Blockbench",
-	"parent": "block/candle/red_candle_one",
-	"display": {
-		"thirdperson_righthand": {
-			"translation": [0, 4, -0.5],
-			"scale": [0.75, 0.75, 0.75]
-		},
-		"thirdperson_lefthand": {
-			"translation": [0, 4, -0.5],
-			"scale": [0.75, 0.75, 0.75]
-		},
-		"firstperson_righthand": {
-			"translation": [0, 4, -0.5],
-			"scale": [0.75, 0.75, 0.75]
-		},
-		"firstperson_lefthand": {
-			"translation": [0, 4, -0.5],
-			"scale": [0.75, 0.75, 0.75]
-		}
+	"parent": "item/template_candle",
+	"textures":{
+		"0": "item/red_candle"
 	}
 }

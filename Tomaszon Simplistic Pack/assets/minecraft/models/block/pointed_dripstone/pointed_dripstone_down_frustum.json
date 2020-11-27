@@ -1,0 +1,6 @@
+{
+  "parent": "block/pointed_dripstone/template_pointed_dripstone",
+  "textures": {
+    "cross": "minecraft:block/pointed_dripstone_down_frustum"
+  }
+}

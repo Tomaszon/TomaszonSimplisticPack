@@ -1,6 +1,37 @@
 {
-  "parent": "block/pointed_dripstone/template_pointed_dripstone",
-  "textures": {
-    "cross": "minecraft:block/pointed_dripstone_up_base"
-  }
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "block/pointed_dripstone/pointed_dripstone_top",
+		"1": "block/pointed_dripstone/pointed_dripstone_up_base",
+		"2": "block/pointed_dripstone/pointed_dripstone_bottom1",
+		"particle": "block/pointed_dripstone/pointed_dripstone_top"
+	},
+	"elements": [
+		{
+			"from": [4, 4, 4],
+			"to": [12, 16, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10, 12, 10]},
+			"faces": {
+				"north": {"uv": [4, 0, 12, 12], "texture": "#1"},
+				"east": {"uv": [4, 0, 12, 12], "texture": "#1"},
+				"south": {"uv": [4, 0, 12, 12], "texture": "#1"},
+				"west": {"uv": [4, 0, 12, 12], "texture": "#1"},
+				"up": {"uv": [4, 4, 12, 12], "texture": "#0"},
+				"down": {"uv": [0, 0, 10, 10], "texture": "#1"}
+			}
+		},
+		{
+			"from": [3, 0, 3],
+			"to": [13, 4, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11, 8, 11]},
+			"faces": {
+				"north": {"uv": [3, 12, 13, 16], "texture": "#1"},
+				"east": {"uv": [3, 12, 13, 16], "texture": "#1"},
+				"south": {"uv": [3, 12, 13, 16], "texture": "#1"},
+				"west": {"uv": [3, 12, 13, 16], "texture": "#1"},
+				"up": {"uv": [3, 3, 13, 13], "texture": "#0"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#2"}
+			}
+		}
+	]
 }

@@ -1,6 +1,33 @@
 {
-  "parent": "block/pointed_dripstone/template_pointed_dripstone",
-  "textures": {
-    "cross": "minecraft:block/pointed_dripstone_down_frustum"
-  }
+	"credit": "Made with Blockbench",
+	"elements": [
+		{
+			"from": [6, 0, 6],
+			"to": [10, 12, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 4, 7]},
+			"color": 3,
+			"faces": {
+				"north": {"uv": [0, 0, 10, 12], "texture": "#missing"},
+				"east": {"uv": [0, 0, 10, 12], "texture": "#missing"},
+				"south": {"uv": [0, 0, 10, 12], "texture": "#missing"},
+				"west": {"uv": [0, 0, 10, 12], "texture": "#missing"},
+				"up": {"uv": [0, 0, 10, 10], "texture": "#missing"},
+				"down": {"uv": [0, 0, 10, 10], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [5, 12, 5],
+			"to": [11, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 17, 8]},
+			"color": 3,
+			"faces": {
+				"north": {"uv": [0, 0, 10, 12], "texture": "#missing"},
+				"east": {"uv": [0, 0, 10, 12], "texture": "#missing"},
+				"south": {"uv": [0, 0, 10, 12], "texture": "#missing"},
+				"west": {"uv": [0, 0, 10, 12], "texture": "#missing"},
+				"up": {"uv": [0, 0, 10, 10], "texture": "#missing"},
+				"down": {"uv": [0, 0, 10, 10], "texture": "#missing"}
+			}
+		}
+	]
 }

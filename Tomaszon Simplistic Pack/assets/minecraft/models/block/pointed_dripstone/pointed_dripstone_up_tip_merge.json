@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/pointed_dripstone/pointed_dripstone_bottom1",
-		"1": "block/pointed_dripstone/pointed_dripstone_top",
+		"0": "block/pointed_dripstone/pointed_dripstone_up_bottom1",
+		"1": "block/pointed_dripstone/pointed_dripstone_up_top",
 		"2": "block/pointed_dripstone/pointed_dripstone_up_tip_merge",
-		"particle": "block/pointed_dripstone/pointed_dripstone_bottom1"
+		"particle": "block/pointed_dripstone/pointed_dripstone_up_tip_merge"
 	},
 	"elements": [
 		{

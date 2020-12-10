@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/crying_obsidian_top",
+		"side": "block/crying_obsidian"
+	}
+}

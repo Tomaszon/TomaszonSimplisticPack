@@ -107,14 +107,14 @@
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/readme_resources/empty.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/sweet_berry_bush_stage3.png"/>
 <br/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/farmland_side1.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt2.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt2.png"/>
-<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt2.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/dirt.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/farmland_side1.png"/>
+<img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/Tomaszon%20Simplistic%20Pack/assets/minecraft/textures/block/farmland_side1.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/readme_resources/grass_block_side_colored.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/readme_resources/grass_block_side_colored.png"/>
 <img alt="img" src="https://github.com/Tomaszon/TomaszonSimplisticPack/blob/master/readme_resources/grass_block_side_colored.png"/>

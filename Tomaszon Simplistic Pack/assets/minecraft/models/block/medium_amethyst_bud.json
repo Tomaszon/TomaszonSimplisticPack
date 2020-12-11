@@ -1,0 +1,8 @@
+{
+	"parent": "block/template_amethyst",
+	"textures": {
+		"side": "block/medium_amethyst_bud",
+		"base": "block/medium_amethyst_bud_base",
+		"particle": "block/medium_amethyst_bud"
+	}	
+}

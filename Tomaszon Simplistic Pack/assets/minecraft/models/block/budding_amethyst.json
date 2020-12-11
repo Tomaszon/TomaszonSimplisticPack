@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/budding_amethyst_top",
+		"side": "block/budding_amethyst"
+	}
+}

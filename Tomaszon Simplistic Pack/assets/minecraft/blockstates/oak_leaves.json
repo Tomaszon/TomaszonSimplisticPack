@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "block/oak_leaves",
+				"weight": 49
+			},
+			{
+				"model": "block/oak_leaves2"
+			}
+		]
+	}
+}

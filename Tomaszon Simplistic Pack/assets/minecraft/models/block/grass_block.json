@@ -3,9 +3,9 @@
 	"textures": {
 		"top": "block/grass_block_top",
 		"bottom": "block/dirt_top",
-		"side": "block/grass_block_side2",
-		"top_overlay": "block/grass_block_top_overlay2",
-		"side_overlay": "block/grass_block_side_overlay2",
+		"side": "block/grass_block_side",
+		"top_overlay": "block/grass_block_top_overlay",
+		"side_overlay": "block/grass_block_side_overlay",
 		"particle": "block/dirt"
 	}
 }

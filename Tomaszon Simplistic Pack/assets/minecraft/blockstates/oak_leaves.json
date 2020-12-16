@@ -3,7 +3,7 @@
 		"": [
 			{
 				"model": "block/oak_leaves",
-				"weight": 49
+				"weight": 99
 			},
 			{
 				"model": "block/oak_leaves2"

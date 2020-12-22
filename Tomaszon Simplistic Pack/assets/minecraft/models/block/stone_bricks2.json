@@ -1,6 +1,7 @@
 {
-	"parent": "block/stone_bricks",
+	"parent": "block/cube_column",
 	"textures": {
-		"all": "block/stone_bricks2"
+		"end": "block/stone_bricks2_top",
+		"side": "block/stone_bricks2"
 	}
 }

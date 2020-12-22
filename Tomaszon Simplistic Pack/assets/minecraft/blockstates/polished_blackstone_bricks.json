@@ -1,0 +1,12 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "block/polished_blackstone_bricks"
+			},
+			{
+				"model": "block/polished_blackstone_bricks2"
+			}
+		]
+	}
+}

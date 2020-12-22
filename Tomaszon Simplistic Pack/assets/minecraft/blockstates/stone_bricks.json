@@ -1,8 +1,12 @@
 {
-    "variants": {
-        "": [
-            { "model": "block/stone_bricks" },
-            { "model": "block/stone_bricks2" }
-        ]
-    }
+	"variants": {
+		"": [
+			{
+				"model": "block/stone_bricks"
+			},
+			{
+				"model": "block/stone_bricks2"
+			}
+		]
+	}
 }

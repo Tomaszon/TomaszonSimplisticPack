@@ -1,8 +1,12 @@
 {
-    "variants": {
-        "": [
-            { "model": "block/dirt" },
-            { "model": "block/dirt2" }
-        ]
-    }
+	"variants": {
+		"": [
+			{
+				"model": "block/dirt"
+			},
+			{
+				"model": "block/dirt2"
+			}
+		]
+	}
 }

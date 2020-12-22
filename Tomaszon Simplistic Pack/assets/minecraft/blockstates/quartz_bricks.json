@@ -1,0 +1,12 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "block/quartz_bricks"
+			},
+			{
+				"model": "block/quartz_bricks2"
+			}
+		]
+	}
+}

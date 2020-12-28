@@ -1,6 +1,7 @@
 {
-	"parent": "block/netherrack",
+	"parent": "block/cube_column",
 	"textures": {
-		"all": "block/netherrack2"
+		"end": "block/netherrack2_top",
+		"side": "block/netherrack2"
 	}
 }

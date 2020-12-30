@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/birch_fence",
-		"particle": "block/birch_fence"
+		"0": "block/fence/birch_fence",
+		"particle": "block/fence/birch_fence"
 	},
 	"elements": [
 		{

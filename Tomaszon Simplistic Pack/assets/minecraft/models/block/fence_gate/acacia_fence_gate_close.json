@@ -1,5 +1,5 @@
 {
-	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"0": "block/fence_gate/acacia_fence_gate_close",
 		"particle": "block/fence_gate/acacia_fence_gate_close"

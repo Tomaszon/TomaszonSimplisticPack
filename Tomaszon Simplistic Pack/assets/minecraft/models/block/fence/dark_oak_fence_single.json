@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/fence/acacia_fence",
-		"particle": "block/fence/acacia_fence"
+		"0": "block/fence/dark_oak_fence",
+		"particle": "block/fence/dark_oak_fence"
 	},
 	"elements": [
 		{

@@ -1,0 +1,20 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "block/fence/dark_oak_fence",
+		"particle": "block/fence/dark_oak_fence"
+	},
+	"elements": [
+		{
+			"from": [7, 2, 0],
+			"to": [9, 14, 6],
+			"faces": {
+				"north": {"uv": [0, 2, 2, 14], "texture": "#0"},
+				"east": {"uv": [6, 2, 0, 14], "texture": "#0"},
+				"west": {"uv": [0, 2, 6, 14], "texture": "#0"},
+				"up": {"uv": [0, 2.5, 6, 4.5], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [6, 2.5, 0, 4.5], "rotation": 90, "texture": "#0"}
+			}
+		}
+	]
+}

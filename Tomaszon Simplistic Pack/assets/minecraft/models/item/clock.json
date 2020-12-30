@@ -1,0 +1,42 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/clock/clock_00"
+	},
+	"overrides": [
+		{ "predicate": { "time": 0.015625 }, "model": "item/clock_01" },
+		{ "predicate": { "time": 0.046875 }, "model": "item/clock_02" },
+		{ "predicate": { "time": 0.078125 }, "model": "item/clock_03" },
+		{ "predicate": { "time": 0.109375 }, "model": "item/clock_04" },
+		{ "predicate": { "time": 0.140625 }, "model": "item/clock_05" },
+		{ "predicate": { "time": 0.171875 }, "model": "item/clock_06" },
+		{ "predicate": { "time": 0.203125 }, "model": "item/clock_07" },
+		{ "predicate": { "time": 0.223958 }, "model": "item/clock_08" },
+		{ "predicate": { "time": 0.244791 }, "model": "item/clock_09" },
+		{ "predicate": { "time": 0.265625 }, "model": "item/clock_10" },
+		{ "predicate": { "time": 0.296875 }, "model": "item/clock_11" },
+		{ "predicate": { "time": 0.328125 }, "model": "item/clock_12" },
+		{ "predicate": { "time": 0.359375 }, "model": "item/clock_13" },
+		{ "predicate": { "time": 0.390625 }, "model": "item/clock_14" },
+		{ "predicate": { "time": 0.421875 }, "model": "item/clock_15" },
+		{ "predicate": { "time": 0.453125 }, "model": "item/clock_16" },
+		{ "predicate": { "time": 0.484375 }, "model": "item/clock_17" },
+		{ "predicate": { "time": 0.515625 }, "model": "item/clock_18" },
+		{ "predicate": { "time": 0.546875 }, "model": "item/clock_19" },
+		{ "predicate": { "time": 0.578125 }, "model": "item/clock_20" },
+		{ "predicate": { "time": 0.609375 }, "model": "item/clock_21" },
+		{ "predicate": { "time": 0.640625 }, "model": "item/clock_22" },
+		{ "predicate": { "time": 0.671875 }, "model": "item/clock_23" },
+		{ "predicate": { "time": 0.703125 }, "model": "item/clock_24" },
+		{ "predicate": { "time": 0.723958 }, "model": "item/clock_25" },
+		{ "predicate": { "time": 0.744791 }, "model": "item/clock_26" },
+		{ "predicate": { "time": 0.765625 }, "model": "item/clock_27" },
+		{ "predicate": { "time": 0.796875 }, "model": "item/clock_28" },
+		{ "predicate": { "time": 0.828125 }, "model": "item/clock_29" },
+		{ "predicate": { "time": 0.859375 }, "model": "item/clock_30" },
+		{ "predicate": { "time": 0.890625 }, "model": "item/clock_31" },
+		{ "predicate": { "time": 0.921875 }, "model": "item/clock_32" },
+		{ "predicate": { "time": 0.953125 }, "model": "item/clock_33" },
+		{ "predicate": { "time": 0.984375 }, "model": "item/clock" }
+	]
+}

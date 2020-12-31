@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/honeycomb_block_top",
+		"side": "block/honeycomb_block"
+	}
+}

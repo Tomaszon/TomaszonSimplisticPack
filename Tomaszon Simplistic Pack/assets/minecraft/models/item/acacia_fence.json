@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "block/block",
+	"parent": "item/fence",
 	"textures": {
 		"0": "block/fence/acacia_fence",
 		"particle": "block/fence/acacia_fence"

@@ -1,0 +1,7 @@
+{
+	"parent": "block/daylight_detector/daylight_detector",
+	"textures": {
+		"power": "block/daylight_detector/daylight_detector_power4",
+		"switch": "block/daylight_detector/daylight_detector_switch_off"
+	}
+}

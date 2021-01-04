@@ -2,10 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/thin_block",
 	"textures": {
-		"2": "block/daylight_detector/daylight_detector_bottom",
-		"top": "block/daylight_detector/daylight_detector_top",
+		"bottom": "block/daylight_detector/daylight_detector_bottom",
 		"particle": "block/daylight_detector/daylight_detector_top",
-		"side": "block/daylight_detector/daylight_detector_side"
+		"top": "block/daylight_detector/daylight_detector_top",
+		"side": "block/daylight_detector/daylight_detector_side",
+		"power": "block/daylight_detector/daylight_detector_power0",
+		"switch": "block/daylight_detector/daylight_detector_switch_on"
 	},
 	"elements": [
 		{
@@ -17,7 +19,33 @@
 				"south": {"uv": [0, 10, 16, 16], "texture": "#side", "cullface": "south"},
 				"west": {"uv": [0, 10, 16, 16], "texture": "#side", "cullface": "west"},
 				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#2", "cullface": "down"}
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"from": [10.25, 6.01, 11.75],
+			"to": [14, 6.01, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [21, 13, 21]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 1], "texture": "#missing"},
+				"east": {"uv": [0, 0, 3, 1], "texture": "#missing"},
+				"south": {"uv": [0, 0, 4, 1], "texture": "#missing"},
+				"west": {"uv": [0, 0, 3, 1], "texture": "#missing"},
+				"up": {"uv": [10.25, 11.75, 14, 14], "texture": "#power"},
+				"down": {"uv": [0, 0, 4, 3], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [0, 6.01, 14],
+			"to": [4, 6.01, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 13, 23]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 0], "texture": "#missing"},
+				"east": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 4, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"up": {"uv": [0, 14, 4, 16], "texture": "#switch"},
+				"down": {"uv": [0, 0, 4, 2], "texture": "#missing"}
 			}
 		}
 	]

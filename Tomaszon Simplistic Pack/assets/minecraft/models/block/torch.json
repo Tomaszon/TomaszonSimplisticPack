@@ -1,0 +1,7 @@
+{
+	"parent": "block/template_torch",
+	"textures": {
+		"texture": "block/torch",
+		"particle": "block/torch"
+	}
+}

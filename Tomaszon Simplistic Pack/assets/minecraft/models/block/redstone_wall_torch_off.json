@@ -1,6 +1,7 @@
 {
-	"parent": "block/template_torch_wall",
+	"parent": "block/template_wall_torch",
 	"textures": {
-		"torch": "block/redstone_torch_off"
+		"texture": "block/redstone_wall_torch_off",
+		"particle": "block/redstone_wall_torch_off"
 	}
 }

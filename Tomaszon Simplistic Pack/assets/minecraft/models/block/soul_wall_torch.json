@@ -1,0 +1,7 @@
+{
+	"parent": "block/template_wall_torch",
+	"textures": {
+		"texture": "block/soul_wall_torch",
+		"particle": "block/soul_wall_torch"
+	}
+}

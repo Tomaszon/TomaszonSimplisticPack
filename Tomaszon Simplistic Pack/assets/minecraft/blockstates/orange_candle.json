@@ -1,0 +1,112 @@
+{
+	"variants": {
+		"candles=1,lit=false": {
+			"model": "block/candle/orange_candle_one"
+		},
+		"candles=2,lit=false": [
+			{
+				"model": "block/candle/orange_candle_two"
+			},
+			{
+				"model": "block/candle/orange_candle_two",
+				"y": 90
+			},
+			{
+				"model": "block/candle/orange_candle_two",
+				"y": 180
+			},
+			{
+				"model": "block/candle/orange_candle_two",
+				"y": 270
+			}
+		],
+		"candles=3,lit=false": [
+			{
+				"model": "block/candle/orange_candle_three"
+			},
+			{
+				"model": "block/candle/orange_candle_three",
+				"y": 90
+			},
+			{
+				"model": "block/candle/orange_candle_three",
+				"y": 180
+			},
+			{
+				"model": "block/candle/orange_candle_three",
+				"y": 270
+			}
+		],
+		"candles=4,lit=false": [
+			{
+				"model": "block/candle/orange_candle_four"
+			},
+			{
+				"model": "block/candle/orange_candle_four",
+				"y": 90
+			},
+			{
+				"model": "block/candle/orange_candle_four",
+				"y": 180
+			},
+			{
+				"model": "block/candle/orange_candle_four",
+				"y": 270
+			}
+		],
+		"candles=1,lit=true": {
+			"model": "block/candle/orange_candle_one_lit"
+		},
+		"candles=2,lit=true": [
+			{
+				"model": "block/candle/orange_candle_two_lit"
+			},
+			{
+				"model": "block/candle/orange_candle_two_lit",
+				"y": 90
+			},
+			{
+				"model": "block/candle/orange_candle_two_lit",
+				"y": 180
+			},
+			{
+				"model": "block/candle/orange_candle_two_lit",
+				"y": 270
+			}
+		],
+		"candles=3,lit=true": [
+			{
+				"model": "block/candle/orange_candle_three_lit"
+			},
+			{
+				"model": "block/candle/orange_candle_three_lit",
+				"y": 90
+			},
+			{
+				"model": "block/candle/orange_candle_three_lit",
+				"y": 180
+			},
+			{
+				"model": "block/candle/orange_candle_three_lit",
+				"y": 270
+			}
+		],
+		"candles=4,lit=true": [
+			{
+				"model": "block/candle/orange_candle_four_lit"
+			},
+			{
+				"model": "block/candle/orange_candle_four_lit",
+				"y": 90
+			},
+			{
+				"model": "block/candle/orange_candle_four_lit",
+				"y": 180
+			},
+			{
+				"model": "block/candle/orange_candle_four_lit",
+				"y": 270
+			}
+		]
+	}
+}

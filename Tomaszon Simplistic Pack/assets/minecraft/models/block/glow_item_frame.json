@@ -1,6 +1,6 @@
 {
 	"parent": "block/template_item_frame",
 	"textures": {
-		"texture": "block/item_frame"
+		"texture": "block/glow_item_frame"
 	}
 }

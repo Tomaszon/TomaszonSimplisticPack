@@ -1,0 +1,8 @@
+{
+	"parent": "block/repeater/repeater_4tick_locked",
+	"textures": {
+		"top": "block/repeater/repeater_on",
+		"torch": "block/redstone_torch",
+		"delay": "block/repeater/4tick_on"
+	}
+}

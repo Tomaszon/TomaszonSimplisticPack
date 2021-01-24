@@ -1,0 +1,9 @@
+{
+	"parent": "block/comparator/comparator_subtract",
+	"textures": {
+		"particle": "block/comparator/comparator_on",
+		"top": "block/comparator/comparator_on",
+		"torch": "block/redstone_torch",
+		"mode": "block/redstone_torch"
+	}
+}

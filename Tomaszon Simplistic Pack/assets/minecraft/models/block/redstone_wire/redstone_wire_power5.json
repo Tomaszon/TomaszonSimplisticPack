@@ -1,0 +1,15 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"power": "block/redstone_wire/redstone_wire_power5"
+	},
+	"elements": [
+		{
+			"from": [9, 1.01, 9],
+			"to": [12.75, 1.01, 11.25],
+			"faces": {
+				"up": {"uv": [10.25, 11.75, 14, 14], "texture": "#power"}
+			}
+		}
+	]
+}

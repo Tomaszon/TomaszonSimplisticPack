@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/oxidized_copper_top",
+		"side": "block/oxidized_copper"
+	}
+}

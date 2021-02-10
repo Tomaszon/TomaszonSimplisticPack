@@ -1,7 +1,7 @@
 {
 	"parent": "block/template_grass_block",
 	"textures": {
-		"top": "block/grass_block_top3",
+		"accessory": "block/grass_block_accessory3",
 		"bottom": "block/dirt_top",
 		"side": "block/grass_block_side",
 		"top_overlay": "block/grass_block_top_overlay3",

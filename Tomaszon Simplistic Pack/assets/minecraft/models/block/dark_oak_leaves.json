@@ -1,7 +1,10 @@
 {
 	"parent": "block/leaves_bushy",
 	"textures": {
-		"texture": "block/dark_oak_leaves",
+		"side": "block/dark_oak_leaves",
+		"end": "block/dark_oak_leaves_top",
+		"accessory_side": "block/transparent",
+		"accessory_end": "block/transparent",
 		"particle": "block/dark_oak_leaves"
 	}
 }

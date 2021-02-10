@@ -1,7 +1,10 @@
 {
 	"parent": "block/leaves_bushy",
 	"textures": {
-		"texture": "block/jungle_leaves",
+		"side": "block/jungle_leaves",
+		"end": "block/jungle_leaves_top",
+		"accessory_side": "block/jungle_leaves_accessory",
+		"accessory_end": "block/jungle_leaves_accessory_top",
 		"particle": "block/jungle_leaves"
 	}
 }

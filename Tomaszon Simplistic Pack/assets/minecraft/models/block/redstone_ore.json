@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/redstone_ore_top",
+		"side": "block/redstone_ore"
+	}
+}

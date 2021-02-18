@@ -1,0 +1,12 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "block/grimstone_bricks"
+			},
+			{
+				"model": "block/grimstone_bricks2"
+			}
+		]
+	}
+}

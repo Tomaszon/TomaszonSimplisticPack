@@ -1,7 +1,7 @@
 {
 	"parent": "block/cube_column",
 	"textures": {
-		"end": "block/polished_andesite_top",
-		"side": "block/polished_andesite"
+		"end": "block/polished_andesite/polished_andesite_top",
+		"side": "block/polished_andesite/polished_andesite"
 	}
 }

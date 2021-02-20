@@ -1,7 +1,7 @@
 {
 	"parent": "block/cube_column",
 	"textures": {
-		"end": "block/polished_granite_top",
-		"side": "block/polished_granite"
+		"end": "block/polished_granite/polished_granite_top",
+		"side": "block/polished_granite/polished_granite"
 	}
 }

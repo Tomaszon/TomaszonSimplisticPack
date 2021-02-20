@@ -1,8 +1,7 @@
 {
-	"parent": "block/cube_bottom_top",
+	"parent": "block/cube_column",
 	"textures": {
-		"bottom": "block/smooth_quartz_block_bottom",
-		"top": "block/smooth_quartz_block_top",
-		"side": "block/smooth_quartz_block_side"
+		"end": "block/smooth_quartz_block_top",
+		"side": "block/smooth_quartz_block"
 	}
 }

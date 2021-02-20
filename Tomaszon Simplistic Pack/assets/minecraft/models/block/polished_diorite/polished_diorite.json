@@ -1,7 +1,7 @@
 {
 	"parent": "block/cube_column",
 	"textures": {
-		"side": "block/polished_diorite",
-		"end": "block/polished_diorite_top"
+		"side": "block/polished_diorite/polished_diorite",
+		"end": "block/polished_diorite/polished_diorite_top"
 	}
 }

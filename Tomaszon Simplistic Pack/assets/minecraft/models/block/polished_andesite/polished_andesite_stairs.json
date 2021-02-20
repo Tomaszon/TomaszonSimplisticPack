@@ -1,14 +1,14 @@
 {
-  "parent": "block/stairs_base",
-  "textures": {
-    "bottom": "block/polished_andesite_top",
-    "top": "block/polished_andesite_stairs_top",
-    "innertop":"block/polished_andesite_top",
-    "right": "block/polished_andesite_stairs_right",
-    "left": "block/polished_andesite_stairs_left",
-    "front": "block/polished_andesite_slab",
-    "innerfront": "block/polished_andesite",
-    "back": "block/polished_andesite",
-    "particle": "block/polished_andesite"
-  }
+	"parent": "block/stairs_base",
+	"textures": {
+		"bottom": "block/polished_andesite/polished_andesite_top",
+		"top": "block/polished_andesite/polished_andesite_stairs_top",
+		"innertop": "block/polished_andesite/polished_andesite_top",
+		"right": "block/polished_andesite/polished_andesite_stairs_right",
+		"left": "block/polished_andesite/polished_andesite_stairs_left",
+		"front": "block/polished_andesite/polished_andesite_slab",
+		"innerfront": "block/polished_andesite/polished_andesite",
+		"back": "block/polished_andesite/polished_andesite",
+		"particle": "block/polished_andesite/polished_andesite"
+	}
 }

@@ -1,14 +1,14 @@
 {
-  "parent": "block/inner_stairs_base_upside_down",
-  "textures": {
-    "bottom": "block/polished_diorite_top",
-    "top": "block/polished_diorite_stairs_top_inner",
-    "innertop":"block/polished_diorite_top",
-    "right": "block/polished_diorite_stairs_right_upside_down",
-    "left": "block/polished_diorite_stairs_left_upside_down",
-    "front": "block/polished_diorite_slab",
-    "innerfront": "block/polished_diorite",
-    "back": "block/polished_diorite",
-    "particle": "block/polished_diorite"
-  }
+	"parent": "block/inner_stairs_base_upside_down",
+	"textures": {
+		"bottom": "block/polished_diorite/polished_diorite_top",
+		"top": "block/polished_diorite/polished_diorite_stairs_top_inner",
+		"innertop": "block/polished_diorite/polished_diorite_top",
+		"right": "block/polished_diorite/polished_diorite_stairs_right_upside_down",
+		"left": "block/polished_diorite/polished_diorite_stairs_left_upside_down",
+		"front": "block/polished_diorite/polished_diorite_slab",
+		"innerfront": "block/polished_diorite/polished_diorite",
+		"back": "block/polished_diorite/polished_diorite",
+		"particle": "block/polished_diorite/polished_diorite"
+	}
 }

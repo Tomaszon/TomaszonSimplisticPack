@@ -1,14 +1,14 @@
 {
-  "parent": "block/stairs_base_upside_down",
-  "textures": {
-    "bottom": "block/polished_granite_top",
-    "top": "block/polished_granite_stairs_top",
-    "innertop":"block/polished_granite_top",
-    "right": "block/polished_granite_stairs_right_upside_down",
-    "left": "block/polished_granite_stairs_left_upside_down",
-    "front": "block/polished_granite_slab",
-    "innerfront": "block/polished_granite",
-    "back": "block/polished_granite",
-    "particle": "block/polished_granite"
-  }
+	"parent": "block/stairs_base_upside_down",
+	"textures": {
+		"bottom": "block/polished_granite/polished_granite_top",
+		"top": "block/polished_granite/polished_granite_stairs_top",
+		"innertop": "block/polished_granite/polished_granite_top",
+		"right": "block/polished_granite/polished_granite_stairs_right_upside_down",
+		"left": "block/polished_granite/polished_granite_stairs_left_upside_down",
+		"front": "block/polished_granite/polished_granite_slab",
+		"innerfront": "block/polished_granite/polished_granite",
+		"back": "block/polished_granite/polished_granite",
+		"particle": "block/polished_granite/polished_granite"
+	}
 }

@@ -1,0 +1,14 @@
+{
+	"parent": "block/inner_stairs_base",
+	"textures": {
+		"bottom": "block/polished_grimstone/polished_grimstone_top",
+		"top": "block/polished_grimstone/polished_grimstone_stairs_top_inner",
+		"innertop": "block/polished_grimstone/polished_grimstone_top",
+		"right": "block/polished_grimstone/polished_grimstone_stairs_right",
+		"left": "block/polished_grimstone/polished_grimstone_stairs_left",
+		"front": "block/polished_grimstone/polished_grimstone_slab",
+		"innerfront": "block/polished_grimstone/polished_grimstone",
+		"back": "block/polished_grimstone/polished_grimstone",
+		"particle": "block/polished_grimstone/polished_grimstone"
+	}
+}

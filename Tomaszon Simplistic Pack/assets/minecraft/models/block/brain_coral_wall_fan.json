@@ -1,0 +1,7 @@
+{
+	"parent": "block/coral_wall_fan",
+	"textures": {
+		"fan_upper": "block/brain_coral_fan_upper",
+		"fan_lower": "block/brain_coral_fan_lower"
+	}
+}

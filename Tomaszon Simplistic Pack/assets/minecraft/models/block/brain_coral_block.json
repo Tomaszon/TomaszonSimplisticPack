@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/brain_coral_block_top",
+		"side": "block/brain_coral_block"
+	}
+}

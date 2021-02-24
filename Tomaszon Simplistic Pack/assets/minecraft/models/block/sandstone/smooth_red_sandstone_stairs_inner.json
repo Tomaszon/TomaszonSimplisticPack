@@ -1,0 +1,14 @@
+{
+	"parent": "block/inner_stairs_base",
+	"textures": {
+		"bottom": "block/sandstone/smooth_red_sandstone_top",
+		"top": "block/sandstone/smooth_red_sandstone_stairs_top_inner",
+		"innertop": "block/sandstone/smooth_red_sandstone_top",
+		"right": "block/sandstone/smooth_red_sandstone_stairs_right",
+		"left": "block/sandstone/smooth_red_sandstone_stairs_left",
+		"front": "block/sandstone/smooth_red_sandstone_slab",
+		"innerfront": "block/sandstone/smooth_red_sandstone",
+		"back": "block/sandstone/smooth_red_sandstone",
+		"particle": "block/sandstone/smooth_red_sandstone"
+	}
+}

@@ -1,8 +1,14 @@
 {
-	"parent": "block/stairs",
+	"parent": "block/stairs_base",
 	"textures": {
-		"bottom": "block/sandstone_top",
-		"top": "block/sandstone_top",
-		"side": "block/sandstone"
+		"bottom": "block/sandstone/sandstone_top",
+		"top": "block/sandstone/sandstone_top",
+		"innertop": "block/sandstone/sandstone_top",
+		"right": "block/sandstone/sandstone_slab",
+		"left": "block/sandstone/sandstone_slab",
+		"front": "block/sandstone/sandstone_slab",
+		"innerfront": "block/sandstone/sandstone_slab",
+		"back": "block/sandstone/sandstone",
+		"particle": "block/sandstone/sandstone"
 	}
 }

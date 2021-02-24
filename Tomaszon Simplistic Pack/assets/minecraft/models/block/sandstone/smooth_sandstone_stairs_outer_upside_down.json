@@ -1,0 +1,13 @@
+{
+	"parent": "block/outer_stairs_base_upside_down",
+	"textures": {
+		"bottom": "block/sandstone/smooth_sandstone_top",
+		"top": "block/sandstone/smooth_sandstone_stairs_top_outer",
+		"innertop": "block/sandstone/smooth_sandstone_top",
+		"right": "block/sandstone/smooth_sandstone_stairs_right_upside_down",
+		"left": "block/sandstone/smooth_sandstone_stairs_left_upside_down",
+		"front": "block/sandstone/smooth_sandstone_slab",
+		"innerfront": "block/sandstone/smooth_sandstone",
+		"particle": "block/sandstone/smooth_sandstone"
+	}
+}

@@ -2,31 +2,27 @@
 	"variants": {
 		"axis=y": [
 			{
-				"model": "block/spruce_log"
+				"model": "block/log/spruce_log"
 			},
 			{
-				"model": "block/spruce_log2"
+				"model": "block/log/spruce_log2"
 			}
 		],
 		"axis=z": [
 			{
-				"model": "block/spruce_log",
-				"x": 90
+				"model": "block/log/spruce_log_horizontal"
 			},
 			{
-				"model": "block/spruce_log2",
-				"x": 90
+				"model": "block/log/spruce_log2_horizontal"
 			}
 		],
 		"axis=x": [
 			{
-				"model": "block/spruce_log",
-				"x": 90,
+				"model": "block/log/spruce_log_horizontal",
 				"y": 90
 			},
 			{
-				"model": "block/spruce_log2",
-				"x": 90,
+				"model": "block/log/spruce_log2_horizontal",
 				"y": 90
 			}
 		]

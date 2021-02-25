@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"north": "block/log/spruce_log_end_horizontal",
+		"south": "block/log/spruce_log_end_horizontal",
+		"east": "block/log/spruce_log_horizontal2",
+		"west": "block/log/spruce_log_horizontal2",
+		"up": "block/log/spruce_log_horizontal",
+		"down": "block/log/spruce_log2_horizontal",
+		"particle": "block/log/spruce_log2"
+	}
+}

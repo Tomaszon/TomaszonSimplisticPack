@@ -1,7 +1,0 @@
-{
-	"parent": "block/cube_column",
-	"textures": {
-		"end": "block/grimstone_bricks_top",
-		"side": "block/grimstone_bricks"
-	}
-}

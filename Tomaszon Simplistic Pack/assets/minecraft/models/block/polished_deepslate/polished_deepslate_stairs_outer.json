@@ -1,0 +1,13 @@
+{
+	"parent": "block/outer_stairs_base",
+	"textures": {
+		"bottom": "block/polished_deepslate/polished_deepslate_top",
+		"top": "block/polished_deepslate/polished_deepslate_stairs_top_outer",
+		"innertop": "block/polished_deepslate/polished_deepslate_top",
+		"right": "block/polished_deepslate/polished_deepslate_stairs_right",
+		"left": "block/polished_deepslate/polished_deepslate_stairs_left",
+		"front": "block/polished_deepslate/polished_deepslate_slab",
+		"innerfront": "block/polished_deepslate/polished_deepslate",
+		"particle": "block/polished_deepslate/polished_deepslate"
+	}
+}

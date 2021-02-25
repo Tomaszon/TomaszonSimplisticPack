@@ -1,0 +1,14 @@
+{
+	"parent": "block/stairs_base_upside_down",
+	"textures": {
+		"bottom": "block/polished_deepslate/polished_deepslate_top",
+		"top": "block/polished_deepslate/polished_deepslate_stairs_top",
+		"innertop": "block/polished_deepslate/polished_deepslate_top",
+		"right": "block/polished_deepslate/polished_deepslate_stairs_right_upside_down",
+		"left": "block/polished_deepslate/polished_deepslate_stairs_left_upside_down",
+		"front": "block/polished_deepslate/polished_deepslate_slab",
+		"innerfront": "block/polished_deepslate/polished_deepslate",
+		"back": "block/polished_deepslate/polished_deepslate",
+		"particle": "block/polished_deepslate/polished_deepslate"
+	}
+}

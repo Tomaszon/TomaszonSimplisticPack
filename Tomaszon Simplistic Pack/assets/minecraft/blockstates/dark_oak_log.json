@@ -1,0 +1,20 @@
+{
+	"variants": {
+		"axis=y": [
+			{
+				"model": "block/log/dark_oak_log"
+			}
+		],
+		"axis=z": [
+			{
+				"model": "block/log/dark_oak_log_horizontal"
+			}
+		],
+		"axis=x": [
+			{
+				"model": "block/log/dark_oak_log_horizontal",
+				"y": 90
+			}
+		]
+	}
+}

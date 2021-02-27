@@ -1,34 +1,30 @@
 {
-    "variants": {
-        "axis=y": [
-            {
-                "model": "block/warped_stem"
-            },
-            {
-                "model": "block/warped_stem2"
-            }
-        ],
-        "axis=z": [
-            {
-                "model": "block/warped_stem",
-                "x": 90
-            },
-            {
-                "model": "block/warped_stem2",
-                "x": 90
-            }
-        ],
-        "axis=x": [
-            {
-                "model": "block/warped_stem",
-                "x": 90,
-                "y": 90
-            },
-            {
-                "model": "block/warped_stem2",
-                "x": 90,
-                "y": 90
-            }
-        ]
-    }
+	"variants": {
+		"axis=y": [
+			{
+				"model": "block/log/warped_stem"
+			},
+			{
+				"model": "block/log/warped_stem2"
+			}
+		],
+		"axis=z": [
+			{
+				"model": "block/log/warped_stem_horizontal"
+			},
+			{
+				"model": "block/log/warped_stem2_horizontal"
+			}
+		],
+		"axis=x": [
+			{
+				"model": "block/log/warped_stem_horizontal",
+				"y": 90
+			},
+			{
+				"model": "block/log/warped_stem2_horizontal",
+				"y": 90
+			}
+		]
+	}
 }

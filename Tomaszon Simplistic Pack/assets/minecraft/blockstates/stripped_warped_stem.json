@@ -1,0 +1,20 @@
+{
+	"variants": {
+		"axis=y": [
+			{
+				"model": "block/log/stripped_warped_stem"
+			}
+		],
+		"axis=z": [
+			{
+				"model": "block/log/stripped_warped_stem_horizontal"
+			}
+		],
+		"axis=x": [
+			{
+				"model": "block/log/stripped_warped_stem_horizontal",
+				"y": 90
+			}
+		]
+	}
+}

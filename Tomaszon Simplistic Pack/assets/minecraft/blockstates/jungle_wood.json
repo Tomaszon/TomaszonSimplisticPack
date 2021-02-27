@@ -1,0 +1,20 @@
+{
+	"variants": {
+		"axis=y": [
+			{
+				"model": "block/log/spruce_wood"
+			}
+		],
+		"axis=z": [
+			{
+				"model": "block/log/spruce_wood_horizontal"
+			}
+		],
+		"axis=x": [
+			{
+				"model": "block/log/spruce_wood_horizontal",
+				"y": 90
+			}
+		]
+	}
+}

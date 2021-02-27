@@ -1,34 +1,30 @@
 {
-    "variants": {
-        "axis=y": [
-            {
-                "model": "block/crimson_stem"
-            },
-            {
-                "model": "block/crimson_stem2"
-            }
-        ],
-        "axis=z": [
-            {
-                "model": "block/crimson_stem",
-                "x": 90
-            },
-            {
-                "model": "block/crimson_stem2",
-                "x": 90
-            }
-        ],
-        "axis=x": [
-            {
-                "model": "block/crimson_stem",
-                "x": 90,
-                "y": 90
-            },
-            {
-                "model": "block/crimson_stem2",
-                "x": 90,
-                "y": 90
-            }
-        ]
-    }
+	"variants": {
+		"axis=y": [
+			{
+				"model": "block/log/crimson_stem"
+			},
+			{
+				"model": "block/log/crimson_stem2"
+			}
+		],
+		"axis=z": [
+			{
+				"model": "block/log/crimson_stem_horizontal"
+			},
+			{
+				"model": "block/log/crimson_stem2_horizontal"
+			}
+		],
+		"axis=x": [
+			{
+				"model": "block/log/crimson_stem_horizontal",
+				"y": 90
+			},
+			{
+				"model": "block/log/crimson_stem2_horizontal",
+				"y": 90
+			}
+		]
+	}
 }

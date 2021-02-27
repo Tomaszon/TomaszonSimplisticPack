@@ -1,0 +1,8 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/log/jungle_log_end",
+		"side": "block/log/jungle_log",
+		"particle": "block/log/jungle_log"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"variants": {
+		"axis=y": [
+			{
+				"model": "block/log/jungle_log"
+			}
+		],
+		"axis=z": [
+			{
+				"model": "block/log/jungle_log_horizontal"
+			}
+		],
+		"axis=x": [
+			{
+				"model": "block/log/jungle_log_horizontal",
+				"y": 90
+			}
+		]
+	}
+}

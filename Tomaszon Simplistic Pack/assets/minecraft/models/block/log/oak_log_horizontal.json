@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"north": "block/log/oak_log_end_horizontal",
+		"south": "block/log/oak_log_end_horizontal",
+		"east": "block/log/oak_log_horizontal2",
+		"west": "block/log/oak_log_horizontal2",
+		"up": "block/log/oak_log_horizontal",
+		"down": "block/log/oak_log_horizontal",
+		"particle": "block/log/oak_log"
+	}
+}

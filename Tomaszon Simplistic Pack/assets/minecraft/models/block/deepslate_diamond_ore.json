@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/deepslate_diamond_ore_top",
+		"side": "block/deepslate_diamond_ore"
+	}
+}

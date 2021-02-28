@@ -1,0 +1,14 @@
+{
+	"parent": "block/stairs_base",
+	"textures": {
+		"bottom": "block/smooth_quartz/smooth_quartz_top",
+		"top": "block/smooth_quartz/smooth_quartz_stairs_top",
+		"innertop": "block/smooth_quartz/smooth_quartz_top",
+		"right": "block/smooth_quartz/smooth_quartz_stairs_right",
+		"left": "block/smooth_quartz/smooth_quartz_stairs_left",
+		"front": "block/smooth_quartz/smooth_quartz_slab",
+		"innerfront": "block/smooth_quartz/smooth_quartz",
+		"back": "block/smooth_quartz/smooth_quartz",
+		"particle": "block/smooth_quartz/smooth_quartz"
+	}
+}

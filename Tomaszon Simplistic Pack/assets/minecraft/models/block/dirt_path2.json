@@ -1,0 +1,9 @@
+{
+	"parent": "block/template_dirt_path",
+	"textures": {
+		"top": "block/dirt_path2_top",
+		"bottom": "block/dirt2_top",
+		"side": "block/dirt_path2",
+		"particle": "block/dirt_path2_top"
+	}
+}

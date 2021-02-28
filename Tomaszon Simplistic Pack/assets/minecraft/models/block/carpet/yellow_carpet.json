@@ -1,0 +1,8 @@
+{
+	"parent": "block/carpet/template_carpet",
+	"textures": {
+		"top": "block/carpet/yellow_carpet_top",
+		"side": "block/carpet/yellow_carpet",
+		"particle": "block/carpet/yellow_carpet"
+	}
+}

@@ -2,17 +2,17 @@
 	"variants": {
 		"axis=y": [
 			{
-				"model": "block/log/stripped_spruce_wood"
+				"model": "block/log/stripped_oak_wood"
 			}
 		],
 		"axis=z": [
 			{
-				"model": "block/log/stripped_spruce_wood_horizontal"
+				"model": "block/log/stripped_oak_wood_horizontal"
 			}
 		],
 		"axis=x": [
 			{
-				"model": "block/log/stripped_spruce_wood_horizontal",
+				"model": "block/log/stripped_oak_wood_horizontal",
 				"y": 90
 			}
 		]

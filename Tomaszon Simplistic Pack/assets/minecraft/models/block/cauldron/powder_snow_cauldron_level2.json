@@ -1,0 +1,6 @@
+{
+	"parent": "block/template_cauldron_level2",
+	"textures": {
+		"content": "block/powder_snow"
+	}
+}

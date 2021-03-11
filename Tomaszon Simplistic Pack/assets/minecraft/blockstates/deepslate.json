@@ -1,11 +1,29 @@
 {
 	"variants": {
-		"": [
+		"axis=y": [
 			{
 				"model": "block/deepslate"
 			},
 			{
 				"model": "block/deepslate2"
+			}
+		],
+		"axis=z": [
+			{
+				"model": "block/deepslate_horizontal"
+			},
+			{
+				"model": "block/deepslate2_horizontal"
+			}
+		],
+		"axis=x": [
+			{
+				"model": "block/deepslate_horizontal",
+				"y": 90
+			},
+			{
+				"model": "block/deepslate2_horizontal",
+				"y": 90
 			}
 		]
 	}

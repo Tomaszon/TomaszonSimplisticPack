@@ -1,7 +1,7 @@
 {
 	"parent": "block/cube_column",
 	"textures": {
-		"end": "block/deepslate_top",
+		"end": "block/deepslate_end",
 		"side": "block/deepslate"
 	}
 }

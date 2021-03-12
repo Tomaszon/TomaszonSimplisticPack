@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/deepslate_copper_ore_top",
+		"side": "block/deepslate_copper_ore"
+	}
+}

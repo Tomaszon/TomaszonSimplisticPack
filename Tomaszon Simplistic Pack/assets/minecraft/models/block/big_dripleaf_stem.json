@@ -1,0 +1,30 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "block/big_dripleaf_stem",
+		"stem": "block/big_dripleaf_stem"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 12],
+			"to": [13, 16, 12],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"north": {"uv": [3, 0, 13, 16], "texture": "#stem"},
+				"south": {"uv": [13, 0, 3, 16], "texture": "#stem"}
+			}
+		},
+		{
+			"from": [8, 0, 7],
+			"to": [8, 16, 17],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"east": {"uv": [13, 0, 3, 16], "texture": "#stem"},
+				"west": {"uv": [3, 0, 13, 16], "texture": "#stem"}
+			}
+		}
+	]
+}

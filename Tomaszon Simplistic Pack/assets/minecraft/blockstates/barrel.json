@@ -1,0 +1,46 @@
+{
+	"variants": {
+		"facing=up,open=false": {
+			"model": "block/barrel/barrel"
+		},
+		"facing=up,open=true": {
+			"model": "block/barrel/barrel_open"
+		},
+		"facing=down,open=false": {
+			"model": "block/barrel/barrel_upside_down"
+		},
+		"facing=down,open=true": {
+			"model": "block/barrel/barrel_open_upside_down"
+		},
+		"facing=north,open=false": {
+			"model": "block/barrel/barrel_horizontal"
+		},
+		"facing=north,open=true": {
+			"model": "block/barrel/barrel_open"
+		},
+		"facing=south,open=false": {
+			"y": 180,
+			"model": "block/barrel/barrel_horizontal"
+		},
+		"facing=south,open=true": {
+			"y": 180,
+			"model": "block/barrel/barrel_open"
+		},
+		"facing=west,open=false": {
+			"y": 270,
+			"model": "block/barrel/barrel_horizontal"
+		},
+		"facing=west,open=true": {
+			"y": 270,
+			"model": "block/barrel/barrel_open"
+		},
+		"facing=east,open=false": {
+			"y": 90,
+			"model": "block/barrel/barrel_horizontal"
+		},
+		"facing=east,open=true": {
+			"y": 90,
+			"model": "block/barrel/barrel_open"
+		}
+	}
+}

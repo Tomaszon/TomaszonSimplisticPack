@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"north": "block/basalt_end_horizontal",
+		"south": "block/basalt_end_horizontal",
+		"east": "block/basalt_horizontal2",
+		"west": "block/basalt_horizontal2",
+		"up": "block/basalt_horizontal",
+		"down": "block/basalt_horizontal",
+		"particle": "block/basalt"
+	}
+}

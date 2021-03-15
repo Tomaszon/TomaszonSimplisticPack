@@ -1,0 +1,20 @@
+{
+	"variants": {
+		"axis=y": [
+			{
+				"model": "block/polished_basalt"
+			}
+		],
+		"axis=z": [
+			{
+				"model": "block/polished_basalt_horizontal"
+			}
+		],
+		"axis=x": [
+			{
+				"model": "block/polished_basalt_horizontal",
+				"y": 90
+			}
+		]
+	}
+}

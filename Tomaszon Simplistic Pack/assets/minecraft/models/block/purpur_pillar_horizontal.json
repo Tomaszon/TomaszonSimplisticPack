@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"north": "block/purpur_pillar_end_horizontal",
+		"south": "block/purpur_pillar_end_horizontal",
+		"east": "block/purpur_pillar_horizontal2",
+		"west": "block/purpur_pillar_horizontal2",
+		"up": "block/purpur_pillar_horizontal",
+		"down": "block/purpur_pillar_horizontal",
+		"particle": "block/purpur_pillar"
+	}
+}

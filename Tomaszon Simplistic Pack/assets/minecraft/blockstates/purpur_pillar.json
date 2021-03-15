@@ -1,0 +1,30 @@
+{
+	"variants": {
+		"axis=y": [
+			{
+				"model": "block/purpur_pillar"
+			},
+			{
+				"model": "block/purpur_pillar2"
+			}
+		],
+		"axis=z": [
+			{
+				"model": "block/purpur_pillar_horizontal"
+			},
+			{
+				"model": "block/purpur_pillar2_horizontal"
+			}
+		],
+		"axis=x": [
+			{
+				"model": "block/purpur_pillar_horizontal",
+				"y": 90
+			},
+			{
+				"model": "block/purpur_pillar2_horizontal",
+				"y": 90
+			}
+		]
+	}
+}

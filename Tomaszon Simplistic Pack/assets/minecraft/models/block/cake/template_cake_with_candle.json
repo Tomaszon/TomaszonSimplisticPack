@@ -69,6 +69,39 @@
 				"up": {"uv": [2, 14, 4, 16], "texture": "#top"},
 				"down": {"uv": [5, 5, 7, 7], "texture": "#top"}
 			}
+		},
+		{
+			"from": [7, 8, 7],
+			"to": [9, 14, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16, 8]},
+			"faces": {
+				"north": {"uv": [0, 10, 2, 16], "texture": "#candle"},
+				"east": {"uv": [0, 10, 2, 16], "texture": "#candle"},
+				"south": {"uv": [0, 10, 2, 16], "texture": "#candle"},
+				"west": {"uv": [0, 10, 2, 16], "texture": "#candle"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#candle"},
+				"down": {"uv": [2, 0, 4, 2], "texture": "#candle", "cullface": "down"}
+			}
+		},
+		{
+			"name": "wick1",
+			"from": [7.75, 14, 8],
+			"to": [8.25, 16, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 15, 8]},
+			"faces": {
+				"north": {"uv": [0.75, 2, 1.25, 4], "texture": "#candle"},
+				"south": {"uv": [0.75, 2, 1.25, 4], "texture": "#candle"}
+			}
+		},
+		{
+			"name": "wick2",
+			"from": [7.75, 14, 8],
+			"to": [8.25, 16, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 15, 8]},
+			"faces": {
+				"north": {"uv": [0.75, 2, 1.25, 4], "texture": "#candle"},
+				"south": {"uv": [0.75, 2, 1.25, 4], "texture": "#candle"}
+			}
 		}
 	]
 }

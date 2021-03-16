@@ -1,0 +1,10 @@
+{
+	"parent": "block/orientable_vertical",
+	"textures": {
+		"front": "block/observer_front_vertical",
+		"side": "block/observer_side_vertical",
+		"east": "block/observer_side_vertical2",
+		"west": "block/observer_side_vertical2",
+		"down": "block/observer_back_on_vertical"
+	}
+}

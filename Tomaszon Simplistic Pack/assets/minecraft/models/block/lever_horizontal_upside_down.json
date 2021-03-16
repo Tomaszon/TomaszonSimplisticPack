@@ -1,0 +1,7 @@
+{
+	"parent" : "block/lever",
+	"textures": {
+		"lever": "block/lever_horizontal_upside_down",
+		"particle": "block/lever_horizontal_upside_down"
+	}
+}

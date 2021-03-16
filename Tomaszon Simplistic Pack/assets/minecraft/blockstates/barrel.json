@@ -16,7 +16,7 @@
 			"model": "block/barrel/barrel_horizontal"
 		},
 		"facing=north,open=true": {
-			"model": "block/barrel/barrel_open"
+			"model": "block/barrel/barrel_open_horizontal"
 		},
 		"facing=south,open=false": {
 			"y": 180,
@@ -24,7 +24,7 @@
 		},
 		"facing=south,open=true": {
 			"y": 180,
-			"model": "block/barrel/barrel_open"
+			"model": "block/barrel/barrel_open_horizontal"
 		},
 		"facing=west,open=false": {
 			"y": 270,
@@ -32,7 +32,7 @@
 		},
 		"facing=west,open=true": {
 			"y": 270,
-			"model": "block/barrel/barrel_open"
+			"model": "block/barrel/barrel_open_horizontal"
 		},
 		"facing=east,open=false": {
 			"y": 90,
@@ -40,7 +40,7 @@
 		},
 		"facing=east,open=true": {
 			"y": 90,
-			"model": "block/barrel/barrel_open"
+			"model": "block/barrel/barrel_open_horizontal"
 		}
 	}
 }

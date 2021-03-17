@@ -1,0 +1,7 @@
+{
+	"parent": "item/button",
+	"textures":
+	{
+		"texture": "block/button/birch_button"
+	}
+}

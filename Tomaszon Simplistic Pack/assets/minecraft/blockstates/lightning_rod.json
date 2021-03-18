@@ -1,24 +1,45 @@
 {
 	"variants": {
-		"facing=down": {
+		"facing=down,powered=false": {
 			"model": "block/lightning_rod_upside_down"
 		},
-		"facing=east": {
+		"facing=east,powered=false": {
 			"model": "block/lightning_rod_horizontal",
 			"y": 90
 		},
-		"facing=north": {
+		"facing=north,powered=false": {
 			"model": "block/lightning_rod_horizontal"
 		},
-		"facing=south": {
+		"facing=south,powered=false": {
 			"model": "block/lightning_rod_horizontal",
 			"y": 180
 		},
-		"facing=up": {
+		"facing=up,powered=false": {
 			"model": "block/lightning_rod"
 		},
-		"facing=west": {
+		"facing=west,powered=false": {
 			"model": "block/lightning_rod_horizontal",
+			"y": 270
+		},
+		"facing=down,powered=true": {
+			"model": "block/lightning_rod_on_upside_down"
+		},
+		"facing=east,powered=true": {
+			"model": "block/lightning_rod_on_horizontal",
+			"y": 90
+		},
+		"facing=north,powered=true": {
+			"model": "block/lightning_rod_on_horizontal"
+		},
+		"facing=south,powered=true": {
+			"model": "block/lightning_rod_on_horizontal",
+			"y": 180
+		},
+		"facing=up,powered=true": {
+			"model": "block/lightning_rod_on"
+		},
+		"facing=west,powered=true": {
+			"model": "block/lightning_rod_on_horizontal",
 			"y": 270
 		}
 	}

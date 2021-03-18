@@ -1,0 +1,37 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/lightning_rod_on",
+		"texture": "block/lightning_rod_on"
+	},
+	"elements": [
+		{
+			"from": [6, 14, 6],
+			"to": [10, 16, 10],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [8, 4, 12, 6], "texture": "#texture"},
+				"east": {"uv": [8, 4, 12, 6], "texture": "#texture"},
+				"south": {"uv": [8, 4, 12, 6], "texture": "#texture"},
+				"west": {"uv": [8, 4, 12, 6], "texture": "#texture"},
+				"up": {"uv": [8, 0, 12, 4], "texture": "#texture"},
+				"down": {"uv": [8, 0, 12, 4], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [7, 0, 7],
+			"to": [9, 14, 9],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [2, 0, 4, 14], "texture": "#texture"},
+				"east": {"uv": [2, 0, 4, 14], "texture": "#texture"},
+				"south": {"uv": [2, 0, 4, 14], "texture": "#texture"},
+				"west": {"uv": [2, 0, 4, 14], "texture": "#texture"},
+				"up": {"uv": [0, 0, 0, 0], "texture": "#missing"},
+				"down": {"uv": [12, 4, 14, 6], "texture": "#texture"}
+			}
+		}
+	]
+}

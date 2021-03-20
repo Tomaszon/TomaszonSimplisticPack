@@ -1,7 +1,7 @@
 {
 	"parent": "block/cube_column",
 	"textures": {
-		"end": "block/prismarine_bricks_top",
+		"end": "block/prismarine_bricks_end",
 		"side": "block/prismarine_bricks"
 	}
 }

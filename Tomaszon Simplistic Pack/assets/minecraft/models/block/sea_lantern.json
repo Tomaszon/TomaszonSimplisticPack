@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"end": "block/sea_lantern_end",
+		"side": "block/sea_lantern"
+	}
+}

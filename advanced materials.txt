@@ -1,0 +1,39 @@
+Normal mapping color codes
+
+	Side view				Top view
+	0------R------>255		0------R------>255		Left		Middle	Right
+	|	  |				|	  |				0		127		255
+	|	  v				|	  v				-90°		 0°		90°
+	G---> 127				B---> 127
+	|					|					Up		Middle	Down
+	|					|					0		127		255
+	v					v					-90°		0°		90°
+	255					255
+	
+	
+	Side (R, B, B) vectors	// convex shape (|
+	
+	A----B----C		A: 63,  63, 255		B: 127,  63, 255		C: 191,  63, 255
+	|         |		
+	D    E    F		D: 63, 127, 255		E: 127, 127, 255		F: 191, 127, 255
+	|         |		
+	G----H----I		G: 63, 191, 255		H: 127, 191, 255		I: 191, 191, 255
+
+
+Normal mapping conventions
+
+	Borderlines have E class, object insides have A to I classes all around
+	End and side normal maps are partially or fully inverted, if needed
+	Sand blocks have 'random' normal mappings for sparkling effect
+
+Specular mapping conventions
+
+	Highly reflective:		191, 191, 191	// gems, glass etc
+	Moderately reflective:	127, 127, 127	// metals
+	Lowly reflective:		63,  63,  63	// polished stone like materials, sand, corals
+	Barely reflective:		31,  31,  31	// stone like materials, sandsotnes
+	No reflective:			no mapping		// matt materials, wool etc
+	
+	Borderlines have one class lower reflection values
+	
+	End and side texture speculars are identical, if end and side textures are identical (shading not included)

@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "block/piston/piston_head",
+		"1": "block/piston/piston_top",
+		"2": "block/piston/piston_head_bottom",
+		"3": "block/piston/piston_rod",
+		"particle": "block/piston/piston_head"
+	},
+	"elements": [
+		{
+			"from": [0, 12, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 4], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 4], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 4], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [6, 0, 6],
+			"to": [10, 12, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14, 8, 14]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 12], "texture": "#3"},
+				"east": {"uv": [0, 0, 4, 12], "texture": "#3"},
+				"south": {"uv": [0, 0, 4, 12], "texture": "#3"},
+				"west": {"uv": [0, 0, 4, 12], "texture": "#3"}
+			}
+		}
+	]
+}

@@ -1,6 +1,24 @@
 {
-	"parent": "item/generated",
+	"credit": "Made with Blockbench",
+	"parent": "item/fence",
 	"textures": {
-		"layer0": "block/glass/glass"
-	}
+		"0": "block/glass/glass",
+		"1": "block/glass/glass_pane_top",
+		"2": "block/glass/glass_pane_noside_border",
+		"particle": "block/glass/glass"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 0],
+			"to": [9, 16, 16],
+			"faces": {
+				"north": {"uv": [7, 0, 9, 16], "texture": "#2"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [7, 0, 9, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [7, 0, 9, 16], "texture": "#1"},
+				"down": {"uv": [7, 0, 9, 16], "texture": "#1"}
+			}
+		}
+	]
 }

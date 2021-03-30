@@ -1,7 +1,6 @@
 {
-	"parent": "block/template_glass_pane_noside",
+	"parent": "block/glass_pane/template_glass_pane_noside",
 	"textures": {
-		"pane": "block/glass/white_stained_glass",
-		"edge": "block/glass/white_stained_glass_pane_top"
+		"pane": "block/glass/white_stained_glass"
 	}
 }

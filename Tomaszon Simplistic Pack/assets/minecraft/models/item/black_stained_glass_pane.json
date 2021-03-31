@@ -1,6 +1,8 @@
 {
-	"parent": "item/generated",
+	"parent": "item/template_glass_pane",
 	"textures": {
-	"layer0": "block/glass/black_stained_glass"
+		"face": "block/glass/black_stained_glass",
+		"top": "block/glass/black_stained_glass_pane_top",
+		"edge": "block/glass/black_stained_glass_pane_noside_border"
 	}
 }

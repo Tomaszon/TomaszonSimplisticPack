@@ -4,8 +4,8 @@
 	"elements": [
 		{
 			"name": "accessory",
-			"from": [-0.01, -0.01, -0.01],
-			"to": [16.01, 16.01, 16.01],
+			"from": [-0.03, -0.03, -0.03],
+			"to": [16.03, 16.03, 16.03],
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#accessory_side", "cullface": "north"},
 				"east": {"uv": [0, 0, 16, 16], "texture": "#accessory_side", "cullface": "east"},

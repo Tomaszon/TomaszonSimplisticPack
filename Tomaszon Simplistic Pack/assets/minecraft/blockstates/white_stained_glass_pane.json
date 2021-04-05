@@ -2,43 +2,43 @@
 	"multipart": [
 		{
 			"when": { "north": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_side_nw" }
+			"apply": { "model": "block/glass/white_stained_glass_pane_side_nw" }
 		},
 		{
 			"when": { "south": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_side_se" }
+			"apply": { "model": "block/glass/white_stained_glass_pane_side_se" }
 		},
 		{
 			"when": { "west": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_side_nw", "y": 270 }
+			"apply": { "model": "block/glass/white_stained_glass_pane_side_nw", "y": 270 }
 		},
 		{
 			"when": { "east": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_side_se", "y": 270}
+			"apply": { "model": "block/glass/white_stained_glass_pane_side_se", "y": 270}
 		},
 		{
 			"when": { "north": true, "south": true, "west": false, "east": false },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_post_ns" }
+			"apply": { "model": "block/glass/white_stained_glass_pane_post_ns" }
 		},
 		{
 			"when": { "north": false, "south": false, "west": true, "east": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_post_ns", "y": 90 }
+			"apply": { "model": "block/glass/white_stained_glass_pane_post_ns", "y": 90 }
 		},
 		{
 			"when": { "north": true, "south": false, "west": false, "east": false },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_post_n" }
+			"apply": { "model": "block/glass/white_stained_glass_pane_post_n" }
 		},
 		{
 			"when": { "north": false, "south": true, "west": false, "east": false },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_post_n", "y": 180 }
+			"apply": { "model": "block/glass/white_stained_glass_pane_post_n", "y": 180 }
 		},
 		{
 			"when": { "north": false, "south": false, "west": true, "east": false },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_post_n", "y": 270 }
+			"apply": { "model": "block/glass/white_stained_glass_pane_post_n", "y": 270 }
 		},
 		{
 			"when": { "north": false, "south": false, "west": false, "east": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_post_n", "y": 90 }
+			"apply": { "model": "block/glass/white_stained_glass_pane_post_n", "y": 90 }
 		},
 		{
 			"when": { 
@@ -54,71 +54,71 @@
 					{ "north": false, "south": true, "west": true, "east": false },
 					{ "north": true, "south": false, "west": true, "east": false }
 					]},
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_post" }
+			"apply": { "model": "block/glass/white_stained_glass_pane_post" }
 		},
 		{
 			"when": { "north": false, "east": true, "west": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside" }
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside" }
 		},
 		{
 			"when": { "north": false, "east": true, "west": false },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_rightborder" }
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_rightborder" }
 		},
 		{
 			"when": { "north": false, "east": false, "west": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_leftborder" }
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_leftborder" }
 		},
 		{
 			"when": { "north": false, "east": false, "west": false },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_border" }
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_border" }
 		},
 		{
 			"when": { "south": false, "east": true, "west": true  },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside", "y": 180}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside", "y": 180}
 		},
 		{
 			"when": { "south": false, "east": true, "west": false  },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_leftborder", "y": 180}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_leftborder", "y": 180}
 		},
 		{
 			"when": { "south": false, "east": false, "west": true  },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_rightborder", "y": 180}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_rightborder", "y": 180}
 		},
 		{
 			"when": { "south": false, "east": false, "west": false  },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_border", "y": 180}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_border", "y": 180}
 		},
 		{
 			"when": { "west": false, "north": true, "south": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside", "y": 270}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside", "y": 270}
 		},
 		{
 			"when": { "west": false, "north": true, "south": false },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_rightborder", "y": 270}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_rightborder", "y": 270}
 		},
 		{
 			"when": { "west": false, "north": false, "south": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_leftborder", "y": 270}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_leftborder", "y": 270}
 		},
 		{
 			"when": { "west": false, "north": false, "south": false },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_border", "y": 270}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_border", "y": 270}
 		},
 		{
 			"when": { "east": false, "north": true, "south": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside", "y": 90}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside", "y": 90}
 		},
 		{
 			"when": { "east": false, "north": true, "south": false },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_leftborder", "y": 90}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_leftborder", "y": 90}
 		},
 		{
 			"when": { "east": false, "north": false, "south": true },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_rightborder", "y": 90}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_rightborder", "y": 90}
 		},
 		{
 			"when": { "east": false, "north": false, "south": false },
-			"apply": { "model": "block/glass_pane/white_stained_glass_pane_noside_border", "y": 90}
+			"apply": { "model": "block/glass/white_stained_glass_pane_noside_border", "y": 90}
 		}
 	]
 }

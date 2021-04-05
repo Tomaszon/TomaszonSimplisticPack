@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "item/spyglass",
+		"0": "item/spystained_glass",
 		"1": "item/spyglass_accessories",
-		"particle": "item/spyglass"
+		"particle": "item/spystained_glass"
 	},
 	"elements": [
 		{

@@ -1,0 +1,6 @@
+{
+	"parent": "block/glass/template_glass_pane_noside",
+	"textures": {
+		"pane": "block/glass/lime_stained_glass_pane_noside_rightborder"
+	}
+}

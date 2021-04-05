@@ -1,33 +1,32 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "block/brewing_stand_bottle"
+		"2": "block/brewing_stand/brewing_stand_bottle"
 	},
 	"elements": [
 		{
-			"from": [3, 2, 3],
-			"to": [5, 10, 5],
-			"rotation": {"angle": -45, "axis": "y", "origin": [4, 9.5, 4]},
-			"faces": {
-				"north": {"uv": [7, 7, 9, 15], "texture": "#2"},
-				"east": {"uv": [7, 7, 9, 15], "texture": "#2"},
-				"south": {"uv": [7, 7, 9, 15], "texture": "#2"},
-				"west": {"uv": [7, 7, 9, 15], "texture": "#2"},
-				"up": {"uv": [7.25, 9, 8.5, 10.25], "texture": "#2"},
-				"down": {"uv": [7.25, 9, 8.5, 10.25], "texture": "#2"}
-			}
-		},
-		{
-			"from": [3, 10, 3],
-			"to": [5, 16, 5],
-			"rotation": {"angle": -45, "axis": "y", "origin": [4, 9.5, 4]},
+			"from": [2, 10, 7],
+			"to": [4, 16, 9],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 9.5, 8]},
 			"faces": {
 				"north": {"uv": [7, 1, 9, 7], "texture": "#2"},
 				"east": {"uv": [7, 1, 9, 7], "texture": "#2"},
 				"south": {"uv": [7, 1, 9, 7], "texture": "#2"},
 				"west": {"uv": [7, 1, 9, 7], "texture": "#2"},
-				"up": {"uv": [7.25, 1.5, 8.5, 3], "texture": "#2"},
-				"down": {"uv": [0, 0, 2, 2], "texture": "#2"}
+				"up": {"uv": [0, 0, 2, 2], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"from": [2, 2, 7],
+			"to": [4, 10, 9],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 9.5, 8]},
+			"faces": {
+				"north": {"uv": [7, 7, 9, 15], "texture": "#2"},
+				"east": {"uv": [7, 7, 9, 15], "texture": "#2"},
+				"south": {"uv": [7, 7, 9, 15], "texture": "#2"},
+				"west": {"uv": [7, 7, 9, 15], "texture": "#2"},
+				"up": {"uv": [4, 0, 6, 2], "rotation": 270, "texture": "#2"},
+				"down": {"uv": [2, 0, 4, 2], "rotation": 90, "texture": "#2"}
 			}
 		}
 	]

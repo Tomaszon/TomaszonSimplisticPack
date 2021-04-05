@@ -1,6 +1,8 @@
 {
-	"parent": "item/generated",
+	"parent": "item/template_glass_pane",
 	"textures": {
-	"layer0": "block/glass/cyan_stained_glass"
+		"face": "block/glass/cyan_stained_glass",
+		"top": "block/glass/cyan_stained_glass_pane_top",
+		"edge": "block/glass/cyan_stained_glass_pane_noside_border"
 	}
 }

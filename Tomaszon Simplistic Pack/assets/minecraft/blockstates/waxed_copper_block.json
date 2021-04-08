@@ -2,7 +2,7 @@
 	"variants": {
 		"": [
 			{
-				"model": "block/waxed_copper_block"
+				"model": "block/copper/waxed_copper_block"
 			}
 		]
 	}

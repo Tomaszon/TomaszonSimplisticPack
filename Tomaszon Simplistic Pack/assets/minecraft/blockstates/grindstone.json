@@ -1,0 +1,49 @@
+{
+	"variants": {
+		"face=ceiling,facing=east": {
+			"model": "block/grindstone_upside_down",
+			"y": 90
+		},
+		"face=ceiling,facing=north": {
+			"model": "block/grindstone_upside_down"
+		},
+		"face=ceiling,facing=south": {
+			"model": "block/grindstone_upside_down",
+			"y": 180
+		},
+		"face=ceiling,facing=west": {
+			"model": "block/grindstone_upside_down",
+			"y": 270
+		},
+		"face=floor,facing=east": {
+			"model": "block/grindstone",
+			"y": 90
+		},
+		"face=floor,facing=north": {
+			"model": "block/grindstone"
+		},
+		"face=floor,facing=south": {
+			"model": "block/grindstone",
+			"y": 180
+		},
+		"face=floor,facing=west": {
+			"model": "block/grindstone",
+			"y": 270
+		},
+		"face=wall,facing=east": {
+			"model": "block/grindstone_horizontal",
+			"y": 90
+		},
+		"face=wall,facing=north": {
+			"model": "block/grindstone_horizontal"
+		},
+		"face=wall,facing=south": {
+			"model": "block/grindstone_horizontal",
+			"y": 180
+		},
+		"face=wall,facing=west": {
+			"model": "block/grindstone_horizontal",
+			"y": 270
+		}
+	}
+}

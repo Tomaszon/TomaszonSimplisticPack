@@ -1,0 +1,14 @@
+{
+	"parent": "block/stairs_base",
+	"textures": {
+		"bottom": "block/copper/oxidized_cut_copper_top",
+		"top": "block/copper/oxidized_cut_copper_top",
+		"innertop": "block/copper/oxidized_cut_copper_top",
+		"right": "block/copper/oxidized_cut_copper",
+		"left": "block/copper/oxidized_cut_copper",
+		"front": "block/copper/oxidized_cut_copper",
+		"innerfront": "block/copper/oxidized_cut_copper",
+		"back": "block/copper/oxidized_cut_copper",
+		"particle": "block/copper/oxidized_cut_copper"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"parent": "block/inner_stairs_base",
+	"textures": {
+		"bottom": "block/copper/cut_copper_top",
+		"top": "block/copper/cut_copper_top",
+		"innertop": "block/copper/cut_copper_top",
+		"right": "block/copper/cut_copper",
+		"left": "block/copper/cut_copper",
+		"front": "block/copper/cut_copper",
+		"innerfront": "block/copper/cut_copper",
+		"back": "block/copper/cut_copper",
+		"particle": "block/copper/cut_copper"
+	}
+}

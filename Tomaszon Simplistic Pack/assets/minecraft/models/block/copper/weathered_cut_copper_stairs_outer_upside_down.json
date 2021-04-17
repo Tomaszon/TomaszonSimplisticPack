@@ -1,0 +1,13 @@
+{
+	"parent": "block/outer_stairs_base_upside_down",
+	"textures": {
+		"bottom": "block/copper/weathered_cut_copper_top",
+		"top": "block/copper/weathered_cut_copper_top",
+		"innertop": "block/copper/weathered_cut_copper_top",
+		"right": "block/copper/weathered_cut_copper",
+		"left": "block/copper/weathered_cut_copper",
+		"front": "block/copper/weathered_cut_copper",
+		"innerfront": "block/copper/weathered_cut_copper",
+		"particle": "block/copper/weathered_cut_copper"
+	}
+}

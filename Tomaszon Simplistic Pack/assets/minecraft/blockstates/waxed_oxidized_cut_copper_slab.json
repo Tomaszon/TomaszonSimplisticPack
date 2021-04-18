@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "block/copper/waxed_oxidized_cut_copper_slab"
+		},
+		"type=top": {
+			"model": "block/copper/waxed_oxidized_cut_copper_slab_top"
+		},
+		"type=double": {
+			"model": "block/copper/waxed_oxidized_cut_copper_slab_double"
+		}
+	}
+}

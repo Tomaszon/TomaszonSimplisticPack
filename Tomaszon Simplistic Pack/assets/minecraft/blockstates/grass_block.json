@@ -3,11 +3,11 @@
 		"snowy=false": [
 			{
 				"model": "block/grass_block",
-				"weight": 510
+				"weight": 100
 			},
 			{
 				"model": "block/grass_block2",
-				"weight": 510
+				"weight": 100
 			},
 			{
 				"model": "block/grass_block3",
@@ -23,6 +23,18 @@
 			},
 			{
 				"model": "block/grass_block6",
+				"weight": 1
+			},
+			{
+				"model": "block/grass_block7",
+				"weight": 1
+			},
+			{
+				"model": "block/grass_block8",
+				"weight": 1
+			},
+			{
+				"model": "block/grass_block9",
 				"weight": 1
 			}
 		],

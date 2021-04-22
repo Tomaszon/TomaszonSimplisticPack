@@ -1,0 +1,12 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "block/clay"
+			},
+			{
+				"model": "block/clay2"
+			}
+		]
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"parent": "block/template_grass_block",
+	"textures": {
+		"accessory": "block/grass_block_accessory9",
+		"bottom": "block/dirt_top",
+		"side": "block/grass_block_side",
+		"top_overlay": "block/grass_block_top_overlay9",
+		"side_overlay": "block/grass_block_side_overlay",
+		"particle": "block/dirt"
+	}
+}

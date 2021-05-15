@@ -1,0 +1,20 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "block/tripwire_0",
+		"particle": "block/tripwire_0"
+	},
+	"elements": [
+		{
+			"from": [7.5, 1, 7.5],
+			"to": [8.5, 1, 8.5],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"up": {"uv": [7.5, 7.5, 8.5, 8.5], "texture": "#1"},
+				"down": {"uv": [7.5, 7.5, 8.5, 8.5], "texture": "#1"}
+			}
+		}
+	]
+}

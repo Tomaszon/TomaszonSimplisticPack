@@ -3,39 +3,20 @@
 	"textures": {
 		"2": "block/tripwire_hook_base",
 		"particle": "block/tripwire_hook_base",
-		"hook": "block/tripwire_hook",
-		"tripwire": "block/tripwire_1"
+		"hook": "block/tripwire_hook"
 	},
 	"elements": [
-		{
-			"from": [7.5, 1.87, 3.5],
-			"to": [8.5, 1.87, 6.04],
-			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 1.8, 5.75]},
-			"faces": {
-				"up": {"uv": [7.5, 0, 8.5, 4.5], "texture": "#tripwire"},
-				"down": {"uv": [7.5, 0, 8.5, 4.5], "texture": "#tripwire"}
-			}
-		},
-		{
-			"from": [7.5, 1, 0],
-			"to": [8.5, 1, 3.65],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0.5, -1]},
-			"faces": {
-				"up": {"uv": [7.5, 5, 8.5, 7], "texture": "#tripwire"},
-				"down": {"uv": [7.5, 5, 8.5, 7], "texture": "#tripwire"}
-			}
-		},
 		{
 			"from": [6, 1, 6],
 			"to": [10, 3, 10],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 7]},
 			"faces": {
-				"north": {"uv": [8, 14, 12, 16], "texture": "#hook"},
+				"north": {"uv": [8, 0, 12, 2], "texture": "#hook"},
 				"east": {"uv": [8, 0, 12, 2], "texture": "#hook"},
 				"south": {"uv": [8, 0, 12, 2], "texture": "#hook"},
 				"west": {"uv": [8, 0, 12, 2], "texture": "#hook"},
-				"up": {"uv": [0, 12, 4, 16], "texture": "#hook"},
-				"down": {"uv": [0, 16, 4, 12], "texture": "#hook"}
+				"up": {"uv": [0, 0, 4, 4], "texture": "#hook"},
+				"down": {"uv": [0, 4, 4, 0], "texture": "#hook"}
 			}
 		},
 		{

@@ -1,0 +1,44 @@
+{
+	"multipart": [
+		{
+			"apply": {
+				"model": "block/tripwire_0"
+			}
+		},
+		{
+			"when": {
+				"north": true
+			},
+			"apply": {
+				"model": "block/tripwire_1"
+			}
+		},
+		{
+			"when": {
+				"south": true
+			},
+			"apply": {
+				"model": "block/tripwire_1",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"west": true
+			},
+			"apply": {
+				"model": "block/tripwire_1",
+				"y": 270
+			}
+		},
+		{
+			"when": {
+				"east": true
+			},
+			"apply": {
+				"model": "block/tripwire_1",
+				"y": 90
+			}
+		}
+	]
+}

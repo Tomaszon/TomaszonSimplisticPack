@@ -2,7 +2,7 @@
 	"multipart": [
 		{
 			"apply": {
-				"model": "block/fence/acacia_fence_single"
+				"model": "block/fence/crimson_fence_single"
 			}
 		},
 		{
@@ -10,7 +10,7 @@
 				"north": true
 			},
 			"apply": {
-				"model": "block/fence/acacia_fence_side"
+				"model": "block/fence/crimson_fence_side"
 			}
 		},
 		{
@@ -18,7 +18,7 @@
 				"west": true
 			},
 			"apply": {
-				"model": "block/fence/acacia_fence_side",
+				"model": "block/fence/crimson_fence_side",
 				"y": 270
 			}
 		},
@@ -27,7 +27,7 @@
 				"south": true
 			},
 			"apply": {
-				"model": "block/fence/acacia_fence_side",
+				"model": "block/fence/crimson_fence_side",
 				"y": 180
 			}
 		},
@@ -36,7 +36,7 @@
 				"east": true
 			},
 			"apply": {
-				"model": "block/fence/acacia_fence_side",
+				"model": "block/fence/crimson_fence_side",
 				"y": 90
 			}
 		}

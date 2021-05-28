@@ -1,0 +1,7 @@
+{
+	"parent": "block/template_potted_azalea",
+	"textures": {
+		"top": "block/potted_azalea_top",
+		"side": "block/potted_azalea"
+	}
+}

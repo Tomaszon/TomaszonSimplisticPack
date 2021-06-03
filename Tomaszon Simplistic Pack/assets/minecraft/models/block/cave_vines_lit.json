@@ -1,0 +1,6 @@
+{
+	"parent": "block/shaded_cross",
+	"textures": {
+		"cross": "block/cave_vines_lit"
+	}
+}

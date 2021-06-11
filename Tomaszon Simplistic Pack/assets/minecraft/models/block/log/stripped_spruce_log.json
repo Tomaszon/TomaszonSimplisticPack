@@ -2,7 +2,6 @@
 	"parent": "block/cube_column",
 	"textures": {
 		"end": "block/log/stripped_spruce_log_end",
-		"side": "block/log/stripped_spruce_log",
-		"particle": "block/log/stripped_spruce_log"
+		"side": "block/log/stripped_spruce_log"
 	}
 }

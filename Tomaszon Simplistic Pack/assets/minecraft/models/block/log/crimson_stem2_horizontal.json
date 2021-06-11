@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"north": "block/log/crimson_stem_end_horizontal",
+		"south": "block/log/crimson_stem_end_horizontal",
+		"east": "block/log/crimson_stem2_horizontal2",
+		"west": "block/log/crimson_stem2_horizontal2",
+		"up": "block/log/crimson_stem2_horizontal",
+		"down": "block/log/crimson_stem2_horizontal",
+		"particle": "block/log/crimson_stem2"
+	}
+}

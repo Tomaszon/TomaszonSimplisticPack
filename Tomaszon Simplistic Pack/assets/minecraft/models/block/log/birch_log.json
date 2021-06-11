@@ -2,7 +2,6 @@
 	"parent": "block/cube_column",
 	"textures": {
 		"end": "block/log/birch_log_end",
-		"side": "block/log/birch_log",
-		"particle": "block/log/birch_log"
+		"side": "block/log/birch_log"
 	}
 }

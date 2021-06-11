@@ -2,7 +2,6 @@
 	"parent": "block/cube_column",
 	"textures": {
 		"end": "block/log/oak_log_end",
-		"side": "block/log/oak_log",
-		"particle": "block/log/oak_log"
+		"side": "block/log/oak_log"
 	}
 }

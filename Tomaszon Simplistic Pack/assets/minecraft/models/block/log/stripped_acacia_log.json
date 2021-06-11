@@ -2,7 +2,6 @@
 	"parent": "block/cube_column",
 	"textures": {
 		"end": "block/log/stripped_acacia_log_end",
-		"side": "block/log/stripped_acacia_log",
-		"particle": "block/log/stripped_acacia_log"
+		"side": "block/log/stripped_acacia_log"
 	}
 }

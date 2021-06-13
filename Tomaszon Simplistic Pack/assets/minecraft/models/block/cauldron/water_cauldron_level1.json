@@ -1,5 +1,5 @@
 {
-	"parent": "block/template_cauldron_level1",
+	"parent": "block/cauldron/template_cauldron_level1",
 	"textures": {
 		"content": "block/water_still"
 	}

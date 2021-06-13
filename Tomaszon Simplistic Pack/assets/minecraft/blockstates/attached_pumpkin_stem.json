@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "block/stem/stem_stage7_attached"
+		},
+		"facing=south": {
+			"model": "block/stem/stem_stage7_attached",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "block/stem/stem_stage7_attached",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "block/stem/stem_stage7_attached",
+			"y": 90
+		}
+	}
+}

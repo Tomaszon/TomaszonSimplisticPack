@@ -1,0 +1,10 @@
+{
+	"parent": "block/piston/piston_head_upside_down",
+	"textures": {
+		"0": "block/piston/sticky_piston_head_upside_down",
+		"1": "block/piston/sticky_piston_top",
+		"2": "block/piston/piston_head_bottom",
+		"3": "block/piston/piston_rod",
+		"particle": "block/piston/sticky_piston_head_upside_down"
+	}
+}

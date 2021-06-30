@@ -1,0 +1,10 @@
+{
+	"parent": "block/piston/piston_horizontal",
+	"textures": {
+		"north": "block/piston/sticky_piston_top_horizontal",
+		"south": "block/piston/piston_bottom_horizontal",
+		"east": "block/piston/sticky_piston_horizontal2",
+		"up": "block/piston/sticky_piston_horizontal",
+		"particle": "block/piston/sticky_piston"
+	}
+}

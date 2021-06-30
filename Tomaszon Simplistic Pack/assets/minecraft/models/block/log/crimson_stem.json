@@ -1,5 +1,5 @@
 {
-	"parent": "block/cube_column",
+	"parent": "block/cube_column_bottom_mirrored",
 	"textures": {
 		"end": "block/log/crimson_stem_end",
 		"side": "block/log/crimson_stem",

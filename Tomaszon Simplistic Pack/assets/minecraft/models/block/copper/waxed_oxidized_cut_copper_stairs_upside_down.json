@@ -1,0 +1,14 @@
+{
+	"parent": "block/stairs_base_upside_down",
+	"textures": {
+		"bottom": "block/copper/waxed_oxidized_cut_copper_top",
+		"top": "block/copper/waxed_oxidized_cut_copper_stairs_top",
+		"innertop": "block/copper/waxed_oxidized_cut_copper_stairs_top",
+		"right": "block/copper/waxed_oxidized_cut_copper_stairs_right_upside_down",
+		"left": "block/copper/waxed_oxidized_cut_copper_stairs_left_upside_down",
+		"front": "block/copper/waxed_oxidized_cut_copper_slab",
+		"innerfront": "block/copper/waxed_oxidized_cut_copper_slab",
+		"back": "block/copper/waxed_oxidized_cut_copper",
+		"particle": "block/copper/waxed_oxidized_cut_copper"
+	}
+}
